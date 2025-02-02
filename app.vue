@@ -90,13 +90,19 @@ onMounted(() => {
 });
 </script>
 <style>
-body {
+html {
   margin: 0;
   padding: 0;
   font-family: "Monument Grotesk Variable", "Helvetica", Arial, sans-serif;
-  overflow-y: auto;
+  overflow-y: overlay;
   text-transform: lowercase;
   overflow-x: hidden;
+  scrollbar-gutter: stable both-edges;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
 h3 {
