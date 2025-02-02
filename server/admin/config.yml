@@ -1,0 +1,152 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: "space"
+    label: "Spaces"
+    folder: "content/1.spaces"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Year", name: "year", widget: "string" }
+      - label: "Navigation"
+        name: "navigation"
+        widget: "object"
+        fields:
+          - label: "Order"
+            name: "order"
+            widget: "number"
+            min: 0
+            default: 0
+            value_type: "int"
+      - label: "Icon"
+        name: "icon"
+        widget: "image"
+        hint: "Upload a PNG icon for the project. Please ensure the file is in PNG format."
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "src", widget: "image" }
+          - { label: "Caption", name: "caption", widget: "string" }
+      - label: "Art Description"
+        name: "description"
+        widget: "markdown"
+      - label: "Credits"
+        name: "credits"
+        widget: "markdown"
+
+  - name: "word"
+    label: "Words"
+    folder: "content/2.words"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Year", name: "year", widget: "string" }
+      - label: "Navigation"
+        name: "navigation"
+        widget: "object"
+        fields:
+          - label: "Order"
+            name: "order"
+            widget: "number"
+            min: 0
+            default: 0
+            value_type: "int"
+      - label: "Icon"
+        name: "icon"
+        widget: "image"
+        hint: "Upload a PNG icon for the project. Please ensure the file is in PNG format."
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "src", widget: "image" }
+          - { label: "Caption", name: "caption", widget: "string" }
+      - label: "Text"
+        name: "description"
+        widget: "markdown"
+      - label: "Credits"
+        name: "credits"
+        widget: "markdown"
+
+  - name: "about"
+    label: "About"
+    files:
+      - file: "content/3.about/bio.md"
+        label: "Bio"
+        name: "bio"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: true }
+          - { label: "Description", name: "description", widget: "markdown" }
+          - label: "Navigation"
+            name: "navigation"
+            widget: "object"
+            fields:
+              - label: "Order"
+                name: "order"
+                widget: "number"
+                default: 0
+                min: 0
+                value_type: "int"
+
+      - file: "content/3.about/calendar.md"
+        label: "Calendar"
+        name: "calendar"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: true }
+          - { label: "Description", name: "credits", widget: "markdown" }
+          - label: "Navigation"
+            name: "navigation"
+            widget: "object"
+            fields:
+              - label: "Order"
+                name: "order"
+                widget: "number"
+                default: 0
+                min: 0
+                value_type: "int"
+      - file: "content/3.about/press.md"
+        label: "Press"
+        name: "press"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: true }
+          - { label: "Description", name: "credits", widget: "markdown" }
+          - label: "Navigation"
+            name: "navigation"
+            widget: "object"
+            fields:
+              - label: "Order"
+                name: "order"
+                widget: "number"
+                default: 0
+                min: 0
+                value_type: "int"
+      - file: "content/3.about/contact.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: true }
+          - { label: "Description", name: "credits", widget: "markdown" }
+          - label: "Navigation"
+            name: "navigation"
+            widget: "object"
+            fields:
+              - label: "Order"
+                name: "order"
+                widget: "number"
+                default: 0
+                min: 0
+                value_type: "int"
