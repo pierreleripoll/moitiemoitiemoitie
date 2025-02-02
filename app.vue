@@ -181,6 +181,9 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
+  html {
+    scrollbar-gutter: initial;
+  }
   .app {
     padding: 0px;
   }
