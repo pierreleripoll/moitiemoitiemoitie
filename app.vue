@@ -137,6 +137,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: end;
   flex-wrap: nowrap;
   padding: 0 2rem;
 }
