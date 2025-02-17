@@ -95,7 +95,7 @@ html {
   padding: 0;
   font-family: "Monument Grotesk Variable", "Helvetica", Arial, sans-serif;
   overflow-y: overlay;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   overflow-x: hidden;
   scrollbar-gutter: stable both-edges;
 }
@@ -109,6 +109,14 @@ h3 {
   font-size: x-large;
   font-weight: normal;
   margin: 0px;
+  text-transform: lowercase;
+}
+
+h2 {
+  font-size: xx-large;
+  font-weight: normal;
+  margin: 0px;
+  text-transform: lowercase;
 }
 
 #__nuxt {
@@ -180,7 +188,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   html {
     scrollbar-gutter: initial;
   }
