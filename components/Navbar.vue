@@ -79,6 +79,7 @@ function toggleMobileMenu() {
   align-items: center;
   position: sticky;
   top: 0px;
+  z-index: 10;
   background: white;
   padding: 2rem;
   padding-bottom: 1rem;
@@ -156,7 +157,7 @@ function toggleMobileMenu() {
 }
 
 /* Mobile-specific styles */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   .navbar-title > h3 {
     font-size: xx-large;
   }
