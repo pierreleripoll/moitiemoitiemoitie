@@ -129,8 +129,8 @@ h2 {
 
 .container {
   text-align: start;
-  /* be carefull if changing the max width needs to change the translate value for the selected icon */
-  max-width: 1500px;
+
+  max-width: 1300px;
   margin: auto;
   margin-top: 6rem;
   /* height: 100%; */

@@ -73,7 +73,7 @@ if (fetchedShows.value) {
   gap: 2rem;
   width: 100%;
   max-width: 800px;
-  position: relative;
+  /* position: relative; */
   text-align: left;
 }
 
@@ -116,12 +116,26 @@ if (fetchedShows.value) {
 
 @media screen and (max-width: 620px) {
   .show-dates {
+    gap: 4rem;
+    /* text-align: end; */
+  }
+  .show-dates .show-date {
+    /* flex-direction: column; */
     gap: 2rem;
+  }
+  .show-lieu {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .show-dates {
+    gap: 3rem;
     text-align: end;
   }
   .show-dates .show-date {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
   }
   .show-lieu {
     max-width: 100%;

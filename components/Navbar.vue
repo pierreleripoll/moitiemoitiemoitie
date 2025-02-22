@@ -82,6 +82,8 @@ function toggleMobileMenu() {
   z-index: 10;
   background: white;
   padding: 2rem;
+  max-width: 1300px;
+  margin: auto;
   padding-bottom: 1rem;
   justify-content: space-between;
 }

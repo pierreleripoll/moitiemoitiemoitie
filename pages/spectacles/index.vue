@@ -30,11 +30,16 @@
           </div>
         </div>
         <div class="show-img-wrapper">
-          <img
+          <NuxtPicture
             class="show-img"
-            :style="{ 'outline-color': show.color }"
             :src="show.images[0].src"
-            :alt="show.title"
+            format="avif,webp"
+            sizes="450px md:650px xl:900px"
+            densities="x1 x2"
+            quality="90"
+            loading="lazy"
+            :style="{ 'outline-color': show.color }"
+            :img-attrs="{ alt: show.images[0].caption, loading: 'lazy' }"
           />
         </div>
       </div>
@@ -106,8 +111,8 @@ function sortDates(dates) {
 .show-dates {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
-  font-size: smaller;
+  gap: 2rem;
+  /* font-size: smaller; */
   text-transform: lowercase;
   /* padding-top: 2rem; */
 }
@@ -121,6 +126,7 @@ function sortDates(dates) {
 .show-lieu {
   max-width: 300px;
   flex-shrink: 2;
+  text-align: left;
 }
 
 .show-dates-text {
@@ -147,8 +153,23 @@ function sortDates(dates) {
   /* flex-shrink: 2; */
   width: auto;
   max-width: 100%;
+  height: 500px;
+  /* max-height: 300px; */
+}
+
+.show-img:deep(img) {
   height: auto;
-  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* padding: 3rem; */
+  /* box-sizing: border-box; */
+  /* outline: solid 2px; */
+  /* flex-shrink: 2; */
+  /* width: auto; */
+  /* max-width: 100%; */
+  /* height: auto; */
+  /* max-height: 300px; */
 }
 
 .line-limit {
