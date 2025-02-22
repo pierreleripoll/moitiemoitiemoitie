@@ -41,7 +41,7 @@
             densities="x1 x2"
             quality="90"
             loading="lazy"
-            :img-attrs="{ alt: image.caption, loading: 'lazy' }"
+            :imgAttrs="{ alt: image.caption, loading: 'lazy' }"
           />
         </a>
       </div>

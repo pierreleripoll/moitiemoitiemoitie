@@ -32,7 +32,7 @@
             quality="90"
             loading="lazy"
             :style="{ 'outline-color': show.color }"
-            :img-attrs="{ alt: show.images[0].caption, loading: 'lazy' }"
+            :imgAttrs="{ alt: show.images[0].caption, loading: 'lazy' }"
           />
         </div>
         <show-dates

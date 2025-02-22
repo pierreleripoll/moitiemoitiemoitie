@@ -26,42 +26,50 @@ dates:
     date_text: 17-18 janvier 2018
     dates_url: "https://www.tlh-sierre.ch"
     ticket_url: ""
-    datetime: 1516233600000
+    date_start: "2018-01-17T00:00:00.000Z"
+    date_end: "2018-01-18T00:00:00.000Z"
   - theatre_text: "Théâtre 2.21, Lausanne"
     date_text: 26 jan. - 04 fév. 2018
     dates_url: "https://www.theatre221.ch"
     ticket_url: ""
-    datetime: 1517702400000
+    date_start: "2018-01-26T00:00:00.000Z"
+    date_end: "2018-02-04T00:00:00.000Z"
   - theatre_text: "Petithéâtre, Sion"
     date_text: 24-26 mai 2019
     dates_url: "https://www.petitheatre.ch"
     ticket_url: ""
-    datetime: 1558828800000
+    date_start: "2019-05-24T00:00:00.000Z"
+    date_end: "2019-05-26T00:00:00.000Z"
   - theatre_text: "Clochards Célestes, Lyon"
     date_text: 26-30 juin 2019
     dates_url: "https://www.clochardscelestes.com"
     ticket_url: ""
-    datetime: 1561852800000
+    date_start: "2019-06-26T00:00:00.000Z"
+    date_end: "2019-06-30T00:00:00.000Z"
   - theatre_text: "Festival de la Bâtie, Genève, Théâtre de l’Orangerie"
     date_text: 2-7 sept. 2020
     dates_url: "https://www.batie.ch"
     ticket_url: ""
-    datetime: 1599436800000
+    date_start: "2020-09-02T00:00:00.000Z"
+    date_end: "2020-09-07T00:00:00.000Z"
   - theatre_text: "Pommier, Neuchâtel"
     date_text: 2-3 avr. 2022
     dates_url: "https://www.theatredupommier.ch"
     ticket_url: ""
-    datetime: 1648944000000
+    date_start: "2022-04-02T00:00:00.000Z"
+    date_end: "2022-04-03T00:00:00.000Z"
   - theatre_text: "Tournelle, Orbe"
     date_text: 23-24 sept. 2023
     dates_url: "https://www.theatre-tournelle.ch"
     ticket_url: ""
-    datetime: 1695513600000
+    date_start: "2023-09-23T00:00:00.000Z"
+    date_end: "2023-09-24T00:00:00.000Z"
   - theatre_text: "Nebia Poche, Bienne"
     date_text: 27-28 sept. 2023
     dates_url: "https://www.nebia.ch"
     ticket_url: ""
-    datetime: 1695859200000
+    date_start: "2023-09-27T00:00:00.000Z"
+    date_end: "2023-09-28T00:00:00.000Z"
 gif: "/uploads/histoire-sans-gloire/quand-tu-veux-pecho.gif"
 description: >
   « Vous êtes ici. »

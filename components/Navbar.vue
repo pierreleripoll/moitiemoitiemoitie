@@ -71,11 +71,11 @@ function toggleMobileMenu() {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: sticky;
+  position: relative;
   top: 0px;
   z-index: 10;
   background: white;
-  padding: 2rem;
+  padding-top: 2rem;
   max-width: 1500px;
   margin: auto;
   padding-bottom: 4rem;
@@ -148,12 +148,6 @@ a {
   }
 }
 
-@media screen and (max-width: 760px) {
-  .navbar {
-    padding: 2rem 0.5rem;
-  }
-}
-
 /* Mobile-specific styles */
 @media screen and (max-width: 720px) {
   .navbar-title > h3 {
@@ -161,7 +155,6 @@ a {
   }
   .navbar {
     flex-direction: column;
-    padding: 2rem;
   }
   .long-title {
     display: block;

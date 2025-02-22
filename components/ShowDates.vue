@@ -2,7 +2,7 @@
   <div class="dates">
     <div v-for="(date, idx) in computedDates" :key="idx">
       <a
-        :class="`date ${date.datetime > today ? '' : 'passed'}`"
+        :class="`date ${new Date(date.date_end) > today ? '' : 'passed'}`"
         :href="date.dates_url"
         target="_blank"
       >
@@ -35,7 +35,7 @@ const props = defineProps({
 const today = props.today || new Date();
 
 const sortedDates = computed(() =>
-  [...props.dates].sort((a, b) => a.datetime - b.datetime)
+  [...props.dates].sort((a, b) => new Date(a.date_end) - new Date(b.date_end))
 );
 
 const computedDates = computed(() => {

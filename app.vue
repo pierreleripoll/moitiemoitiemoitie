@@ -136,14 +136,17 @@ h2 {
   text-align: start;
 
   max-width: 1500px;
+  border-top: solid rgba(0, 0, 0, 0.6) 2px;
+
   margin: auto;
+  padding-top: 8rem;
+
   /* margin-top: 6rem; */
   /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 0 2rem;
 }
 
 .header {
@@ -188,7 +191,6 @@ a:hover {
     font-size: large;
   } */
   .container {
-    margin: 0 2rem;
     padding: 0;
     border-top: solid rgba(0, 0, 0, 0.6) 2px;
     padding-top: 4rem;
@@ -209,7 +211,7 @@ a:hover {
     scrollbar-gutter: initial;
   }
   .app {
-    padding: 0px;
+    padding: 1.5rem;
   }
 }
 
