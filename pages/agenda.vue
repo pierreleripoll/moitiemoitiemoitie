@@ -78,9 +78,9 @@ if (fetchedShows.value) {
 }
 
 .agenda-title {
-  text-align: right;
+  text-align: left;
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   /* text-decoration: underline 2px; */
 }
 
