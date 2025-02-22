@@ -194,8 +194,8 @@ function shortDates(dates) {
 
 /* Image wrapper and image styles */
 .show-img-wrapper {
-  max-width: 800px;
-  max-height: 600px;
+  /* max-width: 800px;
+  max-height: 600px; */
   height: auto;
 }
 .show-img {
