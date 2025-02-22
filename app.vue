@@ -135,7 +135,7 @@ h2 {
 .container {
   text-align: start;
 
-  max-width: 1300px;
+  max-width: 1500px;
   margin: auto;
   margin-top: 6rem;
   /* height: 100%; */

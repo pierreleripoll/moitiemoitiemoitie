@@ -2,19 +2,21 @@
   <div class="list-shows">
     <div v-for="show in shows" :key="show._path">
       <div class="show">
+        <NuxtLink class="show-title" :to="show.sitemap.loc">
+          <h2 :style="{ 'text-decoration-color': 'transparent' }">
+            {{ show.title }}
+          </h2>
+        </NuxtLink>
         <div class="show-details">
-          <NuxtLink :to="show.sitemap.loc">
-            <h2
-              class="show-title"
-              :style="{ 'text-decoration-color': 'transparent' }"
-            >
+          <NuxtLink class="show-title" :to="show.sitemap.loc">
+            <h2 :style="{ 'text-decoration-color': 'transparent' }">
               {{ show.title }}
-            </h2></NuxtLink
-          >
+            </h2>
+          </NuxtLink>
           <MDC class="show-description" :value="show.description" />
           <div class="show-dates" v-if="show.dates">
             <div
-              v-for="(date, idx) in sortDates(show.dates)"
+              v-for="(date, idx) in shortDates(sortDates(show.dates))"
               :key="idx"
               class="date"
             >
@@ -26,6 +28,15 @@
                 <div class="show-lieu">{{ date.theatre_text }}</div>
                 <div class="show-dates-text">{{ date.date_text }}</div></a
               >
+            </div>
+            <div v-if="hasBeenShorted(show.dates)">
+              <a
+                :href="show.sitemap.loc"
+                class="show-date"
+                style="text-align: right"
+              >
+                <div class="show-lieu">et plus ici</div>
+              </a>
             </div>
           </div>
         </div>
@@ -41,6 +52,22 @@
             :style="{ 'outline-color': show.color }"
             :img-attrs="{ alt: show.images[0].caption, loading: 'lazy' }"
           />
+        </div>
+        <div class="show-dates" v-if="show.dates">
+          <div
+            v-for="(date, idx) in sortDates(show.dates)"
+            :key="idx"
+            class="date"
+          >
+            <a
+              :class="`show-date ${date.datetime > today ? '' : 'passed'}`"
+              :href="date.dates_url"
+              target="_blank"
+            >
+              <div class="show-lieu">{{ date.theatre_text }}</div>
+              <div class="show-dates-text">{{ date.date_text }}</div></a
+            >
+          </div>
         </div>
       </div>
       <span class="line-limit"></span>
@@ -59,6 +86,8 @@ const { data: fetchedShows } = await useAsyncData("spectacles", () =>
   queryContent("spectacles").find()
 );
 
+const maxDatesForShort = 3;
+
 shows.value =
   fetchedShows.value.sort((a, b) => a.navigation.order - b.navigation.order) ||
   [];
@@ -67,6 +96,14 @@ console.log(shows.value);
 function sortDates(dates) {
   return [...dates].sort((a, b) => a.datetime - b.datetime);
 }
+
+function hasBeenShorted(dates) {
+  return dates.length > maxDatesForShort;
+}
+
+function shortDates(dates) {
+  return dates.filter((d, i) => i < maxDatesForShort);
+}
 </script>
 
 <style scoped>
@@ -74,33 +111,53 @@ function sortDates(dates) {
   padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
-  gap: 20rem;
+  gap: 10rem;
   text-align: end;
 }
 
 .show {
   display: flex;
   flex-direction: row;
-  gap: calc(2rem + 8vw);
+  gap: calc(1rem + 6vw);
   width: 100%;
   /* justify-content: space-between; */
-  justify-content: end;
+  justify-content: space-between;
+  align-items: flex-start;
 
   /* border-bottom: solid 1px; */
 }
 
+/* Equalize the width of show details, image and dates */
+.show-details,
+.show-dates {
+  flex: 1 1 30%;
+  max-width: 30%;
+  box-sizing: border-box;
+}
+
+.show-img-wrapper {
+  flex: 2 1 40%;
+  max-width: 40%;
+}
+
 .show-title {
-  text-decoration: underline 2px;
+  display: none;
   text-align: left;
 }
 
+.show-details > .show-title {
+  display: block;
+}
+
 .show-details {
-  min-width: 400px;
   text-align: justify;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  flex-shrink: 2;
+}
+
+.show-details > .show-dates {
+  display: none;
 }
 
 :deep(.show-description) {
@@ -111,10 +168,9 @@ function sortDates(dates) {
 .show-dates {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  /* font-size: smaller; */
+  font-size: smaller;
+  gap: 1.5rem;
   text-transform: lowercase;
-  /* padding-top: 2rem; */
 }
 .show-dates .show-date {
   display: flex;
@@ -125,7 +181,6 @@ function sortDates(dates) {
 
 .show-lieu {
   max-width: 300px;
-  flex-shrink: 2;
   text-align: left;
 }
 
@@ -137,72 +192,123 @@ function sortDates(dates) {
   color: #6e6e6e;
 }
 
+/* Image wrapper and image styles */
 .show-img-wrapper {
-  flex-shrink: 1;
-  max-width: 800px; /* Default max width on larger screens */
+  max-width: 800px;
   max-height: 600px;
   height: auto;
-  /* width: 100%; */
-  /* padding-top: 4rem; */
 }
-
 .show-img {
-  /* padding: 3rem; */
   box-sizing: border-box;
-  /* outline: solid 2px; */
-  /* flex-shrink: 2; */
-  width: auto;
+  width: 100%;
   max-width: 100%;
   height: 500px;
-  /* max-height: 300px; */
 }
-
 .show-img:deep(img) {
   height: auto;
   width: 100%;
   object-fit: cover;
   object-position: center;
-  /* padding: 3rem; */
-  /* box-sizing: border-box; */
-  /* outline: solid 2px; */
-  /* flex-shrink: 2; */
-  /* width: auto; */
-  /* max-width: 100%; */
-  /* height: auto; */
-  /* max-height: 300px; */
 }
 
 .line-limit {
-  /* display: block;
-  border-bottom: 1px solid #ccc;
-  position: absolute;
-  width: 80vw;
-  left: 10vw; */
+  display: block;
+  padding-top: 10rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+  .show-details > .show-dates {
+    display: flex;
+  }
+  .show > .show-dates {
+    display: none;
+  }
+
+  .show-details {
+    flex: 1 1 30%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .show-dates {
+    flex: 1 1 100%;
+    max-width: 100%;
+    gap: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .show-img-wrapper {
+    flex: 2 1 40%;
+    max-width: 50%;
+  }
+
+  .show {
+    /* align-items: center; */
+  }
 }
 
 @media screen and (max-width: 1080px) {
+  .list-shows {
+    gap: 5rem;
+  }
+  .line-limit {
+    padding-top: 5rem;
+  }
+
+  .show-title {
+    display: block;
+  }
+
+  .show-details > .show-title {
+    display: none;
+  }
+
+  .show-details > .show-dates {
+    display: none;
+  }
+  .show > .show-dates {
+    display: flex;
+  }
+
   .show {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+    text-align: left;
   }
-}
 
-@media screen and (max-width: 700px) {
-  .show-img {
-    /* max-width: 90%;
-    width: 90%; */
+  .show-img-wrapper {
+    order: 1;
     width: 100%;
     max-width: 100%;
   }
-}
 
-/* Mobile-specific styles */
-@media screen and (max-width: 650px) {
-  .show-img {
+  .show-details {
+    order: 2;
+  }
+
+  .show-dates {
+    gap: 1rem;
+    order: 3;
     max-width: 100%;
     width: 100%;
+  }
+
+  .show-details > .show-title {
+    display: none;
+  }
+
+  .show-img :deep(img) {
+    height: auto;
+    width: 100%;
+    max-height: 50vh;
+    -o-object-fit: cover;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: left;
   }
 }
 </style>
