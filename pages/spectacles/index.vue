@@ -80,7 +80,7 @@ function sortDates(dates) {
 
 .show {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   gap: calc(2rem + 8vw);
   width: 100%;
   /* justify-content: space-between; */

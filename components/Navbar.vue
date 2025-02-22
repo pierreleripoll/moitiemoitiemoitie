@@ -2,7 +2,7 @@
   <nav class="navbar">
     <!-- Header with title and hamburger button -->
     <div class="navbar-header">
-      <NuxtLink to="/" class="navbar-link navbar-title">
+      <NuxtLink to="/" class="navbar-title">
         <h3 class="long-title">collectif moitié moitié moitié</h3>
         <h3 class="short-title">moitié moitié moitié</h3>
       </NuxtLink>
@@ -19,38 +19,22 @@
     <!-- Navigation list: always rendered, but its display is controlled via CSS on mobile -->
     <ul class="navbar-menu" :class="{ 'mobile-menu-open': isMobileMenuOpen }">
       <li>
-        <NuxtLink
-          to="/spectacles"
-          class="navbar-link"
-          active-class="router-link-active"
-        >
+        <NuxtLink to="/spectacles" active-class="router-link-active">
           <h3>spectacles</h3>
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink
-          to="/agenda"
-          class="navbar-link"
-          active-class="router-link-active"
-        >
+        <NuxtLink to="/agenda" active-class="router-link-active">
           <h3>agenda</h3>
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink
-          to="/collectif"
-          class="navbar-link"
-          active-class="router-link-active"
-        >
+        <NuxtLink to="/collectif" active-class="router-link-active">
           <h3>le collectif</h3>
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink
-          to="/contact"
-          class="navbar-link"
-          active-class="router-link-active"
-        >
+        <NuxtLink to="/contact" active-class="router-link-active">
           <h3>contact</h3>
         </NuxtLink>
       </li>
@@ -65,6 +49,16 @@ import HamburgerButton from "./HamburgerButton.vue";
 
 const route = useRoute();
 const isMobileMenuOpen = ref(false);
+
+const activeRoute = ref("");
+
+watch(route, (r) => {
+  activeRoute.value = r.path;
+  console.log(activeRoute.value);
+});
+
+const activeMenu = (routeMenu: string) =>
+  activeRoute.value.includes(routeMenu) ? "-active" : "";
 
 function toggleMobileMenu() {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
@@ -120,10 +114,12 @@ function toggleMobileMenu() {
   gap: 1.5rem;
   margin: 0;
   padding: 0;
+  width: 500px;
+  justify-content: space-between;
 }
 
 /* Link styling */
-.navbar-link {
+a {
   color: black;
   text-decoration: none;
   padding: 0.5rem 0;
@@ -192,7 +188,7 @@ function toggleMobileMenu() {
     display: flex;
   }
 
-  .navbar-link {
+  a {
     padding: 0.75rem 0;
     width: 100%;
   }

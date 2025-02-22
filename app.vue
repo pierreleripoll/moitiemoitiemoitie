@@ -14,41 +14,28 @@ import { title } from "process";
 import Navbar from "./components/Navbar.vue";
 
 useSeoMeta({
-  title: "Maria Clara Castioni",
-  ogTitle: "Maria Clara Castioni",
+  title: "Collectif Moitié Moitié Moitié",
+  ogTitle: "Collectif Moitié Moitié Moitié",
   ogImage: "/android-chrome-192x192.png",
-  description:
-    "Maria Clara Castioni's personal website showcasing her work, including her scenographic projects, exhibitions, and words.",
-  ogDescription:
-    "Maria Clara Castioni's personal website showcasing her work, including her scenographic projects, exhibitions, and words.",
+  description: "Collectif Moitié Moitié Moitié.",
+  ogDescription: "Collectif Moitié Moitié Moitié.",
 });
 
 useHead({
-  script: [
-    {
-      src: "https://cloud.umami.is/script.js",
-      defer: true,
-      "data-website-id": "b8436e6a-506a-41ec-921f-d24f377f3620",
-    },
-  ],
-  title: "moitié moitié moitié",
-  titleTemplate: (titleChunk) => {
-    return titleChunk == "moitié moitié moitié" || !titleChunk
-      ? "moitié moitié moitié"
-      : `${titleChunk} - moitié moitié moitié`;
-  },
-  meta: [
-    {
-      name: "description",
-      content:
-        "Site du collectif moitié moitié moitié. Qui sont-ils, que font-ils et quand le font-ils ! Retrouvez leurs spectacles, prochaines dates, informations. ",
-    },
-    {
-      name: "viewport",
-      content: "width=device-width, initial-scale=1",
-    },
-  ],
   link: [
+    {
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
+    },
+    {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossorigin: "",
+    },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+    },
     {
       rel: "icon",
       href: "/favicon.ico",
@@ -56,6 +43,22 @@ useHead({
     {
       rel: "apple-touch-icon",
       href: "/apple-touch-icon.png",
+    },
+  ],
+  title: "moitié moitié moitié",
+  titleTemplate: (titleChunk) =>
+    titleChunk == "moitié moitié moitié" || !titleChunk
+      ? "moitié moitié moitié"
+      : `${titleChunk} - moitié moitié moitié`,
+  meta: [
+    {
+      name: "description",
+      content:
+        "Site du collectif moitié moitié moitié. Qui sont-ils, que font-ils et quand le font-ils ! Retrouvez leurs spectacles, prochaines dates, informations.",
+    },
+    {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1",
     },
   ],
 });
@@ -93,7 +96,9 @@ onMounted(() => {
 html {
   margin: 0;
   padding: 0;
-  font-family: "Monument Grotesk Variable", "Helvetica", Arial, sans-serif;
+  font-family: "Inter", "Monument Grotesk Variable", "Helvetica", Arial,
+    sans-serif;
+  font-optical-sizing: auto;
   overflow-y: overlay;
   /* text-transform: lowercase; */
   overflow-x: hidden;
@@ -173,11 +178,10 @@ a {
 }
 
 a:hover {
-  font-style: italic;
-  text-decoration: underline dotted;
-  -webkit-text-decoration: underline dotted;
-  text-underline-offset: 2px;
-  -webkit-text-underline-offset: underline dotted;
+  text-decoration: underline rgb(185, 185, 185) 2px;
+  -webkit-text-decoration: underline rgb(185, 185, 185) 2px;
+  /* text-underline-offset: 2px; */
+  -webkit-text-underline-offset: underline rgb(185, 185, 185) 2px;
 }
 
 @media screen and (max-width: 920px) {
