@@ -71,14 +71,14 @@ function toggleMobileMenu() {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* position: sticky; */
-  /* top: 0px; */
+  position: sticky;
+  top: 0px;
   z-index: 10;
   background: white;
   padding: 2rem;
   max-width: 1500px;
   margin: auto;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
   justify-content: space-between;
 }
 .short-title {

@@ -82,12 +82,20 @@ credits: >
   Conception et interprétation : Cécile Goussard, Adrien Mani, Matteo Prandi,
   Marie Ripoll
 
-  Coach vocal et regard extérieur : François Renou
 
-  Création lumière et régie : Guillaume Gex
 
-  Costumes : Augustin Rolland
+  Coach vocal et regard extérieur: François Renou
 
-  Administration, production et communication : Jeanne Quattropani, Boris Degex,
+
+
+  Création lumière et régie: Guillaume Gex
+
+
+
+  Costumes: Augustin Rolland
+
+
+
+  Administration, production et communication: Jeanne Quattropani, Boris Degex,
   Olivier Blättler, Samuel Bezençon
 ---

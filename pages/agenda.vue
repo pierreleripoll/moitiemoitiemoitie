@@ -131,7 +131,7 @@ if (fetchedShows.value) {
 @media screen and (max-width: 620px) {
   .show-dates {
     gap: 3rem;
-    text-align: end;
+    text-align: start;
   }
   .show-dates .show-date {
     flex-direction: column;

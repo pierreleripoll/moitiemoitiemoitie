@@ -14,31 +14,13 @@
             </h2>
           </NuxtLink>
           <MDC class="show-description" :value="show.description" />
-          <div class="show-dates" v-if="show.dates">
-            <div
-              v-for="(date, idx) in shortDates(sortDates(show.dates))"
-              :key="idx"
-              class="date"
-            >
-              <a
-                :class="`show-date ${date.datetime > today ? '' : 'passed'}`"
-                :href="date.dates_url"
-                target="_blank"
-              >
-                <div class="show-lieu">{{ date.theatre_text }}</div>
-                <div class="show-dates-text">{{ date.date_text }}</div></a
-              >
-            </div>
-            <div v-if="hasBeenShorted(show.dates)">
-              <a
-                :href="show.sitemap.loc"
-                class="show-date"
-                style="text-align: right"
-              >
-                <div class="show-lieu">et plus ici</div>
-              </a>
-            </div>
-          </div>
+          <show-dates
+            v-if="show.dates"
+            class="show-dates"
+            :dates="show.dates"
+            :max="maxDatesForShort"
+            :sitemap="show.sitemap.loc"
+          ></show-dates>
         </div>
         <div class="show-img-wrapper">
           <NuxtPicture
@@ -53,22 +35,12 @@
             :img-attrs="{ alt: show.images[0].caption, loading: 'lazy' }"
           />
         </div>
-        <div class="show-dates" v-if="show.dates">
-          <div
-            v-for="(date, idx) in sortDates(show.dates)"
-            :key="idx"
-            class="date"
-          >
-            <a
-              :class="`show-date ${date.datetime > today ? '' : 'passed'}`"
-              :href="date.dates_url"
-              target="_blank"
-            >
-              <div class="show-lieu">{{ date.theatre_text }}</div>
-              <div class="show-dates-text">{{ date.date_text }}</div></a
-            >
-          </div>
-        </div>
+        <show-dates
+          v-if="show.dates"
+          class="show-dates"
+          :dates="show.dates"
+          :sitemap="show.sitemap.loc"
+        ></show-dates>
       </div>
       <span class="line-limit"></span>
     </div>
@@ -80,8 +52,6 @@ import { ref } from "vue";
 
 const shows = ref([]);
 
-const today = new Date();
-
 const { data: fetchedShows } = await useAsyncData("spectacles", () =>
   queryContent("spectacles").find()
 );
@@ -92,18 +62,6 @@ shows.value =
   fetchedShows.value.sort((a, b) => a.navigation.order - b.navigation.order) ||
   [];
 console.log(shows.value);
-
-function sortDates(dates) {
-  return [...dates].sort((a, b) => a.datetime - b.datetime);
-}
-
-function hasBeenShorted(dates) {
-  return dates.length > maxDatesForShort;
-}
-
-function shortDates(dates) {
-  return dates.filter((d, i) => i < maxDatesForShort);
-}
 </script>
 
 <style scoped>

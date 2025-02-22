@@ -137,7 +137,7 @@ h2 {
 
   max-width: 1500px;
   margin: auto;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
   /* height: 100%; */
   display: flex;
   flex-direction: column;
@@ -177,10 +177,22 @@ a {
 }
 
 a:hover {
-  text-decoration: underline rgb(185, 185, 185) 2px;
-  -webkit-text-decoration: underline rgb(185, 185, 185) 2px;
+  text-decoration: underline rgba(0, 0, 0, 0.6) 2px;
+  -webkit-text-decoration: underline rgba(0, 0, 0, 0.6) 2px;
   /* text-underline-offset: 2px; */
-  -webkit-text-underline-offset: underline rgb(185, 185, 185) 2px;
+  -webkit-text-underline-offset: underline rgba(0, 0, 0, 0.6) 2px;
+}
+
+@media screen and (max-width: 1080px) {
+  /* h3 {
+    font-size: large;
+  } */
+  .container {
+    margin: 0 2rem;
+    padding: 0;
+    border-top: solid rgba(0, 0, 0, 0.6) 2px;
+    padding-top: 4rem;
+  }
 }
 
 @media screen and (max-width: 920px) {
