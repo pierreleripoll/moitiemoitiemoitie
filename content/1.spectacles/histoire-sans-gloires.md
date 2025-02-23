@@ -71,21 +71,6 @@ dates:
     date_start: "2023-09-27T00:00:00.000Z"
     date_end: "2023-09-28T00:00:00.000Z"
 gif: "/uploads/histoire-sans-gloire/quand-tu-veux-pecho.gif"
-description: >
-  « Vous êtes ici. »
-
-
-  En partant du plateau, suivez la direction des chants du Père Bovet pendant
-  quelques minutes, avant de bifurquer par un sentier escarpé. Une fois
-  arrivé·e·s aux pâturages peuplés d’esprits de troupeaux, profitez de
-  l’immensité angoissante de la vue offerte par la montagne. Enfin, après une
-  heure de marche soutenue, découvrez le Vieux Chalet, réputé pour abriter des
-  revenants de contes aussi sublimes que ridicules – c’est comme ça qu’on les
-  aime, n’est-ce pas.
-
-
-  Ce spectacle aborde le vide de l’appel des sommets, la solitude du chant
-  choral et la mort des moutons.
 credits: >
   Conception et interprétation : Cécile Goussard, Adrien Mani, Matteo Prandi,
   Marie Ripoll
@@ -107,3 +92,16 @@ credits: >
   Administration, production et communication: Jeanne Quattropani, Boris Degex,
   Olivier Blättler, Samuel Bezençon
 ---
+
+« Vous êtes ici. »
+
+En partant du plateau, suivez la direction des chants du Père Bovet pendant
+quelques minutes, avant de bifurquer par un sentier escarpé. Une fois
+arrivé·e·s aux pâturages peuplés d’esprits de troupeaux, profitez de
+l’immensité angoissante de la vue offerte par la montagne. Enfin, après une
+heure de marche soutenue, découvrez le Vieux Chalet, réputé pour abriter des
+revenants de contes aussi sublimes que ridicules – c’est comme ça qu’on les
+aime, n’est-ce pas.
+
+Ce spectacle aborde le vide de l’appel des sommets, la solitude du chant
+choral et la mort des moutons.

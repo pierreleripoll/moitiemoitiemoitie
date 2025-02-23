@@ -84,12 +84,7 @@ dates:
     ticket_url: ""
     date_start: "2025-10-03T00:00:00.000Z"
     date_end: "2025-10-03T23:59:59.999Z"
-description: >
-  *La Grosse Déprime* aborde la crise économique avec un humour caustique et une
-  pointe d’ironie. Entre conférence chantée et comédie policière, le spectacle
-  interroge la notion de dette publique et propose de réinventer le monde avec
-  des explications énergiques, des jeux de mots inédits et des chansons qui font
-  du bien.
+
 gif: "https://media.giphy.com/media/61lH8qx8A0JiJXh3h5/giphy.gif"
 credits: >
   Texte, mise en scène et jeu : Cécile Goussard, Adrien Mani, Matteo Prandi,
@@ -119,3 +114,9 @@ credits: >
 
   Administration et production : Samuel Bezençon
 ---
+
+_La Grosse Déprime_ aborde la crise économique avec un humour caustique et une
+pointe d’ironie. Entre conférence chantée et comédie policière, le spectacle
+interroge la notion de dette publique et propose de réinventer le monde avec
+des explications énergiques, des jeux de mots inédits et des chansons qui font
+du bien.

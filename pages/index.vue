@@ -40,11 +40,8 @@
         'animate-rotate': animationsActive,
       }"
     >
-      <div class="bubble bubble-bottom-left">
-        <div v-if="!animationsActive">
-          Si seulement nous avions un boutton pour moins stresser...
-        </div>
-        <div v-else>Ça va beaucoup mieux !!!!!!!!</div>
+      <div ref="bubble" class="bubble bubble-bottom-left">
+        Si seulement nous avions un bouton pour moins stresser...
       </div>
 
       <NuxtPicture
@@ -62,14 +59,23 @@
       />
     </div>
 
-    <button class="stress-button" @click="animationsActive = true">
-      <h3>Boutton pour moins stresser</h3>
+    <button
+      ref="stressButton"
+      class="stress-button"
+      @click="
+        () => {
+          animationsActive = !animationsActive;
+          idxText++;
+        }
+      "
+    >
+      Bouton pour moins stresser
     </button>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, useTemplateRef } from "vue";
 
 const diffDays = ref(0);
 const diffHours = ref(0);
@@ -97,6 +103,30 @@ function updateCountdown() {
   diffSeconds.value = Math.floor(remainderAfterMinutes / 1000);
 }
 
+const idxText = ref(0);
+const stressButton = useTemplateRef("stressButton");
+const bubble = useTemplateRef("bubble");
+watch(idxText, (idx) => {
+  if (idx >= listTexts.length - 1) {
+    stressButton.value.style.visibility = "hidden";
+  }
+
+  if (idx >= listTexts.length) {
+    bubble.value.innerHTML = "Mais ???? Vous êtes un HACKER ????";
+  } else bubble.value.innerHTML = listTexts[idx];
+});
+
+const listTexts = [
+  "Ça va beaucoup mieux !!!!!!!!",
+  "Ça va beaucoup mieux !!!!!!!!",
+  "Oooooh.... Pourquoi ? C'était si bien !",
+  "Ouiiiii, la joie à nouveau !!",
+  "Mais ??? Ça commence à bien faire cette histoire !",
+  "Aaaaaaaah... On savait que vous finiriez par être raisonnable !",
+  "Non mais là on va se fâcher vous savez ?",
+  "On vous l'enlève parce que vraiment c'est trop bon !",
+];
+
 onMounted(() => {
   updateCountdown();
   const interval = setInterval(updateCountdown, 1000);
@@ -107,7 +137,7 @@ onMounted(() => {
 <style scoped>
 .welcome {
   display: flex;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -171,7 +201,6 @@ onMounted(() => {
 
 .stress-button {
   background-color: white;
-
   cursor: pointer;
 }
 

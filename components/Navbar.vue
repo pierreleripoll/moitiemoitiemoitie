@@ -78,7 +78,7 @@ function toggleMobileMenu() {
   padding-top: 2rem;
   max-width: 1500px;
   margin: auto;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   justify-content: space-between;
 }
 .short-title {

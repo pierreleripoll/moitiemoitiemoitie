@@ -9,8 +9,8 @@
         <h3 v-if="page.year" class="project-year">{{ page.year }}</h3>
       </div>
 
-      <div v-if="page.description" class="project-description">
-        <MDC :value="page.description" />
+      <div v-if="page.body" class="project-description">
+        <ContentRendererMarkdown :value="page.body" />
       </div>
       <div v-if="page.credits" class="project-credits">
         <MDC :value="page.credits" />
@@ -51,7 +51,13 @@
 
 <script setup lang="ts">
 import { onMounted } from "vue";
-const { page } = useContent();
+
+const { page } = defineProps({
+  page: {
+    type: Object,
+    required: true,
+  },
+});
 
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";
@@ -63,8 +69,6 @@ onMounted(() => {
   });
   lightbox.init();
 });
-
-console.log(page.value.credits);
 </script>
 
 <style scoped>
@@ -114,9 +118,13 @@ console.log(page.value.credits);
   }
   .project-content,
   .images-carousel-wrapper {
-    max-height: calc(100vh - 140px - 8rem - 5px);
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .images-carousel-wrapper {
+    max-height: calc(100vh - 140px - 8rem - 5px);
+
     scrollbar-width: none;
     overflow-y: scroll;
   }

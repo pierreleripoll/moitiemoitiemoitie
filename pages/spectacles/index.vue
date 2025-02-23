@@ -13,7 +13,10 @@
               {{ show.title }}
             </h2>
           </NuxtLink>
-          <MDC class="show-description" :value="show.description" />
+          <ContentRendererMarkdown
+            class="show-description"
+            :value="show.body"
+          />
           <show-dates
             v-if="show.dates"
             class="show-dates"

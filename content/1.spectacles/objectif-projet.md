@@ -74,16 +74,6 @@ dates:
     ticket_url: ""
     date_start: "2023-12-09T00:00:00.000Z"
     date_end: "2023-12-09T00:00:00.000Z"
-description: >
-  *OBJECTIF PROJET* est un spectacle mêlant théâtre et chant. Le collectif,
-  passionné par les projets, se lance dans une aventure théâtrale qui questionne
-  la notion même de **PROJET**.
-
-
-  On y découvre une histoire de managers dans une entreprise sans projet,
-  soulignant que des managers sans projet ne peuvent exister – car le projet est
-  le propre de l’Homme. Une fois ce projet réalisé, le collectif pensera déjà au
-  suivant.
 gif: "https://media.giphy.com/media/61lH8qx8A0JiJXh3h5/giphy.gif"
 credits: >
   Conception, mise en scène et jeu : Cécile Goussard, Adrien Mani, Matteo
@@ -110,3 +100,12 @@ credits: >
 
   Administration et production: Jeanne Quattropani, Samuel Bezençon
 ---
+
+_OBJECTIF PROJET_ est un spectacle mêlant théâtre et chant. Le collectif,
+passionné par les projets, se lance dans une aventure théâtrale qui questionne
+la notion même de **PROJET**.
+
+On y découvre une histoire de managers dans une entreprise sans projet,
+soulignant que des managers sans projet ne peuvent exister – car le projet est
+le propre de l’Homme. Une fois ce projet réalisé, le collectif pensera déjà au
+suivant.
