@@ -1,18 +1,21 @@
-local_backend: true
+# local_backend: true
 
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  branch: main
 
 media_folder: public/uploads
 public_folder: /uploads
 
+editor:
+  preview: false
+
 collections:
-  - name: "space"
-    label: "Spaces"
-    folder: "content/1.spaces"
+  - name: "spectacles"
+    label: "Spectacles"
+    folder: "content/spectacles"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
     fields:
@@ -22,131 +25,79 @@ collections:
         name: "navigation"
         widget: "object"
         fields:
-          - label: "Order"
-            name: "order"
-            widget: "number"
-            min: 0
-            default: 0
-            value_type: "int"
-      - label: "Icon"
-        name: "icon"
-        widget: "image"
-        hint: "Upload a PNG icon for the project. Please ensure the file is in PNG format."
+          - {
+              label: "Order",
+              name: "order",
+              widget: "number",
+              default: 0,
+              min: 0,
+            }
       - label: "Images"
         name: "images"
+        minimize_collapsed: true
         widget: "list"
         fields:
           - { label: "Image", name: "src", widget: "image" }
           - { label: "Caption", name: "caption", widget: "string" }
-      - label: "Art Description"
-        name: "description"
-        widget: "markdown"
-      - label: "Credits"
-        name: "credits"
-        widget: "markdown"
 
-  - name: "word"
-    label: "Words"
-    folder: "content/2.words"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    extension: "md"
-    format: "frontmatter"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Year", name: "year", widget: "string" }
-      - label: "Navigation"
-        name: "navigation"
-        widget: "object"
-        fields:
-          - label: "Order"
-            name: "order"
-            widget: "number"
-            min: 0
-            default: 0
-            value_type: "int"
-      - label: "Icon"
-        name: "icon"
-        widget: "image"
-        hint: "Upload a PNG icon for the project. Please ensure the file is in PNG format."
-      - label: "Images"
-        name: "images"
+      - label: "Dates"
+        name: "dates"
+        minimize_collapsed: true
         widget: "list"
         fields:
-          - { label: "Image", name: "src", widget: "image" }
-          - { label: "Caption", name: "caption", widget: "string" }
-      - label: "Text"
-        name: "description"
-        widget: "markdown"
-      - label: "Credits"
-        name: "credits"
-        widget: "markdown"
+          - { label: "Theatre Text", name: "theatre_text", widget: "string" }
+          - { label: "Date Text", name: "date_text", widget: "string" }
+          - {
+              label: "Dates URL",
+              name: "dates_url",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Ticket URL",
+              name: "ticket_url",
+              widget: "string",
+              required: false,
+            }
+          - { label: "Date Start", name: "date_start", widget: "datetime" }
+          - { label: "Date End", name: "date_end", widget: "datetime" }
+      - { label: "Credits", name: "credits", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "about"
-    label: "About"
+  - name: "pages"
+    label: "Pages"
     files:
-      - file: "content/3.about/bio.md"
-        label: "Bio"
-        name: "bio"
+      - name: "collectif"
+        label: "Collectif"
+        file: "content/collectif.md"
         fields:
           - { label: "Title", name: "title", widget: "string", required: true }
-          - { label: "Description", name: "description", widget: "markdown" }
-          - label: "Navigation"
-            name: "navigation"
-            widget: "object"
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            minimize_collapsed: true
             fields:
-              - label: "Order"
-                name: "order"
-                widget: "number"
-                default: 0
-                min: 0
-                value_type: "int"
+              - { label: "Image", name: "src", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
 
-      - file: "content/3.about/calendar.md"
-        label: "Calendar"
-        name: "calendar"
-        fields:
-          - { label: "Title", name: "title", widget: "string", required: true }
-          - { label: "Description", name: "credits", widget: "markdown" }
-          - label: "Navigation"
-            name: "navigation"
-            widget: "object"
+          - label: "People"
+            name: "people"
+            widget: "list"
             fields:
-              - label: "Order"
-                name: "order"
-                widget: "number"
-                default: 0
-                min: 0
-                value_type: "int"
-      - file: "content/3.about/press.md"
-        label: "Press"
-        name: "press"
-        fields:
-          - { label: "Title", name: "title", widget: "string", required: true }
-          - { label: "Description", name: "credits", widget: "markdown" }
-          - label: "Navigation"
-            name: "navigation"
-            widget: "object"
-            fields:
-              - label: "Order"
-                name: "order"
-                widget: "number"
-                default: 0
-                min: 0
-                value_type: "int"
-      - file: "content/3.about/contact.md"
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Text", name: "text", widget: "markdown" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - name: "contact"
         label: "Contact"
-        name: "contact"
+        file: "content/contact.md"
         fields:
           - { label: "Title", name: "title", widget: "string", required: true }
-          - { label: "Description", name: "credits", widget: "markdown" }
-          - label: "Navigation"
-            name: "navigation"
-            widget: "object"
+          - label: "Images"
+            name: "images"
+            minimize_collapsed: true
+            widget: "list"
             fields:
-              - label: "Order"
-                name: "order"
-                widget: "number"
-                default: 0
-                min: 0
-                value_type: "int"
+              - { label: "Image", name: "src", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+
+          - { label: "Body", name: "body", widget: "markdown" }
