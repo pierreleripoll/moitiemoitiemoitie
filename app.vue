@@ -102,7 +102,7 @@ html {
   overflow-y: overlay;
   /* text-transform: lowercase; */
   overflow-x: hidden;
-  scrollbar-gutter: stable both-edges;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -140,6 +140,7 @@ h2 {
 
   margin: auto;
   padding-top: 8rem;
+  padding-bottom: 8rem;
 
   /* margin-top: 6rem; */
   /* height: 100%; */

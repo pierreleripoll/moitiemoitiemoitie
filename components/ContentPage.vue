@@ -98,6 +98,8 @@ console.log(page.value.credits);
   .project-container {
     flex-direction: row;
     gap: 10rem;
+    margin-top: -8rem;
+    margin-bottom: -8rem;
   }
 
   .project-content {
@@ -112,7 +114,9 @@ console.log(page.value.credits);
   }
   .project-content,
   .images-carousel-wrapper {
-    max-height: calc(100vh - 100px - 4rem);
+    max-height: calc(100vh - 140px - 8rem - 5px);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     scrollbar-width: none;
     overflow-y: scroll;
   }

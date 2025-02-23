@@ -128,7 +128,7 @@ a {
 
 /* Active route styling */
 .router-link-active:not(.navbar-title) {
-  text-decoration: underline 2px rgb(0, 207, 28);
+  text-decoration: underline 2px rgba(0, 0, 0, 0.6);
 }
 
 @media screen and (max-width: 920px) {

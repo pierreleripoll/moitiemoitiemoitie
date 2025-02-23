@@ -116,7 +116,9 @@ if (fetchedShows.value) {
     (a, b) => new Date(a.date_end) - new Date(b.date_end)
   );
   datesFutur.value = dates.filter((date) => new Date(date.date_end) >= today);
-  datesPassed.value = dates.filter((date) => new Date(date.date_end) < today);
+  datesPassed.value = dates
+    .filter((date) => new Date(date.date_end) < today)
+    .sort((a, b) => new Date(b.date_end) - new Date(a.date_end));
 }
 </script>
 
