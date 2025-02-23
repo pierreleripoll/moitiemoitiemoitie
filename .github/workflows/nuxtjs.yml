@@ -22,8 +22,8 @@ jobs:
         # Try to download and unzip the IPX cache from the previous deployment
       - name: Download IPX cache
         run: |
-          if curl --head --silent --fail https://pierreleripoll.github.io/mariaclaracastioni/ipx_cache.zip; then
-            curl -o ipx_cache.zip https://pierreleripoll.github.io/mariaclaracastioni/ipx_cache.zip
+          if curl --head --silent --fail https://pierreleripoll.github.io/moitiemoitiemoitie/ipx_cache.zip; then
+            curl -o ipx_cache.zip https://pierreleripoll.github.io/moitiemoitiemoitie/ipx_cache.zip
             unzip -q ipx_cache.zip -d ./.ipx-cache
             mv ./.ipx-cache/.output/public/_ipx/* ./.ipx-cache/
             ls -aR .
@@ -34,7 +34,7 @@ jobs:
 
       # Generate the static site
       - run: |
-          NUXT_APP_BASE_URL=/mariaclaracastioni  npx nuxt generate
+          NUXT_APP_BASE_URL=/moitiemoitiemoitie  npx nuxt generate
 
       # Zip the _ipx folder with minimal compression for better speed
       - name: Zip IPX cache
