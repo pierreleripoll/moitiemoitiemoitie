@@ -2,29 +2,69 @@
   <div class="welcome">
     <h3 class="disclaimer">
       Plus que
-      <span class="days animate-color">{{ diffDays }} jours</span>,
-      <span class="hours animate-color">{{ diffHours }} h</span>,
-      <span class="minutes animate-color">{{ diffMinutes }} m</span> et
-      <span class="seconds animate-color">{{ diffSeconds }} s</span>
+      <span class="days" :class="{ 'animate-color': animationsActive }"
+        >{{ diffDays }} jours</span
+      >,
+      <span class="hours" :class="{ 'animate-color': animationsActive }"
+        >{{ diffHours }} h</span
+      >,
+      <span class="minutes" :class="{ 'animate-color': animationsActive }"
+        >{{ diffMinutes }} m</span
+      >
+      et
+      <span class="seconds" :class="{ 'animate-color': animationsActive }"
+        >{{ diffSeconds }} s</span
+      >
       avant la première de
-      <div class="titre animate-size animate-color">
-        La <span class="big">grosse</span> déprime
-        <span class="exclamation"></span>
+      <div
+        class="titre"
+        :class="{
+          'animate-size': animationsActive,
+          'animate-color': animationsActive,
+        }"
+      >
+        La
+        <span class="big" :class="{ 'animate-uppercase': animationsActive }"
+          >grosse</span
+        >
+        déprime
+        <span
+          :class="{ 'exclamation animate-exclamation': animationsActive }"
+        ></span>
       </div>
     </h3>
-    <NuxtPicture
-      :src="img.src"
-      format="avif,webp"
-      sizes="450px md:650px xl:900px"
-      densities="x1 x2"
-      quality="90"
-      loading="lazy"
-      :imgAttrs="{
-        alt: img.caption,
-        className: 'show-img animate-rotate',
-        loading: 'lazy',
+
+    <div
+      :class="{
+        cartoon: true,
+        'animate-rotate': animationsActive,
       }"
-    />
+    >
+      <div class="bubble bubble-bottom-left">
+        <div v-if="!animationsActive">
+          Si seulement nous avions un boutton pour moins stresser...
+        </div>
+        <div v-else>Ça va beaucoup mieux !!!!!!!!</div>
+      </div>
+
+      <NuxtPicture
+        :src="img.src"
+        format="avif,webp"
+        sizes="450px md:650px xl:900px"
+        densities="x1 x2"
+        quality="90"
+        loading="lazy"
+        :imgAttrs="{
+          alt: img.caption,
+          className: 'show-img' + (animationsActive ? ' animate-rotate' : ''),
+          loading: 'lazy',
+        }"
+      />
+    </div>
+
+    <button class="stress-button" @click="animationsActive = true">
+      <h3>Boutton pour moins stresser</h3>
+    </button>
   </div>
 </template>
 
@@ -35,6 +75,8 @@ const diffDays = ref(0);
 const diffHours = ref(0);
 const diffMinutes = ref(0);
 const diffSeconds = ref(0);
+
+const animationsActive = ref(false);
 
 const { data: show } = await useAsyncData("spectacles", () =>
   queryContent("spectacles", "la-grosse-deprime").findOne()
@@ -65,10 +107,13 @@ onMounted(() => {
 <style scoped>
 .welcome {
   display: flex;
+  padding-bottom: 4rem;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 :deep(.show-img) {
@@ -77,8 +122,40 @@ onMounted(() => {
   height: auto;
 }
 
+.cartoon {
+  position: relative;
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 100%;
+}
+
+.bubble {
+  font-size: small;
+  max-width: 120px;
+  position: absolute;
+  background-color: white;
+  border: solid 1px;
+  border-radius: 20px;
+  padding: 10px;
+  left: 40%;
+  top: 30%;
+}
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 16px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 4px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 32px;
+  bottom: -20px;
+}
+
 .disclaimer {
   text-align: center;
+  width: 100%;
 }
 
 .exclamation {
@@ -87,9 +164,15 @@ onMounted(() => {
 }
 
 /* Generate animated exclamation marks */
-.exclamation::after {
+.exclamation.animate-exclamation::after {
   content: "!";
   animation: exclamationAnimation 3s steps(3, end) infinite;
+}
+
+.stress-button {
+  background-color: white;
+
+  cursor: pointer;
 }
 
 .animate-color {
@@ -97,31 +180,42 @@ onMounted(() => {
 }
 
 :deep(.animate-rotate) {
-  animation: rotate 3s linear infinite;
+  animation: rotate 2s linear infinite;
 }
 
 /* Shared animation on time units */
 .animate-size {
-  animation: sizePulse 3s ease-in-out infinite;
+  animation: sizePulse 3s linear infinite;
 }
 
-.days,
-.hours,
-.minutes,
-.seconds,
-.titre {
+.animate-color,
+.animate-size {
   font-size: 1.5em;
   font-weight: bold;
   /* Apply animations */
 }
 
+.days,
+.hours,
+.minutes,
+.seconds {
+  display: inline-block;
+  min-width: fit-content;
+}
+
+.seconds {
+  width: 50px;
+}
+
 .titre {
   padding-top: 2rem;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 /* Additional styling for the big part if needed */
-.big {
-  animation: uppercase 3s ease-in-out infinite;
+.animate-uppercase {
+  animation: uppercase 3s linear infinite;
 }
 
 @keyframes rotate {
@@ -135,40 +229,15 @@ onMounted(() => {
 
 @keyframes exclamationAnimation {
   0% {
-    content: "!";
-  }
-  10% {
-    content: "!!";
-  }
-  20% {
-    content: "!!!";
-  }
-  30% {
-    content: "!!!!";
-  }
-  40% {
-    content: "!!!!!";
+    content: "";
   }
   50% {
-    content: "!!!!!!";
-  }
-  60% {
-    content: "!!!!!";
-  }
-  70% {
-    content: "!!!!";
-  }
-  80% {
     content: "!!!";
   }
-  90% {
-    content: "!!";
-  }
   100% {
-    content: "!";
+    content: "";
   }
 }
-
 @keyframes uppercase {
   0% {
     text-transform: lowercase;
@@ -204,7 +273,7 @@ onMounted(() => {
     font-size: 1.5em;
   }
   50% {
-    font-size: 3em;
+    font-size: 2.3em;
   }
   100% {
     font-size: 1.5em;
