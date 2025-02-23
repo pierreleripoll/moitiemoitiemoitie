@@ -1,6 +1,6 @@
 <!-- filepath: /home/pierre/Documents/Code/moitiemoitiemoitie/pages/collectif.vue -->
 <template>
-  <ContentPage :page="page">
+  <ContentPage v-if="page" :page="page">
     <div v-for="(person, index) in page.people" :key="index" class="person">
       <h3 class="person-name" @click="togglePerson(index)">
         {{ person.name }}
@@ -18,8 +18,11 @@
 <script setup>
 import { ref, watch } from "vue";
 import ContentPage from "~/components/ContentPage.vue";
-const { page } = useContent();
-
+const route = useRoute();
+console.log(route.path);
+const { data: page } = await useAsyncData(route.path, () => {
+  return queryCollection("collectif").first();
+});
 // Create a reactive array to track which person is expanded
 const opened = ref([]);
 

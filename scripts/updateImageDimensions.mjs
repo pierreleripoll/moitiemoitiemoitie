@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import imageSize from "image-size";
 
 // Adjust this path to point to your spectacles markdown folder
-const spectaclesDir = path.resolve("content/1.spectacles");
+const spectaclesDir = path.resolve("content/spectacles");
 const collectifFile = path.resolve("content/collectif.md");
 // Helper to determine the image file path. Assuming images with leading "/" are in public/
 function getImagePath(src) {

@@ -1,10 +1,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/content", "@nuxt/image", "@nuxt/fonts", "@nuxtjs/seo"],
-  content: {
-    documentDriven: true,
-  },
+  modules: ["@nuxt/image", "@nuxt/fonts", "@nuxtjs/seo", "@nuxt/content"],
   sourcemap: true,
+  ssr: true,
   nitro: {
     compressPublicAssets: true,
     prerender: {

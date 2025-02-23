@@ -10,7 +10,7 @@
       </div>
 
       <div v-if="page.body" class="project-description">
-        <ContentRendererMarkdown :value="page.body" />
+        <ContentRenderer :value="page.body" />
       </div>
       <div v-if="page.credits" class="project-credits">
         <MDC :value="page.credits" />
@@ -20,7 +20,7 @@
         v-if="page.dates"
         class="show-dates"
         :dates="page.dates"
-        :sitemap="page.sitemap.loc"
+        :sitemap="page.path"
       ></show-dates>
     </div>
 
@@ -61,6 +61,7 @@ const { page } = defineProps({
   },
 });
 
+console.log(page);
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";
 

@@ -66,8 +66,10 @@ const datesPassed = ref([]);
 const randomImages = ref([]);
 
 const { data: fetchedShows } = await useAsyncData("spectacles", () =>
-  queryContent("spectacles").find()
+  queryCollection("spectacles").all()
 );
+
+console.log(fetchedShows);
 
 function shuffle(array) {
   let currentIndex = array.length;

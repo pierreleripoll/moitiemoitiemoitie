@@ -91,7 +91,7 @@ const diffSeconds = ref(0);
 const animationsActive = ref(false);
 
 const { data: show } = await useAsyncData("spectacles", () =>
-  queryContent("spectacles", "la-grosse-deprime").findOne()
+  queryCollection("spectacles").order("navigation", "ASC").first()
 );
 
 const img = show.value.images[4];

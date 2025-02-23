@@ -2,27 +2,24 @@
   <div class="list-shows">
     <div v-for="show in shows" :key="show._path">
       <div class="show">
-        <NuxtLink class="show-title" :to="show.sitemap.loc">
+        <NuxtLink class="show-title" :to="show.path">
           <h2 :style="{ 'text-decoration-color': 'transparent' }">
             {{ show.title }}
           </h2>
         </NuxtLink>
         <div class="show-details">
-          <NuxtLink class="show-title" :to="show.sitemap.loc">
+          <NuxtLink class="show-title" :to="show.path">
             <h2 :style="{ 'text-decoration-color': 'transparent' }">
               {{ show.title }}
             </h2>
           </NuxtLink>
-          <ContentRendererMarkdown
-            class="show-description"
-            :value="show.body"
-          />
+          <ContentRenderer class="show-description" :value="show.body" />
           <show-dates
             v-if="show.dates"
             class="show-dates"
             :dates="show.dates"
             :max="maxDatesForShort"
-            :sitemap="show.sitemap.loc"
+            :sitemap="show.path"
           ></show-dates>
         </div>
         <div class="show-img-wrapper">
@@ -42,7 +39,7 @@
           v-if="show.dates"
           class="show-dates"
           :dates="show.dates"
-          :sitemap="show.sitemap.loc"
+          :sitemap="show.path"
         ></show-dates>
       </div>
       <span class="line-limit"></span>
@@ -51,20 +48,15 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
-const shows = ref([]);
-
-const { data: fetchedShows } = await useAsyncData("spectacles", () =>
-  queryContent("spectacles").find()
+const { data: shows } = await useAsyncData("spectacles", () =>
+  queryCollection("spectacles").all()
 );
 
 const maxDatesForShort = 3;
 
-shows.value = Array.isArray(fetchedShows.value)
-  ? fetchedShows.value.sort((a, b) => a.navigation.order - b.navigation.order)
+shows.value = Array.isArray(shows.value)
+  ? shows.value.sort((a, b) => a.navigation.order - b.navigation.order)
   : [];
-console.log(shows.value);
 </script>
 
 <style scoped>
