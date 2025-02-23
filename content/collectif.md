@@ -2,18 +2,21 @@
 title: le collectif
 images:
   - src: /uploads/collectif/IMG_0183.jpg
-    caption: "Crédit photo: Nom du Photographe"
+    caption: 'Crédit photo: Nom du Photographe'
     width: 4943
     height: 3295
   - src: /uploads/collectif/IMG_0185.jpg
-    caption: "Crédit photo: Nom du Photographe"
+    caption: 'Crédit photo: Nom du Photographe'
     width: 2667
     height: 4000
   - src: /uploads/img_0206.jpg
     caption: Crédits
+    width: 5800
+    height: 3867
 people:
   - name: Cécile Goussard
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
+    text: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
       facilisis, ullamcorper arcu vel, viverra velit. Cras viverra eget velit
       vel blandit. Quisque viverra placerat libero eu mollis. Cras vestibulum
       metus a mi posuere, eget tempus eros rhoncus. Aliquam dictum viverra sem.
@@ -22,7 +25,8 @@ people:
       consectetur, nisl ex posuere diam, vitae bibendum neque velit ut metus.
       Vivamus bibendum luctus nibh, vitae tincidunt mi congue nec.
   - name: Adrien Mani
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
+    text: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
       facilisis, ullamcorper arcu vel, viverra velit. Cras viverra eget velit
       vel blandit. Quisque viverra placerat libero eu mollis. Cras vestibulum
       metus a mi posuere, eget tempus eros rhoncus. Aliquam dictum viverra sem.
@@ -31,7 +35,8 @@ people:
       consectetur, nisl ex posuere diam, vitae bibendum neque velit ut metus.
       Vivamus bibendum luctus nibh, vitae tincidunt mi congue nec.
   - name: Matteo Prandi
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
+    text: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
       facilisis, ullamcorper arcu vel, viverra velit. Cras viverra eget velit
       vel blandit. Quisque viverra placerat libero eu mollis. Cras vestibulum
       metus a mi posuere, eget tempus eros rhoncus. Aliquam dictum viverra sem.
@@ -40,7 +45,8 @@ people:
       consectetur, nisl ex posuere diam, vitae bibendum neque velit ut metus.
       Vivamus bibendum luctus nibh, vitae tincidunt mi congue nec.
   - name: Marie Ripoll
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
+    text: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
       facilisis, ullamcorper arcu vel, viverra velit. Cras viverra eget velit
       vel blandit. Quisque viverra placerat libero eu mollis. Cras vestibulum
       metus a mi posuere, eget tempus eros rhoncus. Aliquam dictum viverra sem.
