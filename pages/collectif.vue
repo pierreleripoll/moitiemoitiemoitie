@@ -18,9 +18,8 @@
 <script setup>
 import { ref, watch } from "vue";
 import ContentPage from "~/components/ContentPage.vue";
-const route = useRoute();
-console.log(route.path);
-const { data: page } = await useAsyncData(route.path, () => {
+
+const { data: page } = await useAsyncData("collectif", () => {
   return queryCollection("collectif").first();
 });
 // Create a reactive array to track which person is expanded
