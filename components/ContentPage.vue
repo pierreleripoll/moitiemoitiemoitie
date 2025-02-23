@@ -15,7 +15,7 @@
       <div v-if="page.credits" class="project-credits">
         <MDC :value="page.credits" />
       </div>
-      <slot></slot>
+      <slot />
       <show-dates
         v-if="page.dates"
         class="show-dates"

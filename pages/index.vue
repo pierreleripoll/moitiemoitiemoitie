@@ -1,21 +1,27 @@
 <template>
   <div class="welcome">
     <h3 class="disclaimer">
-      Plus que
-      <span class="days" :class="{ 'animate-color': animationsActive }"
-        >{{ diffDays }} jours</span
-      >,
-      <span class="hours" :class="{ 'animate-color': animationsActive }"
-        >{{ diffHours }} h</span
-      >,
-      <span class="minutes" :class="{ 'animate-color': animationsActive }"
-        >{{ diffMinutes }} m</span
-      >
-      et
-      <span class="seconds" :class="{ 'animate-color': animationsActive }"
-        >{{ diffSeconds }} s</span
-      >
-      avant la première de
+      <div>
+        Plus que
+        <span class="days" :class="{ 'animate-color': animationsActive }"
+          >{{ diffDays }} jours</span
+        >,
+        <span class="hours" :class="{ 'animate-color': animationsActive }"
+          >{{ diffHours }} heures</span
+        >,
+        <span class="minutes" :class="{ 'animate-color': animationsActive }"
+          >{{ diffMinutes }} minutes</span
+        >
+        et
+        <span class="seconds" :class="{ 'animate-color': animationsActive }"
+          >{{ diffSeconds }} secondes</span
+        >
+      </div>
+      <div>
+        avant la première à
+        <span class="theatre"> {{ premiere.theatre_text }} </span> de :
+      </div>
+
       <div
         class="titre"
         :class="{
@@ -89,11 +95,12 @@ const { data: show } = await useAsyncData("spectacles", () =>
 );
 
 const img = show.value.images[4];
-const premiere = new Date(show.value.dates[0].date_start);
+const premiere = show.value.dates[0];
+const premiereDate = new Date(show.value.dates[0].date_start);
 
 function updateCountdown() {
   const today = new Date();
-  const diffTime = Math.max(premiere - today, 0);
+  const diffTime = Math.max(premiereDate - today, 0);
   diffDays.value = Math.floor(diffTime / (1000 * 60 * 60 * 24));
   const remainderAfterDays = diffTime % (1000 * 60 * 60 * 24);
   diffHours.value = Math.floor(remainderAfterDays / (1000 * 60 * 60));
@@ -146,6 +153,10 @@ onMounted(() => {
   overflow-x: hidden;
 }
 
+.theatre {
+  font-weight: bold;
+}
+
 :deep(.show-img) {
   width: 100%;
   max-width: 400px;
@@ -186,6 +197,9 @@ onMounted(() => {
 .disclaimer {
   text-align: center;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .exclamation {
@@ -306,6 +320,12 @@ onMounted(() => {
   }
   100% {
     font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .disclaimer {
+    text-align: left;
   }
 }
 </style>
