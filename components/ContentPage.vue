@@ -15,8 +15,10 @@
       <div v-if="page.credits" class="project-credits">
         <MDC :value="page.credits" />
       </div>
+      <slot></slot>
       <show-dates
         v-if="page.dates"
+        class="show-dates"
         :dates="page.dates"
         :sitemap="page.sitemap.loc"
       ></show-dates>
@@ -92,9 +94,13 @@ onMounted(() => {
 }
 
 .project-content {
-  gap: 3rem;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
+}
+
+.show-dates {
+  margin-top: 1rem;
 }
 
 /* Desktop: two-column layout with images on left and text on right */
@@ -122,8 +128,9 @@ onMounted(() => {
     padding-bottom: 4rem;
   }
 
+  .project-content,
   .images-carousel-wrapper {
-    max-height: calc(100vh - 140px - 8rem - 5px);
+    max-height: calc(100vh - 140px - 8rem);
 
     scrollbar-width: none;
     overflow-y: scroll;

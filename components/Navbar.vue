@@ -149,7 +149,7 @@ a {
 }
 
 /* Mobile-specific styles */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   .navbar-title > h3 {
     font-size: xx-large;
   }

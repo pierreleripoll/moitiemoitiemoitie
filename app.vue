@@ -203,7 +203,7 @@ a:hover {
     font-size: large;
   } */
   .app {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 }
 
