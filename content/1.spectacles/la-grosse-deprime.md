@@ -40,8 +40,8 @@ dates:
     date_text: 26 fév. – 02 mars 2025
     dates_url: "https://www.casinotheatre.ch"
     ticket_url: ""
-    date_start: "2025-02-26T00:00:00.000Z"
-    date_end: "2025-03-02T23:59:59.999Z"
+    date_start: "2025-02-26T20:00:00.000Z"
+    date_end: "2025-03-02T20:00:00.999Z"
   - theatre_text: Oriental-Vevey
     date_text: 12 – 16 mars 2025
     dates_url: "https://www.orientalvevey.ch"
