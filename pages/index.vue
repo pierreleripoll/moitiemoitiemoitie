@@ -90,7 +90,7 @@ const diffSeconds = ref(0);
 
 const animationsActive = ref(false);
 
-const { data: show } = await useAsyncData("spectacles", () =>
+const { data: show } = await useAsyncData("welcome", () =>
   queryCollection("spectacles").order("navigation", "ASC").first()
 );
 

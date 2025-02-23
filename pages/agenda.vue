@@ -65,7 +65,7 @@ const datesPassed = ref([]);
 
 const randomImages = ref([]);
 
-const { data: fetchedShows } = await useAsyncData("spectacles", () =>
+const { data: fetchedShows } = await useAsyncData("agenda", () =>
   queryCollection("spectacles").all()
 );
 
