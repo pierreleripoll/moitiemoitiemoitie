@@ -61,9 +61,9 @@ const { data: fetchedShows } = await useAsyncData("spectacles", () =>
 
 const maxDatesForShort = 3;
 
-shows.value =
-  fetchedShows.value.sort((a, b) => a.navigation.order - b.navigation.order) ||
-  [];
+shows.value = Array.isArray(fetchedShows.value)
+  ? fetchedShows.value.sort((a, b) => a.navigation.order - b.navigation.order)
+  : [];
 console.log(shows.value);
 </script>
 

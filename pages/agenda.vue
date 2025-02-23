@@ -89,7 +89,7 @@ function shuffle(array) {
 
 const today = new Date();
 // Flatten dates from all shows and attach the show title
-if (fetchedShows.value) {
+if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
   const allDates = [];
   fetchedShows.value.forEach((show) => {
     randomImages.value = randomImages.value.concat(
