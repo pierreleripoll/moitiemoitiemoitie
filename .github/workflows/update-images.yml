@@ -1,0 +1,36 @@
+name: Update Images and Commit
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # necessary to commit changes back
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run update-images script
+        run: npm run update-images
+
+      - name: Commit changed files
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "Update image dimensions [skip ci]"
+          add: "."
+          # Configure author details if needed
+          author_name: "GitHub Actions"
+          author_email: "actions@github.com"
