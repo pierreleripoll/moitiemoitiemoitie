@@ -1,28 +1,29 @@
 ---
-title: LA GROSSE DÉPRIME
-year: '2025'
 color: rgb(255, 87, 72)
+gif: https://media.giphy.com/media/61lH8qx8A0JiJXh3h5/giphy.gif
+title: La Grosse Déprime
+year: "2025"
 navigation:
   order: 1
 images:
-  - src: /uploads/la-grosse-deprime/1. La Grosse déprime visuel simple_Crédit Audrey Bersier.jpg
-    caption: 'Crédit photo: Audrey Bersier'
+  - src: /uploads/la-grosse-deprime/1. La Grosse déprime visuel simple_Crédit Audrey
+      Bersier.jpg
+    caption: "Crédit photo: Audrey Bersier"
     width: 6000
     height: 4000
-  - src: /uploads/la-grosse-deprime/2. La Grosse déprime visuel proportions_Crédit Audrey Bersier.jpg
-    caption: 'Crédit photo: Audrey Bersier'
+  - src: /uploads/la-grosse-deprime/3. La Grosse déprime visuel déprime_Crédit
+      Audrey Bersier.jpg
+    caption: "Crédit photo: Audrey Bersier"
     width: 6000
     height: 4000
-  - src: /uploads/la-grosse-deprime/3. La Grosse déprime visuel déprime_Crédit Audrey Bersier.jpg
-    caption: 'Crédit photo: Audrey Bersier'
+  - src: /uploads/la-grosse-deprime/4. La Grosse Déprime visuel joie_Crédit Audrey
+      Bersier.jpg
+    caption: "Crédit photo: Audrey Bersier"
     width: 6000
     height: 4000
-  - src: /uploads/la-grosse-deprime/4. La Grosse Déprime visuel joie_Crédit Audrey Bersier.jpg
-    caption: 'Crédit photo: Audrey Bersier'
-    width: 6000
-    height: 4000
-  - src: /uploads/la-grosse-deprime/5. La Grosse déprime visuel perruques_Crédit Audrey Bersier.jpg
-    caption: 'Crédit photo: Audrey Bersier'
+  - src: /uploads/la-grosse-deprime/5. La Grosse déprime visuel perruques_Crédit
+      Audrey Bersier.jpg
+    caption: "Crédit photo: Audrey Bersier"
     width: 2619
     height: 3929
 dates:
@@ -74,23 +75,31 @@ dates:
     ticket_url: https://www.echandole.ch
     date_start: 2025-10-03T00:00:00.000Z
     date_end: 2025-10-04T01:59:00
-gif: https://media.giphy.com/media/61lH8qx8A0JiJXh3h5/giphy.gif
-credits: |-
-  Texte, mise en scène et jeu : _Cécile Goussard, Adrien Mani, Matteo Prandi, Marie Ripoll_
+credits: >-
+  Texte, mise en scène et jeu : _Cécile Goussard, Adrien Mani, Matteo Prandi,
+  Marie Ripoll_
+
 
   Oreille interne et regard externe : _François Renou_
 
+
   Direction assistée : _Clémence Mermet_
+
 
   Composition : _Lucien Rouiller_
 
+
   Création lumière et régie : _Guillaume Gex_
+
 
   Scénographie : _Lucie Meyer_
 
+
   Aide à la scénographie : _Charlotte Nicolas_
 
+
   Costumes : _Augustin Rolland_
+
 
   Administration et production : _Samuel Bezençon_
 ---
