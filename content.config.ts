@@ -8,6 +8,7 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string(),
         year: z.string(),
+        credits: z.any(),
         color: z.string(),
         navigation: z.object({
           order: z.number(),
