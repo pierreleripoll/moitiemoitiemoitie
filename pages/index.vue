@@ -94,7 +94,7 @@ const { data: show } = await useAsyncData("welcome", () =>
   queryCollection("spectacles").order("navigation", "ASC").first()
 );
 
-const img = show.value.images[4];
+const img = show.value.images[3];
 const premiere = show.value.dates[0];
 const premiereDate = new Date(show.value.dates[0].date_start);
 

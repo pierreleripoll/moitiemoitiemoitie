@@ -5,6 +5,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "update-images": "node scripts/updateImageDimensions.mjs",
+    "sanitize-images": "node scripts/sanitizeFilenames.mjs",
     "generate": "npm run update-images && nuxt generate",
     "preview": "nuxt preview"
   },
