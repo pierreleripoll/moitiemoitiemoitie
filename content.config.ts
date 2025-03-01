@@ -29,6 +29,7 @@ export default defineContentConfig({
               dates_url: z.string(),
               ticket_url: z.string(),
               date_start: z.string(),
+              date_hint: z.string(),
               date_end: z.string(),
             })
           )

@@ -68,9 +68,16 @@ collections:
             }
           - { label: "Date Start", name: "date_start", widget: "datetime" }
           - { label: "Date End", name: "date_end", widget: "datetime" }
+          - {
+              label: "Date secondaire",
+              name: "date_hint",
+              widget: "string",
+              required: false,
+            }
       - {
           label: "Credits",
-          hint: "Toutes les autres parties, crédits, presse etc" name: "credits",
+          hint: "Toutes les autres parties, crédits, presse etc",
+          name: "credits",
           widget: "markdown",
         }
       - { label: "Body", name: "body", widget: "markdown" }

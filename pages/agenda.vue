@@ -36,8 +36,11 @@
               <div>{{ date.theatre_text }}</div>
               <div class="show-title">{{ date.showTitle }}</div>
             </div>
-            <div class="show-dates-text">{{ date.date_text }}</div></a
-          >
+            <div class="show-dates-text">
+              {{ date.date_text }}
+              <div class="show-title">{{ date.date_hint }}</div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -95,7 +98,7 @@ if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
   const allDates = [];
   fetchedShows.value.forEach((show) => {
     randomImages.value = randomImages.value.concat(
-      shuffle(show.images).slice(0, 2)
+      shuffle(show.images).slice(0, 1)
     );
 
     if (show.dates && Array.isArray(show.dates)) {
@@ -165,7 +168,7 @@ if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
 .agenda-title {
   text-align: left;
   /* font-size: 2rem; */
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   /* text-decoration: underline 2px; */
 }
 
@@ -174,8 +177,8 @@ if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding-bottom: 10vh;
-  gap: 5rem;
+  padding-bottom: 5vh;
+  gap: 1rem;
   text-transform: lowercase;
   /* padding-top: 2rem; */
 }

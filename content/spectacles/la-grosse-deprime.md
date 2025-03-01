@@ -69,6 +69,7 @@ dates:
   - theatre_text: L’Échandole, Yverdon-les-Bains
     date_text: 3 octobre 2025
     dates_url: https://www.echandole.ch
+    date_hint: "réservation à partir de juin 2025"
     ticket_url: https://www.echandole.ch
     date_start: 2025-10-03T00:00:00.000Z
     date_end: 2025-10-04T01:59:00.000Z
