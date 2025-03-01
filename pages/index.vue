@@ -1,70 +1,72 @@
 <template>
   <div class="welcome">
-    <h3 class="disclaimer">
-      <div>
-        Plus que
-        <span class="days" :class="{ 'animate-color': animationsActive }"
-          >{{ diffDays }} jours</span
-        >,
-        <span class="hours" :class="{ 'animate-color': animationsActive }"
-          >{{ diffHours }} heures</span
-        >,
-        <span class="minutes" :class="{ 'animate-color': animationsActive }"
-          >{{ diffMinutes }} minutes</span
-        >
-        et
-        <span class="seconds" :class="{ 'animate-color': animationsActive }"
-          >{{ diffSeconds }} secondes</span
-        >
-      </div>
-      <div>
-        avant la première à
-        <span class="theatre"> {{ premiere.theatre_text }} </span> de :
-      </div>
+    <div class="left-column">
+      <h3 class="disclaimer">
+        <div>
+          Plus que
+          <span class="days" :class="{ 'animate-color': animationsActive }"
+            >{{ diffDays }} jours</span
+          >,
+          <span class="hours" :class="{ 'animate-color': animationsActive }"
+            >{{ diffHours }} heures</span
+          >,
+          <span class="minutes" :class="{ 'animate-color': animationsActive }"
+            >{{ diffMinutes }} minutes</span
+          >
+          et
+          <span class="seconds" :class="{ 'animate-color': animationsActive }"
+            >{{ diffSeconds }} secondes</span
+          >
+        </div>
+        <div>
+          avant la {{ isPremiere ? "première" : "prochaine date" }} à
+          <span class="theatre"> {{ nextShow.theatre_text }} </span> de :
+        </div>
 
+        <div
+          class="titre"
+          :class="{
+            'animate-size': animationsActive,
+            'animate-color': animationsActive,
+          }"
+        >
+          La
+          <span class="big" :class="{ 'animate-uppercase': animationsActive }"
+            >grosse</span
+          >
+          déprime
+          <span
+            :class="{ 'exclamation animate-exclamation': animationsActive }"
+          ></span>
+        </div>
+      </h3>
+    </div>
+    <div class="right-column">
       <div
-        class="titre"
         :class="{
-          'animate-size': animationsActive,
-          'animate-color': animationsActive,
+          cartoon: true,
+          'animate-rotate': animationsActive,
         }"
       >
-        La
-        <span class="big" :class="{ 'animate-uppercase': animationsActive }"
-          >grosse</span
-        >
-        déprime
-        <span
-          :class="{ 'exclamation animate-exclamation': animationsActive }"
-        ></span>
-      </div>
-    </h3>
+        <div ref="bubble" class="bubble bubble-bottom-left">
+          Si seulement nous avions un bouton pour moins stresser...
+        </div>
 
-    <div
-      :class="{
-        cartoon: true,
-        'animate-rotate': animationsActive,
-      }"
-    >
-      <div ref="bubble" class="bubble bubble-bottom-left">
-        Si seulement nous avions un bouton pour moins stresser...
+        <NuxtPicture
+          :src="img.src"
+          format="avif,webp"
+          sizes="450px md:650px xl:900px"
+          densities="x1 x2"
+          quality="90"
+          loading="lazy"
+          :imgAttrs="{
+            alt: img.caption,
+            className: 'show-img' + (animationsActive ? ' animate-rotate' : ''),
+            loading: 'lazy',
+          }"
+        />
       </div>
-
-      <NuxtPicture
-        :src="img.src"
-        format="avif,webp"
-        sizes="450px md:650px xl:900px"
-        densities="x1 x2"
-        quality="90"
-        loading="lazy"
-        :imgAttrs="{
-          alt: img.caption,
-          className: 'show-img' + (animationsActive ? ' animate-rotate' : ''),
-          loading: 'lazy',
-        }"
-      />
     </div>
-
     <button
       ref="stressButton"
       class="stress-button"
@@ -93,14 +95,24 @@ const animationsActive = ref(false);
 const { data: show } = await useAsyncData("welcome", () =>
   queryCollection("spectacles").order("navigation", "ASC").first()
 );
+const images = show.value.images;
+const img = images.length > 3 ? images[3] : images[0];
 
-const img = show.value.images[3];
-const premiere = show.value.dates[0];
-const premiereDate = new Date(show.value.dates[0].date_start);
+const nextShowIndex = show.value.dates.findIndex(
+  (date) => new Date(date.date_start) > new Date()
+);
+
+console.log("Next show index", nextShowIndex);
+
+const nextShow = show.value.dates[nextShowIndex];
+
+const isPremiere = nextShowIndex === 0;
+
+const nextShowDate = new Date(nextShow.date_start);
 
 function updateCountdown() {
   const today = new Date();
-  const diffTime = Math.max(premiereDate - today, 0);
+  const diffTime = Math.max(nextShowDate - today, 0);
   diffDays.value = Math.floor(diffTime / (1000 * 60 * 60 * 24));
   const remainderAfterDays = diffTime % (1000 * 60 * 60 * 24);
   diffHours.value = Math.floor(remainderAfterDays / (1000 * 60 * 60));
@@ -145,12 +157,16 @@ onMounted(() => {
 .welcome {
   display: flex;
   padding-bottom: 2rem;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 2rem;
   overflow-y: hidden;
   overflow-x: hidden;
+}
+
+.left-column {
+  text-align: left;
 }
 
 .theatre {
@@ -159,7 +175,7 @@ onMounted(() => {
 
 :deep(.show-img) {
   width: 100%;
-  max-width: 400px;
+  max-height: 60vh;
   height: auto;
 }
 
@@ -195,7 +211,7 @@ onMounted(() => {
 }
 
 .disclaimer {
-  text-align: center;
+  text-align: left;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -320,6 +336,13 @@ onMounted(() => {
   }
   100% {
     font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .welcome {
+    flex-direction: column;
+    gap: 4rem;
   }
 }
 
