@@ -13,14 +13,6 @@ function getImagePath(src) {
   return path.join(spectaclesDir, src);
 }
 
-function sanitizeFilename(filename) {
-  return filename
-    .normalize("NFD") // Normalize to decompose accents
-    .replace(/[\u0300-\u036f]/g, "") // Remove diacritical marks
-    .replace(/\s+/g, "_") // Replace all spaces with underscores
-    .replace(/[^a-zA-Z0-9._-]/g, ""); // Remove all unwanted characters except dots and hyphens
-}
-
 async function updateImageDimensionsForPath(filePath, file) {
   const content = await fs.readFile(filePath, "utf8");
   const parsed = matter(content);
@@ -39,30 +31,6 @@ async function updateImageDimensionsForPath(filePath, file) {
           console.error(
             `Error reading image ${image.src} in ${file}: ${err.message}`
           );
-        }
-      }
-
-      if (image.src) {
-        const oldPath = getImagePath(image.src);
-        const filename = path.basename(image.src);
-        const cleanFilename = sanitizeFilename(filename);
-
-        if (filename !== cleanFilename) {
-          console.log(
-            "Not valid :",
-            filename,
-            "new file name :",
-            cleanFilename
-          );
-          const newPath = path.join(path.dirname(oldPath), cleanFilename);
-          image.src = image.src.replace(filename, cleanFilename);
-          changed = true;
-          try {
-            await fs.rename(oldPath, newPath);
-            console.log(`Renamed ${filename} -> ${cleanFilename}`);
-          } catch (err) {
-            console.error(`Error renaming file ${filename}: ${err.message}`);
-          }
         }
       }
     }
