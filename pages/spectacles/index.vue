@@ -1,5 +1,5 @@
 <template>
-  <div class="list-shows">
+  <div class="list-shows scrollable">
     <div v-for="show in shows" :key="show._path">
       <div class="show">
         <NuxtLink class="show-title" :to="show.path">

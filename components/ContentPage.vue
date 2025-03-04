@@ -3,7 +3,7 @@
 
   <div v-else class="project-container">
     <!-- Text Content -->
-    <div class="project-content">
+    <div class="project-content scrollable">
       <div>
         <h2>{{ page.title }}</h2>
         <h3 v-if="page.year" class="project-year">{{ page.year }}</h3>
@@ -25,7 +25,7 @@
     </div>
 
     <!-- Images Gallery with PhotoSwipe -->
-    <div class="images-carousel-wrapper">
+    <div class="images-carousel-wrapper scrollable">
       <div id="gallery" class="images-carousel">
         <a
           v-for="(image, index) in page.images"
@@ -79,7 +79,6 @@ onMounted(() => {
 .project-container {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   gap: 10rem;
   text-align: justify;
 }
@@ -108,33 +107,26 @@ onMounted(() => {
 @media screen and (min-width: 1080px) {
   .project-container {
     flex-direction: row;
-    gap: 10rem;
-    margin-top: -8rem;
-    margin-bottom: -8rem;
+    gap: 4rem;
+    height: 100%;
+    padding-top: 0px;
   }
 
   .project-content {
-    flex: 0 0 40%;
+    flex: 0 0 50%;
     /* position: sticky;
     top: 6rem; */
-    overflow-y: auto;
   }
 
   .images-carousel {
-    flex: 0 0 60%;
+    flex: 0 0 50%;
   }
   .project-content,
   .images-carousel-wrapper {
+    height: 100%;
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-
-  .project-content,
-  .images-carousel-wrapper {
-    max-height: calc(100vh - 140px - 8rem);
-
-    scrollbar-width: none;
-    overflow-y: scroll;
+    box-sizing: border-box;
   }
 }
 

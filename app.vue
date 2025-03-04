@@ -93,21 +93,18 @@ onMounted(() => {
 });
 </script>
 <style>
-html {
+html,
+body {
   margin: 0;
   padding: 0;
+  height: 100%; /* Let’s ensure html and body both go full height */
+}
+
+html {
   font-family: "Inter", "Monument Grotesk Variable", "Helvetica", Arial,
     sans-serif;
   font-optical-sizing: auto;
-  overflow-y: overlay;
-  /* text-transform: lowercase; */
-  overflow-x: hidden;
   scrollbar-gutter: stable;
-}
-
-body {
-  margin: 0px;
-  padding: 0px;
 }
 
 h3 {
@@ -125,29 +122,32 @@ h2 {
 }
 
 #__nuxt {
-  /* height: 100vh; */
+  height: 100%;
 }
 
 .app {
   padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1500px;
+  margin: auto;
+
+  overflow-x: hidden;
 }
 
 .container {
   text-align: start;
-
-  max-width: 1500px;
-  border-top: solid rgba(0, 0, 0, 0.6) 2px;
-
+  flex: 1;
   margin: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-
-  /* margin-top: 6rem; */
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
+  overflow: hidden;
+  scrollbar-color: rgba(0, 0, 0, 0.6);
+  scrollbar-width: 2px;
+  width: 100%;
 }
 
 .header {
@@ -184,16 +184,55 @@ a:hover {
   text-decoration: underline rgba(0, 0, 0, 0.6) 2px;
   -webkit-text-decoration: underline rgba(0, 0, 0, 0.6) 2px;
   /* text-underline-offset: 2px; */
-  -webkit-text-underline-offset: underline rgba(0, 0, 0, 0.6) 2px;
+  text-underline-offset: 2px;
+  -webkit-text-underline-offset: 2px;
+}
+
+@media screen and (min-width: 1080px) {
+  .container > * {
+    padding-top: 8rem;
+  }
+
+  .scrollable::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .scrollable::-webkit-scrollbar-track {
+    background: transparent;
+    /* If you want a vertical “line” vibe, 
+     you can do e.g. border-left: 2px solid black; 
+     or border-right, depending on look 
+  */
+  }
+
+  .scrollable::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.6); /* color of the thumb */
+    background-clip: padding-box;
+    border-top: 6rem solid rgba(0, 0, 0, 0);
+    border-bottom: 6rem solid rgba(0, 0, 0, 0);
+  }
+
+  /* Optional: hover effect if you want a darker tone on hover */
+  .scrollable::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .scrollable {
+    padding-right: 4rem;
+    overflow-y: scroll;
+  }
 }
 
 @media screen and (max-width: 1080px) {
   /* h3 {
     font-size: large;
   } */
+  .app {
+    height: fit-content;
+  }
+
   .container {
     padding: 0;
-    border-top: solid rgba(0, 0, 0, 0.6) 2px;
     padding-top: 4rem;
   }
 }

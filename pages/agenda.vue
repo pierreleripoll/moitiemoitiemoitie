@@ -1,61 +1,63 @@
 <template>
-  <div class="agenda">
-    <div class="left-column">
-      <h2 class="agenda-title">à venir</h2>
-      <div class="show-dates">
-        <div v-for="(date, idx) in datesFutur" :key="idx" class="date">
-          <a
-            :class="`show-date ${
-              new Date(date.date_end) > today ? '' : 'passed'
-            }`"
-            :href="date.dates_url"
-            target="_blank"
-          >
-            <div class="show-lieu">
-              <div>{{ date.theatre_text }}</div>
-              <div class="show-title">{{ date.showTitle }}</div>
-            </div>
-            <div class="show-dates-text">{{ date.date_text }}</div></a
-          >
+  <div class="agenda-container scrollable">
+    <div class="agenda">
+      <div class="left-column">
+        <h2 class="agenda-title">à venir</h2>
+        <div class="show-dates">
+          <div v-for="(date, idx) in datesFutur" :key="idx" class="date">
+            <a
+              :class="`show-date ${
+                new Date(date.date_end) > today ? '' : 'passed'
+              }`"
+              :href="date.dates_url"
+              target="_blank"
+            >
+              <div class="show-lieu">
+                <div>{{ date.theatre_text }}</div>
+                <div class="show-title">{{ date.showTitle }}</div>
+              </div>
+              <div class="show-dates-text">{{ date.date_text }}</div></a
+            >
+          </div>
+        </div>
+
+        <span class="line-limit"></span>
+
+        <h2 class="agenda-title">passé</h2>
+        <div class="show-dates">
+          <div v-for="(date, idx) in datesPassed" :key="idx" class="date">
+            <a
+              :class="`show-date ${
+                new Date(date.date_end) > today ? '' : 'passed'
+              }`"
+              :href="date.dates_url"
+              target="_blank"
+            >
+              <div class="show-lieu">
+                <div>{{ date.theatre_text }}</div>
+                <div class="show-title">{{ date.showTitle }}</div>
+              </div>
+              <div class="show-dates-text">
+                {{ date.date_text }}
+                <div class="show-title">{{ date.date_hint }}</div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-
-      <span class="line-limit"></span>
-
-      <h2 class="agenda-title">passé</h2>
-      <div class="show-dates">
-        <div v-for="(date, idx) in datesPassed" :key="idx" class="date">
-          <a
-            :class="`show-date ${
-              new Date(date.date_end) > today ? '' : 'passed'
-            }`"
-            :href="date.dates_url"
-            target="_blank"
-          >
-            <div class="show-lieu">
-              <div>{{ date.theatre_text }}</div>
-              <div class="show-title">{{ date.showTitle }}</div>
-            </div>
-            <div class="show-dates-text">
-              {{ date.date_text }}
-              <div class="show-title">{{ date.date_hint }}</div>
-            </div>
-          </a>
-        </div>
+      <div class="right-column">
+        <NuxtPicture
+          v-for="(img, idx) in randomImages"
+          class="show-img"
+          :src="img.src"
+          format="avif,webp"
+          sizes="450px md:650px xl:900px"
+          densities="x1 x2"
+          quality="90"
+          loading="lazy"
+          :imgAttrs="{ alt: img.caption, loading: 'lazy' }"
+        />
       </div>
-    </div>
-    <div class="right-column">
-      <NuxtPicture
-        v-for="(img, idx) in randomImages"
-        class="show-img"
-        :src="img.src"
-        format="avif,webp"
-        sizes="450px md:650px xl:900px"
-        densities="x1 x2"
-        quality="90"
-        loading="lazy"
-        :imgAttrs="{ alt: img.caption, loading: 'lazy' }"
-      />
     </div>
   </div>
 </template>
@@ -138,7 +140,6 @@ if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
 .agenda {
   display: flex;
   flex-direction: row;
-  width: 100%;
   /* position: relative; */
   text-align: left;
   gap: calc(2rem + 8vw);

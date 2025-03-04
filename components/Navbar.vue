@@ -71,15 +71,14 @@ function toggleMobileMenu() {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: relative;
+  position: sticky;
   top: 0px;
   z-index: 10;
   background: white;
   padding-top: 2rem;
-  max-width: 1500px;
-  margin: auto;
   padding-bottom: 2rem;
   justify-content: space-between;
+  border-bottom: solid rgba(0, 0, 0, 0.6) 2px;
 }
 .short-title {
   display: none;
@@ -154,6 +153,7 @@ a {
     font-size: xx-large;
   }
   .navbar {
+    position: relative;
     flex-direction: column;
   }
   .long-title {
