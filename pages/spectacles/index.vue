@@ -31,7 +31,6 @@
             densities="x1 x2"
             quality="90"
             loading="lazy"
-            :style="{ 'outline-color': show.color }"
             :imgAttrs="{ alt: show.images[0].caption, loading: 'lazy' }"
           />
         </div>
