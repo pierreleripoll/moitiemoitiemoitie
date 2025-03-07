@@ -52,7 +52,7 @@ const { data: shows } = await useAsyncData("spectacles", () =>
   queryCollection("spectacles").all()
 );
 
-const maxDatesForShort = 3;
+const maxDatesForShort = 4;
 
 shows.value = Array.isArray(shows.value)
   ? shows.value.sort((a, b) => a.navigation.order - b.navigation.order)

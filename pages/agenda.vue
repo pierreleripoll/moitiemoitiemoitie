@@ -3,46 +3,13 @@
     <div class="agenda">
       <div class="left-column">
         <h2 class="agenda-title">à venir</h2>
-        <div class="show-dates">
-          <div v-for="(date, idx) in datesFutur" :key="idx" class="date">
-            <a
-              :class="`show-date ${
-                new Date(date.date_end) > today ? '' : 'passed'
-              }`"
-              :href="date.dates_url"
-              target="_blank"
-            >
-              <div class="show-lieu">
-                <div>{{ date.theatre_text }}</div>
-                <div class="show-title">{{ date.showTitle }}</div>
-              </div>
-              <div class="show-dates-text">{{ date.date_text }}</div></a
-            >
-          </div>
-        </div>
+        <show-dates :dates="datesFutur" detailed> </show-dates>
 
         <span class="line-limit"></span>
 
         <h2 class="agenda-title">passé</h2>
         <div class="show-dates">
-          <div v-for="(date, idx) in datesPassed" :key="idx" class="date">
-            <a
-              :class="`show-date ${
-                new Date(date.date_end) > today ? '' : 'passed'
-              }`"
-              :href="date.dates_url"
-              target="_blank"
-            >
-              <div class="show-lieu">
-                <div>{{ date.theatre_text }}</div>
-                <div class="show-title">{{ date.showTitle }}</div>
-              </div>
-              <div class="show-dates-text">
-                {{ date.date_text }}
-                <div class="show-title">{{ date.date_hint }}</div>
-              </div>
-            </a>
-          </div>
+          <show-dates :dates="datesPassed" detailed> </show-dates>
         </div>
       </div>
       <div class="right-column">
@@ -63,6 +30,7 @@
 </template>
 
 <script setup>
+import ShowDates from "@/components/ShowDates.vue";
 import { ref } from "vue";
 
 const datesFutur = ref([]);
@@ -130,6 +98,14 @@ if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
 </script>
 
 <style scoped>
+:deep(.dates) {
+  font-size: medium !important;
+}
+
+:deep(.dates) .date.passed {
+  color: inherit;
+}
+
 .line-limit {
   display: block;
   border-bottom: 2px solid rgba(0, 0, 0, 0.6);
@@ -210,28 +186,21 @@ if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
 }
 
 @media screen and (max-width: 620px) {
-  .show-dates {
-    gap: 4rem;
-    /* text-align: end; */
+  .dates {
+    gap: 3rem !important;
+    text-align: start !important;
   }
+  :deep(.dates) .date,
   .show-dates .show-date {
-    /* flex-direction: column; */
-    gap: 2rem;
+    text-align: start !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
   }
-  .show-lieu {
-    max-width: 100%;
-  }
-}
 
-@media screen and (max-width: 620px) {
-  .show-dates {
-    gap: 3rem;
-    text-align: start;
+  :deep(.dates) .dates-text {
+    text-align: start !important;
   }
-  .show-dates .show-date {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+
   .show-lieu {
     max-width: 100%;
   }

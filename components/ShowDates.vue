@@ -1,14 +1,20 @@
 <template>
   <div class="dates">
     <div v-for="(date, idx) in computedDates" :key="idx">
-      <a
+      <div
         :class="`date ${new Date(date.date_end) > today ? '' : 'passed'}`"
         :href="date.dates_url"
         target="_blank"
       >
-        <div class="lieu">{{ date.theatre_text }}</div>
-        <div class="dates-text">{{ date.date_text }}</div>
-      </a>
+        <a :href="date.dates_url" target="_blank" class="lieu">
+          {{ date.theatre_text }}
+          <div v-if="detailed" class="show-title">{{ date.showTitle }}</div>
+        </a>
+        <a :href="date.ticket_url" target="_blank" class="dates-text">
+          {{ date.date_text }}
+          <div v-if="detailed" class="show-title">{{ date.date_hint }}</div>
+        </a>
+      </div>
     </div>
     <div v-if="max && dates.length > max" class="more-link">
       <a :href="sitemap" class="date" style="text-align: right">
@@ -25,6 +31,10 @@ const props = defineProps({
   dates: {
     type: Array,
     default: () => [],
+  },
+  detailed: {
+    type: Boolean,
+    default: false,
   },
   max: Number,
   sitemap: String,
@@ -44,6 +54,9 @@ const computedDates = computed(() => {
 </script>
 
 <style scoped>
+.show-title {
+  color: grey;
+}
 .dates {
   display: flex;
   flex-direction: column;
@@ -52,6 +65,11 @@ const computedDates = computed(() => {
   text-transform: lowercase;
   box-sizing: border-box;
 }
+
+.dates-text {
+  text-align: right;
+}
+
 .dates .date {
   display: flex;
   flex-direction: row;
