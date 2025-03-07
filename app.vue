@@ -104,7 +104,6 @@ html {
   font-family: "Inter", "Monument Grotesk Variable", "Helvetica", Arial,
     sans-serif;
   font-optical-sizing: auto;
-  scrollbar-gutter: stable;
 }
 
 h3 {

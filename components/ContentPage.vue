@@ -67,7 +67,8 @@ import "photoswipe/style.css";
 
 onMounted(() => {
   const lightbox = new PhotoSwipeLightbox({
-    gallery: "#gallery a",
+    gallery: "#gallery",
+    children: "a",
     pswpModule: () => import("photoswipe"),
   });
   lightbox.init();
