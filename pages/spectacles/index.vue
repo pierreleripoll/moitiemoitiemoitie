@@ -196,10 +196,6 @@ shows.value = Array.isArray(shows.value)
     flex: 2 1 40%;
     max-width: 50%;
   }
-
-  .show {
-    /* align-items: center; */
-  }
 }
 
 @media screen and (max-width: 1080px) {
