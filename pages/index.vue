@@ -1,84 +1,112 @@
 <template>
-  <div class="welcome">
-    <div class="left-column">
-      <h3 class="disclaimer">
-        <div>
-          Plus que
-          <span class="days" :class="{ 'animate-color': animationsActive }"
-            >{{ diffDays }} jours</span
-          >,
-          <span class="hours" :class="{ 'animate-color': animationsActive }"
-            >{{ diffHours }} heures</span
-          >,
-          <span class="minutes" :class="{ 'animate-color': animationsActive }"
-            >{{ diffMinutes }} minutes</span
-          >
-          et
-          <span class="seconds" :class="{ 'animate-color': animationsActive }"
-            >{{ diffSeconds }} secondes</span
-          >
-        </div>
-        <div>
-          avant la {{ isPremiere ? "première" : "prochaine date" }} à
-          <span class="theatre"> {{ nextShow.theatre_text }} </span> de :
-        </div>
+  <div class="scrollable">
+    <div class="welcome">
+      <div class="left-column">
+        <h3 class="disclaimer">
+          <div>
+            Plus que
+            <span class="days" :class="{ 'animate-color': animationsActive }"
+              >{{ diffDays }} jours</span
+            >,
+            <span class="hours" :class="{ 'animate-color': animationsActive }"
+              >{{ diffHours }} heures</span
+            >,
+            <span class="minutes" :class="{ 'animate-color': animationsActive }"
+              >{{ diffMinutes }} minutes</span
+            >
+            et
+            <span class="seconds" :class="{ 'animate-color': animationsActive }"
+              >{{ diffSeconds }} secondes</span
+            >
+          </div>
+          <div>
+            avant la {{ isPremiere ? "première" : "prochaine date" }} à
+            <span class="theatre"> {{ nextShow.theatre_text }} </span> de :
+          </div>
 
+          <div
+            class="titre"
+            :class="{
+              'animate-size': animationsActive,
+              'animate-color': animationsActive,
+            }"
+          >
+            La
+            <span class="big" :class="{ 'animate-uppercase': animationsActive }"
+              >grosse</span
+            >
+            déprime
+            <span
+              :class="{ 'exclamation animate-exclamation': animationsActive }"
+            ></span>
+          </div>
+        </h3>
+      </div>
+      <div class="right-column">
         <div
-          class="titre"
           :class="{
-            'animate-size': animationsActive,
-            'animate-color': animationsActive,
+            cartoon: true,
+            'animate-rotate': animationsActive,
           }"
         >
-          La
-          <span class="big" :class="{ 'animate-uppercase': animationsActive }"
-            >grosse</span
-          >
-          déprime
-          <span
-            :class="{ 'exclamation animate-exclamation': animationsActive }"
-          ></span>
+          <div ref="bubble" class="bubble bubble-bottom-left">
+            Si seulement nous avions un bouton pour moins stresser...
+          </div>
+
+          <NuxtPicture
+            :src="img.src"
+            format="avif,webp"
+            sizes="450px md:650px xl:900px"
+            densities="x1 x2"
+            quality="90"
+            loading="lazy"
+            :imgAttrs="{
+              alt: img.caption,
+              className:
+                'show-img' + (animationsActive ? ' animate-rotate' : ''),
+              loading: 'lazy',
+            }"
+          />
         </div>
+      </div>
+      <button
+        ref="stressButton"
+        class="stress-button"
+        @click="
+          () => {
+            animationsActive = !animationsActive;
+            idxText++;
+          }
+        "
+      >
+        Bouton pour moins stresser
+      </button>
+    </div>
+
+    <div class="footer">
+      <h3>
+        instagram -
+        <a
+          href="https://www.instagram.com/collectifmoitiemoitiemoitie/"
+          target="_blank"
+          rel="noopener"
+          >@collectifmoitiemoitiemoitie
+        </a>
+      </h3>
+      <h3>
+        facebook -
+        <a
+          href="https://www.facebook.com/moitiemoitiemoitie/?locale=fr_FR"
+          target="_blank"
+          rel="noopener"
+          >moitiemoitiemoitie</a
+        >
+      </h3>
+      <h3>
+        newsletter -
+        <a href="/" target="_blank" rel="noopener">ici !</a>
       </h3>
     </div>
-    <div class="right-column">
-      <div
-        :class="{
-          cartoon: true,
-          'animate-rotate': animationsActive,
-        }"
-      >
-        <div ref="bubble" class="bubble bubble-bottom-left">
-          Si seulement nous avions un bouton pour moins stresser...
-        </div>
-
-        <NuxtPicture
-          :src="img.src"
-          format="avif,webp"
-          sizes="450px md:650px xl:900px"
-          densities="x1 x2"
-          quality="90"
-          loading="lazy"
-          :imgAttrs="{
-            alt: img.caption,
-            className: 'show-img' + (animationsActive ? ' animate-rotate' : ''),
-            loading: 'lazy',
-          }"
-        />
-      </div>
-    </div>
-    <button
-      ref="stressButton"
-      class="stress-button"
-      @click="
-        () => {
-          animationsActive = !animationsActive;
-          idxText++;
-        }
-      "
-    >
-      Bouton pour moins stresser
-    </button>
   </div>
 </template>
 
@@ -154,6 +182,16 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 4rem;
+  border-top: solid rgba(0, 0, 0, 0.6) 2px;
+}
+
 .welcome {
   display: flex;
   padding-bottom: 2rem;
@@ -175,7 +213,7 @@ onMounted(() => {
 
 :deep(.show-img) {
   width: 100%;
-  max-height: 60vh;
+  max-height: 50vh;
   height: auto;
 }
 

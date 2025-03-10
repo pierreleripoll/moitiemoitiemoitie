@@ -4,13 +4,13 @@
       <div class="show">
         <NuxtLink class="show-title" :to="show.path">
           <h2 :style="{ 'text-decoration-color': 'transparent' }">
-            {{ show.title }}
+            {{ show.title }} <span>+</span>
           </h2>
         </NuxtLink>
         <div class="show-details">
           <NuxtLink class="show-title" :to="show.path">
             <h2 :style="{ 'text-decoration-color': 'transparent' }">
-              {{ show.title }}
+              {{ show.title }} <span>+</span>
             </h2>
           </NuxtLink>
           <ContentRenderer class="show-description" :value="show.body" />
@@ -100,7 +100,6 @@ shows.value = Array.isArray(shows.value)
 .show-details > .show-title {
   display: block;
 }
-
 .show-details {
   text-align: justify;
   display: flex;
