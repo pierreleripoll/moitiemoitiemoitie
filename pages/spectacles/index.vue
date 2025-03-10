@@ -4,13 +4,13 @@
       <div class="show">
         <NuxtLink class="show-title" :to="show.path">
           <h2 :style="{ 'text-decoration-color': 'transparent' }">
-            {{ show.title }} <span>+</span>
+            {{ show.title }}
           </h2>
         </NuxtLink>
         <div class="show-details">
           <NuxtLink class="show-title" :to="show.path">
             <h2 :style="{ 'text-decoration-color': 'transparent' }">
-              {{ show.title }} <span>+</span>
+              {{ show.title }}
             </h2>
           </NuxtLink>
           <ContentRenderer class="show-description" :value="show.body" />
@@ -21,6 +21,9 @@
             :max="maxDatesForShort"
             :sitemap="show.path"
           ></show-dates>
+          <NuxtLink class="show-plus-infos" :to="show.path">
+            <h3 :style="{ 'text-decoration-color': 'transparent' }">+ infos</h3>
+          </NuxtLink>
         </div>
         <div class="show-img-wrapper">
           <NuxtPicture
@@ -95,6 +98,10 @@ shows.value = Array.isArray(shows.value)
 .show-title {
   display: none;
   text-align: left;
+}
+
+.show-plus-infos {
+  text-align: right;
 }
 
 .show-details > .show-title {
