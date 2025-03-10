@@ -2,15 +2,15 @@
 title: le collectif
 images:
   - src: /uploads/collectif/IMG_0183.jpg
-    caption: "Crédit photo: Nom du Photographe"
+    caption: "Crédit photo: Audrey Bersier"
     width: 4943
     height: 3295
-  - src: /uploads/collectif/IMG_0185.jpg
-    caption: "Crédit photo: Nom du Photographe"
+  - src: /uploads/img_0216.jpg
+    caption: "Crédit photo: Audrey Bersier"
     width: 2667
     height: 4000
   - src: /uploads/img_0206.jpg
-    caption: Crédits
+    caption: "Crédits photo: Audrey Bersier"
     width: 5800
     height: 3867
 people:
