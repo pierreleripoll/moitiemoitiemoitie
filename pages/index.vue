@@ -84,24 +84,22 @@
     </div>
 
     <div class="footer">
-      <h3>retrouvez nous sur :</h3>
       <h3>
+        retrouvez nous sur :
         <a
           href="https://www.instagram.com/collectifmoitiemoitiemoitie/"
           target="_blank"
           rel="noopener"
           >instagram
         </a>
-      </h3>
-      <h3>
+        /
         <a
           href="https://www.facebook.com/moitiemoitiemoitie/?locale=fr_FR"
           target="_blank"
           rel="noopener"
-          >facebook</a
-        >
-      </h3>
-      <h3>
+          >facebook
+        </a>
+        /
         <a href="/contact" rel="noopener">newsletter</a>
       </h3>
     </div>
