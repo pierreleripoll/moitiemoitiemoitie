@@ -22,7 +22,10 @@ images:
     caption: "Crédit photo: Audrey Bersier"
     width: 2619
     height: 3929
-
+  - src: /uploads/grossedeprime46.jpeg
+    caption: "Crédits photo: Aurelia Thys"
+  - src: /uploads/grossedeprime59.jpeg
+    caption: "Crédits photo: Aurelia Thys"
 dates:
   - theatre_text: Casino Théâtre, Rolle
     date_text: 26 fév. – 02 mars 2025
@@ -69,7 +72,7 @@ dates:
   - theatre_text: L’Échandole, Yverdon-les-Bains
     date_text: 3 octobre 2025
     dates_url: https://www.echandole.ch
-    date_hint: "réservation à partir de juin 2025"
+    date_hint: réservation à partir de juin 2025
     ticket_url: https://www.echandole.ch
     date_start: 2025-10-03T00:00:00.000Z
     date_end: 2025-10-04T01:59:00.000Z
