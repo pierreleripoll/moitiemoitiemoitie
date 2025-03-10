@@ -82,6 +82,7 @@ onMounted(() => {
   flex-direction: column;
   gap: 10rem;
   text-align: justify;
+  text-transform: lowercase;
 }
 .project-credits :deep(p) {
   margin-block-end: 0px;
