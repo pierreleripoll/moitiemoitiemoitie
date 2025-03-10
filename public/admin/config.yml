@@ -1,10 +1,10 @@
 # local_backend: true
 
 backend:
-  name: proxy
-  proxy_url: http://localhost:8081/api/v1
-  # name: git-gateway
-  # branch: main
+  # name: proxy
+  # proxy_url: http://localhost:8081/api/v1
+  name: git-gateway
+  branch: main
 
 media_folder: public/uploads
 public_folder: /uploads
