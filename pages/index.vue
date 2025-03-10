@@ -84,27 +84,25 @@
     </div>
 
     <div class="footer">
+      <h3>retrouvez nous sur :</h3>
       <h3>
-        instagram -
         <a
           href="https://www.instagram.com/collectifmoitiemoitiemoitie/"
           target="_blank"
           rel="noopener"
-          >@collectifmoitiemoitiemoitie
+          >instagram
         </a>
       </h3>
       <h3>
-        facebook -
         <a
           href="https://www.facebook.com/moitiemoitiemoitie/?locale=fr_FR"
           target="_blank"
           rel="noopener"
-          >moitiemoitiemoitie</a
+          >facebook</a
         >
       </h3>
       <h3>
-        newsletter -
-        <a href="/" target="_blank" rel="noopener">ici !</a>
+        <a href="/contact" rel="noopener">newsletter</a>
       </h3>
     </div>
   </div>
@@ -183,12 +181,9 @@ onMounted(() => {
 
 <style scoped>
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  margin-top: 4rem;
+  margin-top: 8rem;
   border-top: solid rgba(0, 0, 0, 0.6) 2px;
 }
 
