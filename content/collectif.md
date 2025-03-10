@@ -2,11 +2,11 @@
 title: le collectif
 images:
   - src: /uploads/collectif/IMG_0183.jpg
-    caption: 'Crédit photo: Nom du Photographe'
+    caption: "Crédit photo: Nom du Photographe"
     width: 4943
     height: 3295
   - src: /uploads/collectif/IMG_0185.jpg
-    caption: 'Crédit photo: Nom du Photographe'
+    caption: "Crédit photo: Nom du Photographe"
     width: 2667
     height: 4000
   - src: /uploads/img_0206.jpg
@@ -15,8 +15,7 @@ images:
     height: 3867
 people:
   - name: Cécile Goussard
-    text: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
       facilisis, ullamcorper arcu vel, viverra velit. Cras viverra eget velit
       vel blandit. Quisque viverra placerat libero eu mollis. Cras vestibulum
       metus a mi posuere, eget tempus eros rhoncus. Aliquam dictum viverra sem.
@@ -26,17 +25,37 @@ people:
       Vivamus bibendum luctus nibh, vitae tincidunt mi congue nec.
   - name: Adrien Mani
     text: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
-      facilisis, ullamcorper arcu vel, viverra velit. Cras viverra eget velit
-      vel blandit. Quisque viverra placerat libero eu mollis. Cras vestibulum
-      metus a mi posuere, eget tempus eros rhoncus. Aliquam dictum viverra sem.
-      Maecenas ex lacus, pulvinar quis luctus rhoncus, ultrices eget erat.
-      Maecenas dictum pharetra mauris. Cras tempor, ligula a hendrerit
-      consectetur, nisl ex posuere diam, vitae bibendum neque velit ut metus.
-      Vivamus bibendum luctus nibh, vitae tincidunt mi congue nec.
+      
+
+
+
+
+      Né en 1987, Adrien Mani grandit à Lausanne. Après des études de lettres
+
+      à l’Université de Lausanne et à l’Université de Kathmandu, il est admis en 2010
+
+      au Conservatoire de Genève. Il entre ensuite dans la promotion H de la
+
+      Manufacture d’où il sort diplômé en 2016. Depuis sa sortie d’école, il entreprend des démarches collectives (Collectif moitié moitié moitié, Collectif CCC, Compagnie Slalom, Compagnie
+
+      Lausanne-Impro) et travaille également pour des metteur·e·s en scène émergent·e·s
+
+      ou établi·e·s (Muriel Imbach, Sandra Amodio, Jacques Maitre, Camille Giaccobino,
+
+      Mattias Brossard, Sarah Calcine, Jean-Daniel Piguet, Tibor Ockenfels, Jonas
+
+      Lambelet et Lara Khattabi).
+
+
+      Parallèlement à son parcours théâtral, il fait également partie de
+
+      différentes troupes et événements d’improvisation. Il est notamment co-programmateur
+
+      du Festival d’Improvisation Rolande Léonard et a été président de l’Association
+
+      Vaudoise des Ligues d’Improvisation jusqu’en 2020.
   - name: Matteo Prandi
-    text: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
       facilisis, ullamcorper arcu vel, viverra velit. Cras viverra eget velit
       vel blandit. Quisque viverra placerat libero eu mollis. Cras vestibulum
       metus a mi posuere, eget tempus eros rhoncus. Aliquam dictum viverra sem.
@@ -45,8 +64,7 @@ people:
       consectetur, nisl ex posuere diam, vitae bibendum neque velit ut metus.
       Vivamus bibendum luctus nibh, vitae tincidunt mi congue nec.
   - name: Marie Ripoll
-    text: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
       facilisis, ullamcorper arcu vel, viverra velit. Cras viverra eget velit
       vel blandit. Quisque viverra placerat libero eu mollis. Cras vestibulum
       metus a mi posuere, eget tempus eros rhoncus. Aliquam dictum viverra sem.
