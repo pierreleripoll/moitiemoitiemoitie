@@ -38,11 +38,7 @@ useHead({
     },
     {
       rel: "icon",
-      href: "/favicon.ico",
-    },
-    {
-      rel: "apple-touch-icon",
-      href: "/apple-touch-icon.png",
+      href: "/favicon-mmm.svg",
     },
   ],
   title: "moitié moitié moitié",
