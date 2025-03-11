@@ -71,25 +71,33 @@ dates:
     ticket_url: ""
     date_start: 2023-09-27T00:00:00.000Z
     date_end: 2023-09-28T00:00:00.000Z
-credits: >
+credits: >-
   Conception et interprétation : Cécile Goussard, Adrien Mani, Matteo Prandi,
   Marie Ripoll
-
 
 
   Coach vocal et regard extérieur: François Renou
 
 
-
   Création lumière et régie: Guillaume Gex
-
 
 
   Costumes: Augustin Rolland
 
 
-
   Administration, production et communication: Jeanne Quattropani, Boris Degex, Olivier Blättler, Samuel Bezençon
+
+
+  Production : Collectif moitié moitié moitié
+
+
+  Coproduction : TLH – Sierre
+
+
+  Remerciements à : Théâtre 2.21, Petithéâtre de Sion, Oriental-Vevey
+
+
+  Soutien : Ville de Lausanne, Loterie Romande, Fondation Ernst Göhner, Pour-cent culturel Migros, Fondation Engelberts, ALJF
 ---
 « Vous êtes ici. »
 
