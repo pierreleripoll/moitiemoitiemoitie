@@ -12,7 +12,7 @@
         </a>
         <a :href="date.ticket_url" target="_blank" class="dates-text">
           {{ date.date_text }}
-          <div v-if="detailed" class="show-title">{{ date.date_hint }}</div>
+          <div class="show-title">{{ date.date_hint }}</div>
         </a>
       </div>
     </div>
@@ -73,15 +73,17 @@ const computedDates = computed(() => {
 .dates .date {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 1rem;
   justify-content: space-between;
 }
 .lieu {
   max-width: 300px;
   text-align: left;
+  flex-shrink: 2;
 }
+
 .dates-text {
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 .date.passed {
   color: #6e6e6e;
