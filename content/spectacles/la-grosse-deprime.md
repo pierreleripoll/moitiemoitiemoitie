@@ -123,8 +123,8 @@ credits: >-
 
   Soutiens: Loterie Romande, Etat de Vaud, Ville de Lausanne, Pro Helvetia - Fondation suisse pour la culture, Fondation Leenards, Corodis, Fonds culturel de la SSA, Fondation Ernst Göhner, Pour-cent culturel Migros
 ---
-Comme nous l’explique la classe bourgeoise qui détient les pouvoirs économiques, politiques et médiatiques (c’est pas nous qu’on le dit, c’est la sociologie) : LES CAISSES PUBLIQUES SONT PLEINES DE DETTES. Il nous faut donc trancher dans les dépenses, parce que LA DETTE PUBLIQUE, C'EST MAL. Mais pas d’inquiétude : on va remonter un brin l’âge de la retraite, fermer un ou deux petits hôpitaux, réduire un chouïa le coût du travail, et tout ira bien.
+La dette publique, c'est mal. MAIS ALORS VRAIMENT MAL, OK ? On va donc remonter un brin l’âge de la retraite, fermer un ou deux petits hôpitaux, réduire un chouïa le coût du travail, et tout ira bien.
 
-Mais attendez une seconde : est-ce que vraiment la dette publique, c'est mal ? Et en fait, WOAW, ATTENDEZ DEUX SECONDES, c’est quoi, la dette publique ??
+Mais attendez une seconde : est-ce que vraiment la dette publique, c'est mal ? Et en fait, WOAW, ATTENDEZ DEUX SECONDES, c’est quoi, la dette publique ?
 
-En pleine déprime financière et nerveuse, on a décidé d’arrêter de ne rien comprendre aux théories économiques qui structurent notre vie sociale. On part à la recherche d'équations rigolotes, de jolies balances budgétaires et d’une brutale envie de réinventer le monde. *La Grosse Déprime* fait péter les caisses publiques à grands coups d'explications énervantes et de chansons qui font du bien.
+En pleine déprime financière et nerveuse, on part enquêter sur les préceptes économiques qui structurent notre vie sociale pour faire péter les caisses publiques à grands coups d'explications énervantes et de chansons qui font du bien.
