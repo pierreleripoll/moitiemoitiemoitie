@@ -13,7 +13,8 @@
               {{ show.title }}
             </h2>
           </NuxtLink>
-          <ContentRenderer class="show-description" :value="show.body" />
+          <MDC v-if="show.description_short" :value="show.description_short" />
+          <ContentRenderer v-else class="show-description" :value="show.body" />
           <show-dates
             v-if="show.dates"
             class="show-dates"
@@ -53,7 +54,6 @@
 const { data: shows } = await useAsyncData("spectacles", () =>
   queryCollection("spectacles").all()
 );
-
 const maxDatesForShort = 4;
 
 shows.value = Array.isArray(shows.value)
@@ -73,11 +73,12 @@ shows.value = Array.isArray(shows.value)
 .show {
   display: flex;
   flex-direction: row;
-  gap: calc(1rem + 6vw);
+  gap: min(5rem, calc(2rem + 4vw));
   width: 100%;
   /* justify-content: space-between; */
   justify-content: space-between;
   align-items: flex-start;
+  text-transform: lowercase;
 
   /* border-bottom: solid 1px; */
 }

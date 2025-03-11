@@ -1,13 +1,13 @@
 # local_backend: true
 
-backend:
-  name: git-gateway
-  branch: main
-
 # backend:
-#   name: proxy
-#   proxy_url: http://localhost:8081/api/v1
-#   branch: main # optional, defaults to master
+#   name: git-gateway
+#   branch: main
+
+backend:
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
+  branch: main # optional, defaults to master
 
 media_folder: public/uploads
 public_folder: /uploads
@@ -77,13 +77,7 @@ collections:
               widget: "string",
               required: false,
             }
-      - {
-          label: "Extra description",
-          name: "extra_description",
-          widget: "markdown",
-          required: false,
-          hint: "Description supplémentaire affichée uniquement sur la page spectacle",
-        }
+
       - {
           label: "Credits",
           hint: "Toutes les autres parties, crédits, presse etc",
@@ -91,7 +85,14 @@ collections:
           widget: "markdown",
           required: false,
         }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Description courte",
+          name: "description_short",
+          widget: "markdown",
+          required: false,
+          hint: "Affichée uniquement dans la liste des spectacles",
+        }
+      - { label: "Description complète", name: "body", widget: "markdown" }
 
   - name: "pages"
     label: "Pages"

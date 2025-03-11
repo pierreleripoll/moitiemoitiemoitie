@@ -11,7 +11,6 @@
 
       <div v-if="page.body" class="project-description">
         <ContentRenderer :value="page.body" />
-        <MDC v-if="page.extra_description" :value="page.extra_description" />
       </div>
       <div v-if="page.credits" class="project-credits">
         <MDC :value="page.credits" />

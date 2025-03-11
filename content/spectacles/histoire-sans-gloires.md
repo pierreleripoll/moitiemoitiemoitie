@@ -98,7 +98,19 @@ credits: >-
 
 
   Soutien : Ville de Lausanne, Loterie Romande, Fondation Ernst Göhner, Pour-cent culturel Migros, Fondation Engelberts, ALJF
+description_short: >-
+  « Vous êtes ici. »
+
+
+  En partant du plateau, suivez la direction des ~~chants~~ champs du Père Bovet pendant
+  quelques minutes, avant de bifurquer par un sentier escarpé. Une fois
+  arrivé·e·s aux pâturages peuplés ~~d’esprits~~ de troupeaux, profitez de
+  ~~l’immensité angoissante~~ de la vue offerte par la montagne. Enfin, après une
+  heure de marche soutenue, découvrez le Vieux Chalet qui, paraît-il, regorge ~~de
+  revenants~~ de contes aussi sublimes que ridicules – c’est comme ça qu’on les
+  aime, n’est-ce pas.
 ---
+
 « Vous êtes ici. »
 
 En partant du plateau, suivez la direction des ~~chants~~ champs du Père Bovet pendant
