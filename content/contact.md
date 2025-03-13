@@ -20,3 +20,5 @@ images:
 **facebook:** [@moitiémoitiémoitié](https://www.facebook.com/moitiemoitiemoitie)
 
 **newsletter** : en construction !
+
+**administration & graphisme site web**: pierreripoll13@gmail.com
