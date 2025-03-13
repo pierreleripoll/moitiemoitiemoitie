@@ -108,13 +108,18 @@ credits: >-
   Soutiens: Ville de Lausanne, Canton de Vaud, Loterie Romande, Pro 
 
   Helvetia - Fondation suisse pour la culture, Fondation Ernst Göhner, Fondation Michalski et Fonds culturel de la SSA
+description_short: |-
+  *OBJECTIF PROJET* est un spectacle mêlant théâtre et chant. Le collectif,
+  passionné par les projets, se lance dans une aventure théâtrale qui questionne
+  la notion même de **PROJET**.
+
+  On y découvre une histoire de managers dans une entreprise sans projet,
+  soulignant que des managers sans projet ne peuvent exister – car le projet est
+  le propre de l’Homme. Une fois ce projet réalisé, le collectif pensera déjà au
+  suivant.
 ---
+OBJECTIF PROJET est un PROJET de théâtre et de chant. On adore les PROJETS, on a la tête pleine de PROJETS. Alors on a décidé de se lancer dans un PROJET fou : faire un spectacle qui parle du mot PROJET. 
 
-_OBJECTIF PROJET_ est un spectacle mêlant théâtre et chant. Le collectif,
-passionné par les projets, se lance dans une aventure théâtrale qui questionne
-la notion même de **PROJET**.
+On PROJETTE une histoire de managers dans une entreprise sans PROJET. Le problème c’est que des managers sans PROJET ça ne peut pas exister, c’est interdit. Le PROJET est le propre de l’Homme.
 
-On y découvre une histoire de managers dans une entreprise sans projet,
-soulignant que des managers sans projet ne peuvent exister – car le projet est
-le propre de l’Homme. Une fois ce projet réalisé, le collectif pensera déjà au
-suivant.
+Voilà, ça c’est notre PROJET. Et une fois qu’on l’aura produit, on réfléchira au PROJET suivant. Puis au PROJET suivant. Et ainsi de suite. Et ainsi de suite. Beau PROJET.
