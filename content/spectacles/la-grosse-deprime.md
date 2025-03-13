@@ -122,6 +122,9 @@ credits: >-
 
 
   Soutiens: Loterie Romande, Etat de Vaud, Ville de Lausanne, Pro Helvetia - Fondation suisse pour la culture, Fondation Leenards, Corodis, Fonds culturel de la SSA, Fondation Ernst Göhner, Pour-cent culturel Migros
+description_short: En pleine déprime financière et nerveuse, le collectif part à
+  la conquête des théories économiques qui structurent notre vie sociale pour
+  faire péter la dette publique un bon coup, histoire de rire un peu.
 ---
 Comme nous l’explique très bien la classe bourgeoise qui détient les pouvoirs économiques, politiques et médiatiques (c’est pas nous qu’on le dit, c’est la sociologie) : LES CAISSES PUBLIQUES SONT VIDES. Ou plutôt PLEINES DE DETTES. Il nous faut donc trancher dans les dépenses publiques, parce que LA DETTE PUBLIQUE, C'EST MAL. Mais alors, très, TRÈS MAL. Mais ne nous inquiétons pas, on va faire ça bien : remonter un brin l’âge de la retraite, fermer un ou deux petits hôpitaux, réduire un chouïa le coût du travail, et tout ira bien.
 
