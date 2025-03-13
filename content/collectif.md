@@ -15,14 +15,22 @@ images:
     height: 3867
 people:
   - name: Cécile Goussard
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
-      facilisis, ullamcorper arcu vel, viverra velit. Cras viverra eget velit
-      vel blandit. Quisque viverra placerat libero eu mollis. Cras vestibulum
-      metus a mi posuere, eget tempus eros rhoncus. Aliquam dictum viverra sem.
-      Maecenas ex lacus, pulvinar quis luctus rhoncus, ultrices eget erat.
-      Maecenas dictum pharetra mauris. Cras tempor, ligula a hendrerit
-      consectetur, nisl ex posuere diam, vitae bibendum neque velit ut metus.
-      Vivamus bibendum luctus nibh, vitae tincidunt mi congue nec.
+    text: Cécile Goussard commence par étudier le saxophone, puis après une classe
+      préparatoire littéraire, elle entre au CRR de Lyon en théâtre et en chant.
+      Elle expérimente alors plusieurs formes mêlant musique et théâtre, et
+      interprète par exemple le rôle de Bacchis dans La Belle Hélène mise en
+      scène par Vincent Martin au festival des Nuits d’Eté en 2012. Elle intègre
+      la Manufacture en 2013, où elle a l’occasion de se former avec entre
+      autres Oscar Gomez Mata, Valeria Bertolotto, Charlotte Clamens, et
+      Guillaume Béguin. Elle participe actuellement à plusieurs créations
+      collectives avec le Collectif moitié moité moitié, (Histoires sans gloire
+      et pratiquement sans péril pour 4 voix sur pente raide en 2018, Objectif
+      Projet en 2021) et travaille régulièrement avec plusieurs compagnies
+      suisses romandes comme la Bocca della Luna  (Les Tactiques du tic tac en
+      2019, A l’envers à l’endroit en 2021) , et Gaspard Productions (Les
+      Banquets, en 2020, L’Amour fou du Théâtre, 2023) , et plusieurs collectifs
+      de théâtre in situ en plein air comme le Collectif CCC ( Platonov, 2022)
+      et le Collectif Tranx (Bundren, festival des Rias 2023).
   - name: Adrien Mani
     text: >-
       
@@ -55,23 +63,35 @@ people:
 
       Vaudoise des Ligues d’Improvisation jusqu’en 2020.
   - name: Matteo Prandi
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
-      facilisis, ullamcorper arcu vel, viverra velit. Cras viverra eget velit
-      vel blandit. Quisque viverra placerat libero eu mollis. Cras vestibulum
-      metus a mi posuere, eget tempus eros rhoncus. Aliquam dictum viverra sem.
-      Maecenas ex lacus, pulvinar quis luctus rhoncus, ultrices eget erat.
-      Maecenas dictum pharetra mauris. Cras tempor, ligula a hendrerit
-      consectetur, nisl ex posuere diam, vitae bibendum neque velit ut metus.
-      Vivamus bibendum luctus nibh, vitae tincidunt mi congue nec.
+    text: >-
+      Né en 1988 à La Chaux-de-Fonds, Matteo Prandi débute le théâtre et
+      l’improvisation théâtrale pendant ses études de neurosciences à l’EPFL.
+      Son diplôme obtenu, il s’engage dans la filière préprofessionnelle de
+      théâtre au Conservatoire de Genève, puis est reçu à la Manufacture - Haute
+      Ecole des Arts de la Scène à Lausanne, dont il ressort diplômé d’un
+      Bachelor de comédien en 2016.
+
+      Dès sa sortie, il fonde avec trois autres comédien·ne·s le Collectif moitié moitié moitié, dont la deuxième création de théâtre-chant, Objectif Projet, est créée en avril 2021. Il intègre aussi le Groupe B dès sa création en 2016, sous la direction de Tibor Ockenfels, pour les créations de Tambour dans la Nuit, Dialogues d’exilés et Sainte Jeanne des abattoirs de Bertolt Brecht. En 2022, il est interprète pour les deux dernières créations jeune public du metteur en scène Joan Mompart à Am Stram Gram : Le Colibri d’Elisa Shua Dusapin et Oz de Robert Sandoz. En 2023, il participe à la création collective du spectacle de théâtre d’improvisation La Mécanique du pétrin avec la Compagnie Slalom.
+
+      En plus de son activité de comédien, il crée début 2022 la Compagnie QED et met en scène Alenka Chenuz dans le solo QI – Quapacités Intelectuèles. Il est aussi formateur de théâtre et d’improvisation et improvisateur professionnel dans diverses structures de la région lémanique.
   - name: Marie Ripoll
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dui
-      facilisis, ullamcorper arcu vel, viverra velit. Cras viverra eget velit
-      vel blandit. Quisque viverra placerat libero eu mollis. Cras vestibulum
-      metus a mi posuere, eget tempus eros rhoncus. Aliquam dictum viverra sem.
-      Maecenas ex lacus, pulvinar quis luctus rhoncus, ultrices eget erat.
-      Maecenas dictum pharetra mauris. Cras tempor, ligula a hendrerit
-      consectetur, nisl ex posuere diam, vitae bibendum neque velit ut metus.
-      Vivamus bibendum luctus nibh, vitae tincidunt mi congue nec.
+    text: "Marie Ripoll commence le théâtre à 20 ans au sein d'une troupe étudiante,
+      alors qu'elle étudie tout à fait autre chose à l'époque. Après avoir
+      obtenu un master en autre chose, elle commence sa formation de comédienne
+      à l'EDT91 en banlieue parisienne. En 2013, elle débarque à Lausanne pour
+      faire la Manufacture - Haute école des arts de la scène de Suisse romande.
+      Depuis 2016, elle collabore en tant qu'interprète avec Jean-Daniel Piguet,
+      François Renou, Alain Borek, Lucile Carré, Sandro De Feo, Vincent Bonillo
+      ou encore Joël Maillard, avec qui elle fabrique la pièce Sans effort. Elle
+      co-fonde le Collectif moitié moitié moitié en 2016 et participe à la
+      création (écriture, mise en scène, interprétation) des trois premiers
+      spectacles de la compagnie. En 2017, elle rejoint la compagnie des Trois
+      petits points, dont le but complètement fou est de monter des pièces de
+      Brecht à quinze sur le plateau : en 2023, elle interprète le rôle éponyme
+      de Sainte-Jeanne des abattoirs. Parfois, elle accompagne certains projets
+      comme collaboratrice artistique : c’est le cas pour Résilience mon cul, un
+      stand-up de Joël Maillard, ou pour Médée superstar, un spectacle mis en
+      scène par Tamara Fischer (création fév. 2024)."
 ---
 Nous sommes quatre comédien·ne·s formé·e·s au sein de la même promotion à la Manufacture, Haute école des arts de la scène de Suisse romande : Cécile Goussard, Adrien Mani, Matteo Prandi et Marie Ripoll. Notre goût commun pour l'absurde, le chant sur un plateau de théâtre, les pièces de Christoph Marthaler et tant d'autres choses nous a réuni·e·s à l'école, où nous avons commencé à travailler sur l'ébauche de notre premier spectacle.
 
