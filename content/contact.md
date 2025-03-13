@@ -8,7 +8,6 @@ images:
   - src: /uploads/img_0206.jpg
     caption: "Crédit photo: Audrey Bersier"
 ---
-
 **contact artistique** : collectif@moitiemoitiemoitie.ch
 
 **contact administratif** : admin@moitiemoitiemoitie.ch
@@ -21,4 +20,4 @@ images:
 
 **newsletter** : en construction !
 
-**administration & graphisme site web**: pierreripoll13@gmail.com
+**administration & graphisme site web**: [Pierre Ripoll](mailto:pierreripoll13@gmail.com)
