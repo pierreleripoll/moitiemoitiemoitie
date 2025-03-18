@@ -1,7 +1,7 @@
 ---
 color: rgb(255, 226, 63)
 gif: https://media.giphy.com/media/61lH8qx8A0JiJXh3h5/giphy.gif
-title: OBJECTIF PROJET
+title: Objectif Projet
 year: "2021"
 navigation:
   order: 2
@@ -72,42 +72,30 @@ dates:
     date_start: 2023-12-09T00:00:00.000Z
     date_end: 2023-12-09T00:00:00.000Z
 credits: >-
-  Conception, mise en scène et jeu : Cécile Goussard, Adrien Mani, Matteo
-  Prandi, Marie Ripoll
+  #### Générique
 
 
-  Regard externe et oreille interne: François Renou
+  **Conception, mise en scène et jeu** Cécile Goussard, Adrien Mani, Matteo Prandi, Marie Ripoll
 
+  **Regard externe et oreille interne** François Renou
 
-  Création lumière et régie: Guillaume Gex
+  **Création lumière et régie** Guillaume Gex
 
+  **Scénographie** Lucie Meyer
 
-  Scénographie: Lucie Meyer
+  **Construction décor** Amaël Biesler de l’Atelier Antilope
 
+  **Aide à la réalisation** Louise Blanchard
 
-  Construction décor: Amaël Biesler de l’Atelier Antilope
+  **Costumes** Augustin Rolland
 
+  **Administration et production** Jeanne Quattropani, Samuel Bezençon
 
-  Aide à la réalisation: Louise Blanchard
+  **Production** Collectif moitié moitié moitié
 
+  **Co-production** Centre de culture ABC - La Chaux-de-Fonds, Théâtre 2.21 - Lausanne, Petithéâtre de Sion
 
-  Costumes: Augustin Rolland
-
-
-  Administration et production: Jeanne Quattropani, Samuel Bezençon
-
-
-
-
-  Production: Collectif moitié moitié moitié
-
-
-  Co-production: Centre de culture ABC - La Chaux-de-Fonds, Théâtre 2.21 - Lausanne, Petithéâtre de Sion
-
-
-  Soutiens: Ville de Lausanne, Canton de Vaud, Loterie Romande, Pro 
-
-  Helvetia - Fondation suisse pour la culture, Fondation Ernst Göhner, Fondation Michalski et Fonds culturel de la SSA
+  **Soutiens** Ville de Lausanne, Canton de Vaud, Loterie Romande, Pro Helvetia - Fondation suisse pour la culture, Fondation Ernst Göhner, Fondation Michalski et Fonds culturel de la SSA
 description_short: |-
   *OBJECTIF PROJET* est un spectacle mêlant théâtre et chant. Le collectif,
   passionné par les projets, se lance dans une aventure théâtrale qui questionne
