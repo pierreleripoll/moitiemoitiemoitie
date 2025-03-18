@@ -84,31 +84,31 @@ credits: >-
   #### Générique
 
 
-  **Texte, mise en scène et jeu** : Cécile Goussard, Adrien Mani, Matteo Prandi,
+  **Texte, mise en scène et jeu** Cécile Goussard, Adrien Mani, Matteo Prandi,
 
   Marie Ripoll
 
-  **Oreille interne et regard externe** : François Renou
+  **Oreille interne et regard externe** François Renou
 
-  **Direction assistée** : Clémence Mermet
+  **Direction assistée** Clémence Mermet
 
-  **Composition** : Lucien Rouiller
+  **Composition** Lucien Rouiller
 
-  **Création lumière et régie** : Guillaume Gex
+  **Création lumière et régie** Guillaume Gex
 
-  **Scénographie** : Lucie Meyer
+  **Scénographie** Lucie Meyer
 
-  **Aide à la scénographie** : Charlotte Nicolas
+  **Aide à la scénographie** Charlotte Nicolas
 
-  **Costumes** : Augustin Rolland
+  **Costumes** Augustin Rolland
 
-  **Administration et production** : Samuel Bezençon
+  **Administration et production** Samuel Bezençon
 
-  **Production** : Collectif moitié moitié moitié
+  **Production** Collectif moitié moitié moitié
 
-  **Coproduction** : Casino Théâtre Rolle | Scènes du Grütli
+  **Coproduction** Casino Théâtre Rolle, Scènes du Grütli
 
-  **Partenariats** : Théâtre 2.21 - Lausanne, Oriental - Vevey, Centre de Culture ABC - La Chaux-de-Fonds
+  **Partenariats** Théâtre 2.21 - Lausanne, Oriental - Vevey, Centre de Culture ABC - La Chaux-de-Fonds
 
   **Soutiens** : Loterie Romande, Etat de Vaud, Ville de Lausanne, Pro Helvetia - Fondation suisse pour la culture, Fondation Leenards, Corodis, Fonds culturel de la SSA, Fondation Ernst Göhner, Pour-cent culturel Migros
 description_short: En pleine déprime financière et nerveuse, le collectif part à
@@ -123,12 +123,12 @@ En pleine déprime financière et nerveuse, le Collectif moitié moitié moitié
 
 #### Qu'en a dit la presse ?
 
-> "Le quatuor excelle à traiter le sujet avec acuité, mais sans peser." ([Le Temps, 27 fév. 25](https://www.letemps.ch/culture/scenes/a-rolle-avant-une-grande-tournee-la-dette-publique-est-joliment-brocardee))
->
-> "Plus que jamais nécessaire pour affronter la morosité du climat politique actuel." ([Le Courrier, 3 mars 25](https://lecourrier.ch/2025/03/03/racomptez-nous-des-histoires/))
->
-> "Une profonde et sincère imploration de justice sociale." ([RTS Info, 10 mars 25](https://www.rts.ch/info/culture/spectacles/2025/article/la-grosse-deprime-l-enquete-theatrale-sur-la-dette-publique-du-collectif-moitie-moitie-moitie-28806420.html))
->
-> "Loin du prêchi-prêcha économique, la troupe déploie une satire aussi intelligente qu’irrésistible." ([Le Programme, 12 mars 25](https://leprogramme.ch/article/la-grosse-deprime))
->
-> "Une énergie à la fois railleuse et joyeuse, mise au service de plusieurs francs moments de rigolade pour le public." ([L'Agenda, 13 mars 25](https://www.l-agenda.ch/la-grosse-deprime/))
+"Le quatuor excelle à traiter le sujet avec acuité, mais sans peser." ([**Le Temps**, 27 fév. 25](https://www.letemps.ch/culture/scenes/a-rolle-avant-une-grande-tournee-la-dette-publique-est-joliment-brocardee))
+
+"Plus que jamais nécessaire pour affronter la morosité du climat politique actuel." ([**Le Courrier**, 3 mars 25](https://lecourrier.ch/2025/03/03/racomptez-nous-des-histoires/))
+
+"Une profonde et sincère imploration de justice sociale." ([**RTS Info**, 10 mars 25](https://www.rts.ch/info/culture/spectacles/2025/article/la-grosse-deprime-l-enquete-theatrale-sur-la-dette-publique-du-collectif-moitie-moitie-moitie-28806420.html))
+
+"Loin du prêchi-prêcha économique, la troupe déploie une satire aussi intelligente qu’irrésistible." ([**Le Programme**, 12 mars 25](https://leprogramme.ch/article/la-grosse-deprime))
+
+"Une énergie à la fois railleuse et joyeuse, mise au service de plusieurs francs moments de rigolade pour le public." ([**L'Agenda**, 13 mars 25](https://www.l-agenda.ch/la-grosse-deprime/))
