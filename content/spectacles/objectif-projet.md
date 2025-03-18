@@ -72,7 +72,7 @@ dates:
     date_start: 2023-12-09T00:00:00.000Z
     date_end: 2023-12-09T00:00:00.000Z
 credits: >-
-  #### Générique
+  ### Générique
 
 
   **Conception, mise en scène et jeu** Cécile Goussard, Adrien Mani, Matteo Prandi, Marie Ripoll
@@ -111,3 +111,11 @@ OBJECTIF PROJET est un PROJET de théâtre et de chant. On adore les PROJETS, on
 On PROJETTE une histoire de managers dans une entreprise sans PROJET. Le problème c’est que des managers sans PROJET ça ne peut pas exister, c’est interdit. Le PROJET est le propre de l’Homme.
 
 Voilà, ça c’est notre PROJET. Et une fois qu’on l’aura produit, on réfléchira au PROJET suivant. Puis au PROJET suivant. Et ainsi de suite. Et ainsi de suite. Beau PROJET.
+
+### Presse
+
+"Si vous aimez la musique baroque, s’il vous arrive de soupirer devant la machine à café de l’étage, *Objectif projet* est taillé pour vous. ([**RTS Info**, 22 mars 23](https://www.rts.ch/info/culture/spectacles/13880665-avec-objectif-projet-le-theatre-se-rit-du-management.html))
+
+"Piquante caricature du jargon entrepreneurial." ([**RTS La Première**, 21 mars 23](https://www.rts.ch/info/culture/spectacles/13880665-avec-objectif-projet-le-theatre-se-rit-du-management.html))
+
+"les quatre comédiens et comédiennes manifestent une pleine maîtrise de leur projet à eux." ([**L'Atelier Critique**, 21 mars 23](https://www.rts.ch/info/culture/spectacles/13880665-avec-objectif-projet-le-theatre-se-rit-du-management.html))
