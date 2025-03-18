@@ -132,14 +132,14 @@ Mais attendez une seconde : est-ce que vraiment la dette publique, c'est mal ? E
 
 En pleine déprime financière et nerveuse, le Collectif moitié moitié moitié a décidé d’arrêter de ne rien comprendre aux théories économiques qui structurent notre vie sociale. Il part enquêter sur les traces de ses préceptes à la recherche d'équations rigolotes, de jolies balances budgétaires et d’une brutale envie de réinventer le monde. À mi-chemin entre la conférence chantée et la comédie policière suédoise, *La Grosse Déprime* fait péter les caisses publiques à grands coups d'explications énervantes, de jeux de mots inédits et de chansons qui font du bien.
 
-## Qu'a dit la presse ?
+### Qu'en a dit la presse ?
 
-[Le Temps (27 février 2025)](https://www.letemps.ch/culture/scenes/a-rolle-avant-une-grande-tournee-la-dette-publique-est-joliment-brocardee) : « Le quatuor excelle à traiter le sujet avec acuité, mais sans peser. »
+« Le quatuor excelle à traiter le sujet avec acuité, mais sans peser. » ([Le Temps, 27 fév. 25](https://www.letemps.ch/culture/scenes/a-rolle-avant-une-grande-tournee-la-dette-publique-est-joliment-brocardee))
 
-[Le Courrier (3 mars 2025)](https://lecourrier.ch/2025/03/03/racomptez-nous-des-histoires/)  : « Plus que jamais nécessaire pour affronter la morosité du climat politique actuel. »
+« Plus que jamais nécessaire pour affronter la morosité du climat politique actuel. » ([Le Courrier, 3 mars 25](https://lecourrier.ch/2025/03/03/racomptez-nous-des-histoires/))
 
-[RTS Info (10 mars 2025)](https://www.rts.ch/info/culture/spectacles/2025/article/la-grosse-deprime-l-enquete-theatrale-sur-la-dette-publique-du-collectif-moitie-moitie-moitie-28806420.html) : « Une profonde et sincère imploration de justice sociale. »
+« Une profonde et sincère imploration de justice sociale. » ([RTS Info, 10 mars 25](https://www.rts.ch/info/culture/spectacles/2025/article/la-grosse-deprime-l-enquete-theatrale-sur-la-dette-publique-du-collectif-moitie-moitie-moitie-28806420.html))
 
-[Le Programme (12 mars 2025)](https://leprogramme.ch/article/la-grosse-deprime) : « Loin du prêchi-prêcha économique, la troupe déploie une satire aussi intelligente qu’irrésistible. »
+« Loin du prêchi-prêcha économique, la troupe déploie une satire aussi intelligente qu’irrésistible. » ([Le Programme, 12 mars 25](https://leprogramme.ch/article/la-grosse-deprime))
 
-[L'Agenda (13 mars 2025)](https://www.l-agenda.ch/la-grosse-deprime/) : « Une énergie à la fois railleuse et joyeuse, mise au service de plusieurs francs   moments de rigolade pour le public. »
+« Une énergie à la fois railleuse et joyeuse, mise au service de plusieurs francs   moments de rigolade pour le public. » ([L'Agenda, 13 mars 25](https://www.l-agenda.ch/la-grosse-deprime/))
