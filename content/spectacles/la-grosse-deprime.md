@@ -81,47 +81,36 @@ dates:
     date_start: 2025-10-03T00:00:00.000Z
     date_end: 2025-10-04T01:59:00.000Z
 credits: >-
-  Texte, mise en scène et jeu : *Cécile Goussard, Adrien Mani, Matteo Prandi,
-
-  Marie Ripoll*
+  #### Générique
 
 
-  Oreille interne et regard externe : *François Renou*
+  **Texte, mise en scène et jeu** : Cécile Goussard, Adrien Mani, Matteo Prandi,
 
+  Marie Ripoll
 
-  Direction assistée : *Clémence Mermet*
+  **Oreille interne et regard externe** : François Renou
 
+  **Direction assistée** : Clémence Mermet
 
-  Composition : *Lucien Rouiller*
+  **Composition** : Lucien Rouiller
 
+  **Création lumière et régie** : Guillaume Gex
 
-  Création lumière et régie : *Guillaume Gex*
+  **Scénographie** : Lucie Meyer
 
+  **Aide à la scénographie** : Charlotte Nicolas
 
-  Scénographie : *Lucie Meyer*
+  **Costumes** : Augustin Rolland
 
+  **Administration et production** : Samuel Bezençon
 
-  Aide à la scénographie : *Charlotte Nicolas*
+  **Production** : Collectif moitié moitié moitié
 
+  **Coproduction** : Casino Théâtre Rolle | Scènes du Grütli
 
-  Costumes : *Augustin Rolland*
+  **Partenariats** : Théâtre 2.21 - Lausanne, Oriental - Vevey, Centre de Culture ABC - La Chaux-de-Fonds
 
-
-  Administration et production : *Samuel Bezençon*
-
-
-
-
-  Production: Collectif moitié moitié moitié
-
-
-  Coproduction: Casino Théâtre Rolle | Scènes du Grütli
-
-
-  Partenariats: Théâtre 2.21 - Lausanne, Oriental - Vevey, Centre de Culture ABC - La Chaux-de-Fonds
-
-
-  Soutiens: Loterie Romande, Etat de Vaud, Ville de Lausanne, Pro Helvetia - Fondation suisse pour la culture, Fondation Leenards, Corodis, Fonds culturel de la SSA, Fondation Ernst Göhner, Pour-cent culturel Migros
+  **Soutiens** : Loterie Romande, Etat de Vaud, Ville de Lausanne, Pro Helvetia - Fondation suisse pour la culture, Fondation Leenards, Corodis, Fonds culturel de la SSA, Fondation Ernst Göhner, Pour-cent culturel Migros
 description_short: En pleine déprime financière et nerveuse, le collectif part à
   la conquête des théories économiques qui structurent notre vie sociale pour
   faire péter la dette publique un bon coup, histoire de rire un peu.
@@ -132,16 +121,14 @@ Mais attendez une seconde : est-ce que vraiment la dette publique, c'est mal ? E
 
 En pleine déprime financière et nerveuse, le Collectif moitié moitié moitié a décidé d’arrêter de ne rien comprendre aux théories économiques qui structurent notre vie sociale. Il part enquêter sur les traces de ses préceptes à la recherche d'équations rigolotes, de jolies balances budgétaires et d’une brutale envie de réinventer le monde. À mi-chemin entre la conférence chantée et la comédie policière suédoise, *La Grosse Déprime* fait péter les caisses publiques à grands coups d'explications énervantes, de jeux de mots inédits et de chansons qui font du bien.
 
+#### Qu'en a dit la presse ?
 
-
-**Qu'en a dit la presse ?**
-
-> Le quatuor excelle à traiter le sujet avec acuité, mais sans peser. ([Le Temps, 27 fév. 25](https://www.letemps.ch/culture/scenes/a-rolle-avant-une-grande-tournee-la-dette-publique-est-joliment-brocardee))
+> "Le quatuor excelle à traiter le sujet avec acuité, mais sans peser." ([Le Temps, 27 fév. 25](https://www.letemps.ch/culture/scenes/a-rolle-avant-une-grande-tournee-la-dette-publique-est-joliment-brocardee))
 >
-> Plus que jamais nécessaire pour affronter la morosité du climat politique actuel. ([Le Courrier, 3 mars 25](https://lecourrier.ch/2025/03/03/racomptez-nous-des-histoires/))
+> "Plus que jamais nécessaire pour affronter la morosité du climat politique actuel." ([Le Courrier, 3 mars 25](https://lecourrier.ch/2025/03/03/racomptez-nous-des-histoires/))
 >
-> Une profonde et sincère imploration de justice sociale. ([RTS Info, 10 mars 25](https://www.rts.ch/info/culture/spectacles/2025/article/la-grosse-deprime-l-enquete-theatrale-sur-la-dette-publique-du-collectif-moitie-moitie-moitie-28806420.html))
+> "Une profonde et sincère imploration de justice sociale." ([RTS Info, 10 mars 25](https://www.rts.ch/info/culture/spectacles/2025/article/la-grosse-deprime-l-enquete-theatrale-sur-la-dette-publique-du-collectif-moitie-moitie-moitie-28806420.html))
 >
-> Loin du prêchi-prêcha économique, la troupe déploie une satire aussi intelligente qu’irrésistible. ([Le Programme, 12 mars 25](https://leprogramme.ch/article/la-grosse-deprime))
+> "Loin du prêchi-prêcha économique, la troupe déploie une satire aussi intelligente qu’irrésistible." ([Le Programme, 12 mars 25](https://leprogramme.ch/article/la-grosse-deprime))
 >
-> Une énergie à la fois railleuse et joyeuse, mise au service de plusieurs francs moments de rigolade pour le public. ([L'Agenda, 13 mars 25](https://www.l-agenda.ch/la-grosse-deprime/))
+> "Une énergie à la fois railleuse et joyeuse, mise au service de plusieurs francs moments de rigolade pour le public." ([L'Agenda, 13 mars 25](https://www.l-agenda.ch/la-grosse-deprime/))
