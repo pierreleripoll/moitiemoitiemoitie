@@ -81,7 +81,7 @@ dates:
     date_start: 2025-10-03T00:00:00.000Z
     date_end: 2025-10-04T01:59:00.000Z
 credits: >-
-  #### Générique
+  ### Générique
 
 
   **Texte, mise en scène et jeu** Cécile Goussard, Adrien Mani, Matteo Prandi,
@@ -121,7 +121,7 @@ Mais attendez une seconde : est-ce que vraiment la dette publique, c'est mal ? E
 
 En pleine déprime financière et nerveuse, le Collectif moitié moitié moitié a décidé d’arrêter de ne rien comprendre aux théories économiques qui structurent notre vie sociale. Il part enquêter sur les traces de ses préceptes à la recherche d'équations rigolotes, de jolies balances budgétaires et d’une brutale envie de réinventer le monde. À mi-chemin entre la conférence chantée et la comédie policière suédoise, *La Grosse Déprime* fait péter les caisses publiques à grands coups d'explications énervantes, de jeux de mots inédits et de chansons qui font du bien.
 
-#### Qu'en a dit la presse ?
+### Qu'en a dit la presse ?
 
 "Le quatuor excelle à traiter le sujet avec acuité, mais sans peser." ([**Le Temps**, 27 fév. 25](https://www.letemps.ch/culture/scenes/a-rolle-avant-une-grande-tournee-la-dette-publique-est-joliment-brocardee))
 
