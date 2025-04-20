@@ -133,13 +133,13 @@ Mais attendez une seconde : est-ce que vraiment la dette publique, c'est mal ? E
 
 En pleine déprime financière et nerveuse, le Collectif moitié moitié moitié a décidé d’arrêter de ne rien comprendre aux théories économiques qui structurent notre vie sociale. Il part enquêter sur les traces de ses préceptes à la recherche d'équations rigolotes, de jolies balances budgétaires et d’une brutale envie de réinventer le monde. À mi-chemin entre la conférence chantée et la comédie policière suédoise, *La Grosse Déprime* fait péter les caisses publiques à grands coups d'explications énervantes, de jeux de mots inédits et de chansons qui font du bien.
 
-### extraits
+### Extraits
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ftp5AJp95k8?si=32-eXNJRZxdq0Jy6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fArqyaWcB3c?si=xNz8_IlRhiTq-Vwr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-### presse
+### Presse
 "Le quatuor excelle à traiter le sujet avec acuité, mais sans peser." ([**Le Temps**, 27 fév. 25](https://www.letemps.ch/culture/scenes/a-rolle-avant-une-grande-tournee-la-dette-publique-est-joliment-brocardee))
 
 "Plus que jamais nécessaire pour affronter la morosité du climat politique actuel." ([**Le Courrier**, 3 mars 25](https://lecourrier.ch/2025/03/03/racomptez-nous-des-histoires/))
