@@ -10,6 +10,18 @@ images:
     caption: "Crédit photo: Audrey Bersier"
     width: 6000
     height: 4000
+  - src: /uploads/la-grosse-deprime/3._La_Grosse_deprime_visuel_deprime_Credit_Audrey_Bersier.jpg
+    caption: "Crédit photo: Audrey Bersier"
+    width: 6000
+    height: 4000
+  - src: /uploads/la-grosse-deprime/4._La_Grosse_Deprime_visuel_joie_Credit_Audrey_Bersier.jpg
+    caption: "Crédit photo: Audrey Bersier"
+    width: 6000
+    height: 4000
+  - src: /uploads/la-grosse-deprime/5._La_Grosse_deprime_visuel_perruques_Credit_Audrey_Bersier.jpg
+    caption: "Crédit photo: Audrey Bersier"
+    width: 2619
+    height: 3929
   - src: /uploads/grossedeprime46.jpeg
     caption: "Crédits photo: Aurelia Thys"
     width: 5443
@@ -18,10 +30,6 @@ images:
     caption: "Crédits photo: Aurelia Thys"
     width: 5458
     height: 3639
-  - src: /uploads/la-grosse-deprime/5._La_Grosse_deprime_visuel_perruques_Credit_Audrey_Bersier.jpg
-    caption: "Crédit photo: Audrey Bersier"
-    width: 2619
-    height: 3929
   - src: /uploads/grossedeprime10-copie.jpeg
     caption: "Crédits photo: Aurelia Thys"
     width: 4328
@@ -34,14 +42,6 @@ images:
     caption: "Crédits photo: Aurelia Thys"
     width: 5623
     height: 3749
-  - src: /uploads/la-grosse-deprime/3._La_Grosse_deprime_visuel_deprime_Credit_Audrey_Bersier.jpg
-    caption: "Crédit photo: Audrey Bersier"
-    width: 6000
-    height: 4000
-  - src: /uploads/la-grosse-deprime/4._La_Grosse_Deprime_visuel_joie_Credit_Audrey_Bersier.jpg
-    caption: "Crédit photo: Audrey Bersier"
-    width: 6000
-    height: 4000
 dates:
   - theatre_text: Casino Théâtre, Rolle
     date_text: 26 fév. – 02 mars 2025
