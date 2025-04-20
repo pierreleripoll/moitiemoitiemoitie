@@ -10,6 +10,20 @@ images:
     caption: "Crédit photo: Audrey Bersier"
     width: 6000
     height: 4000
+  - src: /uploads/grossedeprime46.jpeg
+    caption: "Crédits photo: Aurelia Thys"
+    width: 5443
+    height: 3629
+  - src: /uploads/grossedeprime16-copie.jpeg
+    caption: "Crédits photo: Aurelia Thys"
+  - src: /uploads/grossedeprime10-copie.jpeg
+    caption: "Crédits photo: Aurelia Thys"
+  - src: /uploads/grossedeprime59.jpeg
+    caption: "Crédits photo: Aurelia Thys"
+    width: 4821
+    height: 3214
+  - src: /uploads/grossedeprime44-copie.jpeg
+    caption: "Crédits photo: Aurelia Thys"
   - src: /uploads/la-grosse-deprime/3._La_Grosse_deprime_visuel_deprime_Credit_Audrey_Bersier.jpg
     caption: "Crédit photo: Audrey Bersier"
     width: 6000
@@ -22,14 +36,6 @@ images:
     caption: "Crédit photo: Audrey Bersier"
     width: 2619
     height: 3929
-  - src: /uploads/grossedeprime46.jpeg
-    caption: "Crédits photo: Aurelia Thys"
-    width: 5443
-    height: 3629
-  - src: /uploads/grossedeprime59.jpeg
-    caption: "Crédits photo: Aurelia Thys"
-    width: 4821
-    height: 3214
 dates:
   - theatre_text: Casino Théâtre, Rolle
     date_text: 26 fév. – 02 mars 2025
@@ -121,7 +127,7 @@ Mais attendez une seconde : est-ce que vraiment la dette publique, c'est mal ? E
 
 En pleine déprime financière et nerveuse, le Collectif moitié moitié moitié a décidé d’arrêter de ne rien comprendre aux théories économiques qui structurent notre vie sociale. Il part enquêter sur les traces de ses préceptes à la recherche d'équations rigolotes, de jolies balances budgétaires et d’une brutale envie de réinventer le monde. À mi-chemin entre la conférence chantée et la comédie policière suédoise, *La Grosse Déprime* fait péter les caisses publiques à grands coups d'explications énervantes, de jeux de mots inédits et de chansons qui font du bien.
 
-### Qu'en a dit la presse ?
+### presse
 
 "Le quatuor excelle à traiter le sujet avec acuité, mais sans peser." ([**Le Temps**, 27 fév. 25](https://www.letemps.ch/culture/scenes/a-rolle-avant-une-grande-tournee-la-dette-publique-est-joliment-brocardee))
 
