@@ -74,10 +74,10 @@ dates:
 credits: >-
   ###générique
 
-  ***Conception et interprétation*** Cécile Goussard, Adrien Mani, Matteo Prandi, Marie Ripoll
+  **Conception et interprétation** Cécile Goussard, Adrien Mani, Matteo Prandi, Marie Ripoll
 
 
-  ***Coach vocal et regard extérieur*** François Renou
+  **Regard externe et oreille interne** François Renou
 
 
   **Création lumière et régie** Guillaume Gex
