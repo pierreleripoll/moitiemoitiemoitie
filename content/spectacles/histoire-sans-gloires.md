@@ -119,3 +119,8 @@ Histoires sans gloire et pratiquement sans péril pour 4 voix sur pente raide es
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/314122827?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Histoires sans gloire et pratiquement sans péril pour 4 voix sur pente raide // extrait"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ### Presse
+"Rien de sérieux, tout de profond. « Le Ranz des vaches » est un psychotrope doux." ([**Le Temps**, 8 septembre 2020](https://www.letemps.ch/culture/suisse-mille-morceaux-choisis-batie?utm_source=mail&utm_medium=share&utm_campaign=article))
+
+"Ici, dans ces Histoires sans gloire..., le soin passe par le simple fait d'écouter la voix des autres. Ce qui n'est pas rien." ([**Penser les arts vivants**, 26 septembre 23](https://penserlesartsvivants.blogspot.com/2023/09/histoires-sans-gloire-et-pratiquement.html))
+
+"[Le collectif], non content d’envoûter par une performance vocale remarquable, se joue du regard sur le traditionnel et le pittoresque." ([**L'Atelier critique**, 6 juin 2019](https://wp.unil.ch/ateliercritique/2019/06/histoires-sans-gloire-et-pratiquement-sans-peril-pour-quatre-voix-sur-une-pente-raide/))
