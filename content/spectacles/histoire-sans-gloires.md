@@ -80,25 +80,25 @@ credits: >-
   ***Coach vocal et regard extérieur*** François Renou
 
 
-  ***Création lumière et régie*** Guillaume Gex
+  **Création lumière et régie** Guillaume Gex
 
 
-  ***Costumes*** Augustin Rolland
+  **Costumes** Augustin Rolland
 
 
-  ***Administration, production et communication*** Jeanne Quattropani, Boris Degex, Olivier Blättler, Samuel Bezençon
+  **Administration, production et communication** Jeanne Quattropani, Boris Degex, Olivier Blättler, Samuel Bezençon
 
 
-  ***Production*** Collectif moitié moitié moitié
+  **Production** Collectif moitié moitié moitié
 
 
-  ***Coproduction*** TLH – Sierre
+  **Coproduction** TLH – Sierre
 
 
-  ***Remerciements*** Théâtre 2.21, Petithéâtre de Sion, Oriental-Vevey
+  **Remerciements** Théâtre 2.21, Petithéâtre de Sion, Oriental-Vevey
 
 
-  ***Soutiens*** Ville de Lausanne, Loterie Romande, Fondation Ernst Göhner, Pour-cent culturel Migros, Fondation Engelberts, ALJF
+  **Soutiens** Ville de Lausanne, Loterie Romande, Fondation Ernst Göhner, Pour-cent culturel Migros, Fondation Engelberts, ALJF
 description_short: Histoires sans gloire et pratiquement sans péril pour 4 voix
   sur pente raide est un spectacle qui parle ~~du vide~~ de l’appel des sommets,
   ~~de la solitude~~ du chant choral et ~~de la mort~~ des moutons.
