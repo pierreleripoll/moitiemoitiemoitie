@@ -114,3 +114,8 @@ revenants~~ de contes aussi sublimes que ridicules – c’est comme ça qu’on
 aime, n’est-ce pas.
 
 Histoires sans gloire et pratiquement sans péril pour 4 voix sur pente raide est un spectacle qui parle ~~du vide~~ de l’appel des sommets, ~~de la solitude~~ du chant choral et ~~de la mort~~ des moutons.
+
+### Extraits
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/314122827?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Histoires sans gloire et pratiquement sans péril pour 4 voix sur pente raide // extrait"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+### Presse
