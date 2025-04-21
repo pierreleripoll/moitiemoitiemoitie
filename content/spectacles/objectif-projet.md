@@ -120,8 +120,8 @@ Voilà, ça c’est notre PROJET. Et une fois qu’on l’aura produit, on réfl
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yeai_la5ntw?si=VToZpGY-DP5lXz2d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Presse
-"Si vous aimez la musique baroque, s’il vous arrive de soupirer devant la machine à café de l’étage, *Objectif projet* est taillé pour vous. ([**RTS Info**, 22 mars 23](https://www.rts.ch/info/culture/spectacles/13880665-avec-objectif-projet-le-theatre-se-rit-du-management.html))
+« Si vous aimez la musique baroque, s’il vous arrive de soupirer devant la machine à café de l’étage, *Objectif projet* est taillé pour vous. » ([**RTS Info**, 22 mars 23](https://www.rts.ch/info/culture/spectacles/13880665-avec-objectif-projet-le-theatre-se-rit-du-management.html))
 
-"Piquante caricature du jargon entrepreneurial." ([**RTS La Première**, 21 mars 23](https://www.rts.ch/info/culture/spectacles/13880665-avec-objectif-projet-le-theatre-se-rit-du-management.html))
+« Piquante caricature du jargon entrepreneurial. » ([**RTS La Première**, 21 mars 23](https://www.rts.ch/info/culture/spectacles/13880665-avec-objectif-projet-le-theatre-se-rit-du-management.html))
 
-"les quatre comédiens et comédiennes manifestent une pleine maîtrise de leur projet à eux." ([**L'Atelier Critique**, 21 mars 23](https://www.rts.ch/info/culture/spectacles/13880665-avec-objectif-projet-le-theatre-se-rit-du-management.html))
+« les quatre comédiens et comédiennes manifestent une pleine maîtrise de leur projet à eux. » ([**L'Atelier Critique**, 21 mars 23](https://www.rts.ch/info/culture/spectacles/13880665-avec-objectif-projet-le-theatre-se-rit-du-management.html))
