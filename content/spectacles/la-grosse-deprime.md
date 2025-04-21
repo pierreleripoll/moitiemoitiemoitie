@@ -140,12 +140,12 @@ En pleine déprime financière et nerveuse, le Collectif moitié moitié moitié
 
 
 ### Presse
-"Le quatuor excelle à traiter le sujet avec acuité, mais sans peser." ([**Le Temps**, 27 fév. 25](https://www.letemps.ch/culture/scenes/a-rolle-avant-une-grande-tournee-la-dette-publique-est-joliment-brocardee))
+« Le quatuor excelle à traiter le sujet avec acuité, mais sans peser. » ([**Le Temps**, 27 fév. 25](https://www.letemps.ch/culture/scenes/a-rolle-avant-une-grande-tournee-la-dette-publique-est-joliment-brocardee))
 
-"Plus que jamais nécessaire pour affronter la morosité du climat politique actuel." ([**Le Courrier**, 3 mars 25](https://lecourrier.ch/2025/03/03/racomptez-nous-des-histoires/))
+« Plus que jamais nécessaire pour affronter la morosité du climat politique actuel. » ([**Le Courrier**, 3 mars 25](https://lecourrier.ch/2025/03/03/racomptez-nous-des-histoires/))
 
-"Une profonde et sincère imploration de justice sociale." ([**RTS Info**, 10 mars 25](https://www.rts.ch/info/culture/spectacles/2025/article/la-grosse-deprime-l-enquete-theatrale-sur-la-dette-publique-du-collectif-moitie-moitie-moitie-28806420.html))
+« Une profonde et sincère imploration de justice sociale. » ([**RTS Info**, 10 mars 25](https://www.rts.ch/info/culture/spectacles/2025/article/la-grosse-deprime-l-enquete-theatrale-sur-la-dette-publique-du-collectif-moitie-moitie-moitie-28806420.html))
 
-"Loin du prêchi-prêcha économique, la troupe déploie une satire aussi intelligente qu’irrésistible." ([**Le Programme**, 12 mars 25](https://leprogramme.ch/article/la-grosse-deprime))
+« Loin du prêchi-prêcha économique, la troupe déploie une satire aussi intelligente qu’irrésistible. » ([**Le Programme**, 12 mars 25](https://leprogramme.ch/article/la-grosse-deprime))
 
-"Une énergie à la fois railleuse et joyeuse, mise au service de plusieurs francs moments de rigolade pour le public." ([**L'Agenda**, 13 mars 25](https://www.l-agenda.ch/la-grosse-deprime/))
+« Une énergie à la fois railleuse et joyeuse, mise au service de plusieurs francs moments de rigolade pour le public. » ([**L'Agenda**, 13 mars 25](https://www.l-agenda.ch/la-grosse-deprime/))
