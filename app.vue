@@ -245,8 +245,9 @@ a:hover {
     background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 0.1s ease;
-    pointer-events: none;
+    pointer-events: none; /* Changed from 'none' to 'auto' to make it clickable */
     z-index: 10;
+    cursor: default; /* Add cursor pointer to indicate it's clickable */
   }
 
   /* Top arrow - appears when can scroll up */
@@ -262,12 +263,11 @@ a:hover {
   }
 
   /* Show arrows when the scrollable has the corresponding classes */
-  .scrollable-container:has(.scrollable.can-scroll-up)::before {
-    opacity: 1;
-  }
-
+  .scrollable-container:has(.scrollable.can-scroll-up)::before,
   .scrollable-container:has(.scrollable.can-scroll-down)::after {
     opacity: 1;
+    pointer-events: auto;
+    cursor: pointer; /* Change cursor to default when not clickable */
   }
 }
 

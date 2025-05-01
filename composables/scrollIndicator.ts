@@ -30,6 +30,33 @@ export function useScrollIndicator() {
       });
       resizeObserver.observe(scrollable);
       resizeObservers.push(resizeObserver);
+
+      // Get the parent container to add click listeners
+      const container = scrollable.closest(".scrollable-container");
+      if (container) {
+        // Add click event for the top arrow (::before)
+        container.addEventListener("click", (event: Event) => {
+          const mouseEvent = event as MouseEvent;
+          const rect = container.getBoundingClientRect();
+          const isTopArrow =
+            mouseEvent.clientY - rect.top < 30 &&
+            mouseEvent.clientX > rect.right - 30;
+          const isBottomArrow =
+            rect.bottom - mouseEvent.clientY < 30 &&
+            mouseEvent.clientX > rect.right - 30;
+
+          if (isTopArrow && scrollable.classList.contains("can-scroll-up")) {
+            // Scroll up by a reasonable amount (e.g., 200px)
+            scrollable.scrollBy({ top: -400, behavior: "smooth" });
+          } else if (
+            isBottomArrow &&
+            scrollable.classList.contains("can-scroll-down")
+          ) {
+            // Scroll down by a reasonable amount
+            scrollable.scrollBy({ top: 400, behavior: "smooth" });
+          }
+        });
+      }
     });
   }
 
@@ -97,6 +124,11 @@ export function useScrollIndicator() {
       .forEach((el) => {
         el.removeEventListener("scroll", () => updateScrollIndicators(el));
       });
+
+    // Clean up container click listeners
+    document.querySelectorAll(".scrollable-container").forEach((container) => {
+      container.removeEventListener("click", () => {});
+    });
   });
 
   // Return any methods that might be useful externally
