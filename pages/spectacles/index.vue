@@ -62,6 +62,8 @@
 </template>
 
 <script setup>
+import { useScrollIndicator } from "@/composables/scrollIndicator";
+useScrollIndicator();
 const { data: shows } = await useAsyncData("spectacles", () =>
   queryCollection("spectacles").all()
 );
@@ -70,52 +72,6 @@ const maxDatesForShort = 4;
 shows.value = Array.isArray(shows.value)
   ? shows.value.sort((a, b) => a.navigation.order - b.navigation.order)
   : [];
-
-onMounted(() => {
-  // Existing onMounted code...
-
-  // Setup scroll indicators
-  const scrollables = document.querySelectorAll(".scrollable");
-
-  scrollables.forEach((scrollable) => {
-    // Initial check
-    updateScrollIndicators(scrollable);
-
-    // Check on scroll
-    scrollable.addEventListener("scroll", () => {
-      updateScrollIndicators(scrollable);
-    });
-
-    // Check on content/window changes
-    window.addEventListener("resize", () => {
-      updateScrollIndicators(scrollable);
-    });
-
-    // MutationObserver to detect content changes
-    const observer = new MutationObserver(() => {
-      updateScrollIndicators(scrollable);
-    });
-
-    observer.observe(scrollable, {
-      childList: true,
-      subtree: true,
-      attributes: false,
-      characterData: true,
-    });
-  });
-
-  function updateScrollIndicators(element) {
-    // Add can-scroll-up class if we can scroll up
-    element.classList.toggle("can-scroll-up", element.scrollTop > 20);
-
-    // Add can-scroll-down class if we can scroll down
-    element.classList.toggle(
-      "can-scroll-down",
-      element.scrollHeight > element.clientHeight &&
-        element.scrollTop < element.scrollHeight - element.clientHeight - 20
-    );
-  }
-});
 </script>
 
 <style scoped>

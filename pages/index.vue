@@ -36,59 +36,61 @@
                 'animate-color': animationsActive,
               }"
             >
-              La
-              <span
-                class="big"
-                :class="{ 'animate-uppercase': animationsActive }"
-                >grosse</span
-              >
-              déprime
-              <span
-                :class="{ 'exclamation animate-exclamation': animationsActive }"
-              ></span>
+              <NuxtLink :to="show.path" class="show-link">
+                La
+                <span
+                  class="big"
+                  :class="{ 'animate-uppercase': animationsActive }"
+                  >grosse</span
+                >
+                déprime
+                <span
+                  :class="{
+                    'exclamation animate-exclamation': animationsActive,
+                  }"
+                ></span>
+              </NuxtLink>
             </div>
           </h3>
         </div>
         <div class="right-column">
-          <div class="image-container">
-            <div
-              :class="{
-                cartoon: true,
-                'animate-rotate': animationsActive,
-              }"
-            >
-              <div ref="bubble" class="bubble bubble-bottom-left">
-                Si seulement nous avions un bouton pour moins stresser...
-              </div>
-              <NuxtPicture
-                :src="img.src"
-                format="avif,webp"
-                sizes="450px md:650px xl:900px"
-                densities="x1 x2"
-                quality="90"
-                loading="lazy"
-                :imgAttrs="{
-                  alt: img.caption,
-                  className:
-                    'show-img' + (animationsActive ? ' animate-rotate' : ''),
-                  loading: 'lazy',
-                }"
-              />
+          <div
+            :class="{
+              cartoon: true,
+              'animate-rotate': animationsActive,
+            }"
+          >
+            <div ref="bubble" class="bubble bubble-bottom-left">
+              Si seulement nous avions un bouton pour moins stresser...
             </div>
+            <NuxtPicture
+              :src="img.src"
+              format="avif,webp"
+              sizes="450px md:650px xl:900px"
+              densities="x1 x2"
+              quality="90"
+              loading="lazy"
+              :imgAttrs="{
+                alt: img.caption,
+                className:
+                  'show-img' + (animationsActive ? ' animate-rotate' : ''),
+                loading: 'lazy',
+              }"
+            />
           </div>
+          <button
+            ref="stressButton"
+            class="stress-button"
+            @click="
+              () => {
+                animationsActive = !animationsActive;
+                idxText++;
+              }
+            "
+          >
+            Bouton pour moins stresser
+          </button>
         </div>
-        <button
-          ref="stressButton"
-          class="stress-button"
-          @click="
-            () => {
-              animationsActive = !animationsActive;
-              idxText++;
-            }
-          "
-        >
-          Bouton pour moins stresser
-        </button>
       </div>
 
       <div class="footer">
@@ -202,15 +204,24 @@ onMounted(() => {
   display: flex;
   flex-direction: row;
   margin-top: 4rem;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  align-items: start;
+  justify-content: left;
+  gap: 10rem;
   overflow-y: hidden;
   overflow-x: hidden;
 }
 
 .left-column {
   text-align: left;
+  flex: 0 0 40%;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .theatre {
@@ -225,10 +236,10 @@ onMounted(() => {
 
 .cartoon {
   position: relative;
-  z-index: 1000;
   overflow: hidden;
   max-width: 100vw;
   max-height: 100%;
+  z-index: -1;
 }
 
 .bubble {
@@ -261,6 +272,9 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   height: 150px;
+  /* gap: 1rem; */
+  font-size: medium;
+  overflow: visible;
 }
 
 .exclamation {
@@ -277,6 +291,7 @@ onMounted(() => {
 .stress-button {
   background-color: white;
   cursor: pointer;
+  z-index: 1;
 }
 
 .animate-color {
@@ -385,10 +400,18 @@ onMounted(() => {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 800px) {
   .welcome {
     flex-direction: column;
     gap: 4rem;
+  }
+
+  .right-column {
+    margin: auto;
+  }
+  .disclaimer {
+    width: 100%;
+    height: 200px;
   }
 }
 
