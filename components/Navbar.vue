@@ -1,45 +1,47 @@
 <template>
-  <nav class="navbar">
-    <!-- Header with title and hamburger button -->
-    <div class="navbar-header">
-      <NuxtLink to="/" class="navbar-title">
-        <h3 class="long-title">collectif moitié moitié moitié</h3>
-        <h3 class="short-title">moitié moitié moitié</h3>
-      </NuxtLink>
-      <!-- Hamburger button visible on mobile only -->
-      <button
-        class="hamburger-btn"
-        @click="toggleMobileMenu"
-        aria-label="Toggle menu"
-      >
-        <HamburgerButton :open="isMobileMenuOpen" />
-      </button>
-    </div>
+  <div class="navbar-container">
+    <nav class="navbar content-maxed-padded">
+      <!-- Header with title and hamburger button -->
+      <div class="navbar-header">
+        <NuxtLink to="/" class="navbar-title">
+          <h3 class="long-title">collectif moitié moitié moitié</h3>
+          <h3 class="short-title">moitié moitié moitié</h3>
+        </NuxtLink>
+        <!-- Hamburger button visible on mobile only -->
+        <button
+          class="hamburger-btn"
+          @click="toggleMobileMenu"
+          aria-label="Toggle menu"
+        >
+          <HamburgerButton :open="isMobileMenuOpen" />
+        </button>
+      </div>
 
-    <!-- Navigation list: always rendered, but its display is controlled via CSS on mobile -->
-    <ul class="navbar-menu" :class="{ 'mobile-menu-open': isMobileMenuOpen }">
-      <li>
-        <NuxtLink to="/spectacles" active-class="router-link-active">
-          <h3>spectacles</h3>
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/agenda" active-class="router-link-active">
-          <h3>agenda</h3>
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/collectif" active-class="router-link-active">
-          <h3>le collectif</h3>
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/contact" active-class="router-link-active">
-          <h3>contact</h3>
-        </NuxtLink>
-      </li>
-    </ul>
-  </nav>
+      <!-- Navigation list: always rendered, but its display is controlled via CSS on mobile -->
+      <ul class="navbar-menu" :class="{ 'mobile-menu-open': isMobileMenuOpen }">
+        <li>
+          <NuxtLink to="/spectacles" active-class="router-link-active">
+            <h3>spectacles</h3>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/agenda" active-class="router-link-active">
+            <h3>agenda</h3>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/collectif" active-class="router-link-active">
+            <h3>le collectif</h3>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/contact" active-class="router-link-active">
+            <h3>contact</h3>
+          </NuxtLink>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -67,6 +69,10 @@ function toggleMobileMenu() {
 
 <style scoped>
 /* Base navbar styling */
+.navbar-container {
+  border-bottom: solid rgba(0, 0, 0, 0.6) 1px;
+  position: relative;
+}
 .navbar {
   display: flex;
   flex-direction: row;
@@ -75,11 +81,10 @@ function toggleMobileMenu() {
   top: 0px;
   z-index: 10;
   background: white;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   justify-content: space-between;
-  border-bottom: solid rgba(0, 0, 0, 0.6) 2px;
+  overflow: visible;
 }
+
 .short-title {
   display: none;
 }
@@ -127,7 +132,7 @@ a {
 
 /* Active route styling */
 .router-link-active:not(.navbar-title) {
-  text-decoration: underline 2px rgba(0, 0, 0, 0.6);
+  text-decoration: underline 1px rgba(0, 0, 0, 0.6);
 }
 
 @media screen and (max-width: 920px) {

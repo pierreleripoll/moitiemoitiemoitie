@@ -47,7 +47,7 @@ function togglePerson(index) {
 }
 
 .person {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
   padding: 0rem 0 2rem 0;
 }
 

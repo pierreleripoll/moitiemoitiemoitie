@@ -10,7 +10,6 @@
 </template>
 
 <script setup lang="ts">
-import { title } from "process";
 import Navbar from "./components/Navbar.vue";
 
 useSeoMeta({
@@ -103,14 +102,14 @@ html {
 }
 
 h3 {
-  font-size: x-large;
+  font-size: larger;
   font-weight: normal;
   margin: 0px;
   text-transform: lowercase;
 }
 
 h2 {
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: normal;
   margin: 0px;
   text-transform: lowercase;
@@ -121,11 +120,11 @@ h2 {
 }
 
 .app {
-  padding: 0 2rem;
+  padding: 0 0;
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-width: 1500px;
+  /* max-width: 1500px; */
   margin: auto;
 
   overflow-x: hidden;
@@ -141,8 +140,18 @@ h2 {
   flex-wrap: nowrap;
   overflow: hidden;
   scrollbar-color: rgba(0, 0, 0, 0.6);
-  scrollbar-width: 2px;
+  scrollbar-width: 1px;
   width: 100%;
+}
+
+.content-maxed-padded {
+  margin: auto;
+  max-width: 1500px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.container .content-maxed-padded {
+  padding-bottom: 0;
 }
 
 .header {
@@ -155,14 +164,14 @@ h2 {
 }
 
 .header h1 {
-  font-size: 36px;
+  font-size: large;
   font-weight: bold;
   text-align: start;
   flex-shrink: 1;
 }
 
 .header h2 {
-  font-size: 24px;
+  font-size: larger;
   font-weight: normal;
   margin: auto 0;
   flex-shrink: 2;
@@ -176,26 +185,29 @@ a {
 }
 
 a:hover {
-  text-decoration: underline rgba(0, 0, 0, 0.6) 2px;
-  -webkit-text-decoration: underline rgba(0, 0, 0, 0.6) 2px;
-  /* text-underline-offset: 2px; */
-  text-underline-offset: 2px;
-  -webkit-text-underline-offset: 2px;
+  text-decoration: underline rgba(0, 0, 0, 0.6) 1px;
+  -webkit-text-decoration: underline rgba(0, 0, 0, 0.6) 1px;
+  /* text-underline-offset: 1px; */
+  text-underline-offset: 1px;
+  -webkit-text-underline-offset: 1px;
 }
 
 @media screen and (min-width: 1080px) {
+  .content-maxed-padded:has(.scrollable) {
+    padding-right: 0;
+  }
   .container > * {
-    padding-top: 8rem;
+    padding-top: 0rem;
   }
 
   .scrollable::-webkit-scrollbar {
-    width: 2px;
+    width: 0px;
   }
 
   .scrollable::-webkit-scrollbar-track {
     background: transparent;
     /* If you want a vertical “line” vibe, 
-     you can do e.g. border-left: 2px solid black; 
+     you can do e.g. border-left: 1px solid black; 
      or border-right, depending on look 
   */
   }
@@ -211,10 +223,51 @@ a:hover {
   .scrollable::-webkit-scrollbar-thumb:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-
+  /* Modify the scrollable class to position relative on the parent */
   .scrollable {
-    padding-right: 4rem;
+    padding-right: 0;
     overflow-y: scroll;
+  }
+
+  /* Parent container of scrollable needs to be positioned */
+  .scrollable-container {
+    position: relative; /* Position context for the indicators */
+  }
+
+  /* Move indicators to the parent */
+  .scrollable-container::before,
+  .scrollable-container::after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* Top arrow - appears when can scroll up */
+  .scrollable-container::before {
+    top: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M10 15L10 2M5 7L10 2L15 7' stroke='rgba(0,0,0,0.6)' stroke-width='1' stroke-linejoin='miter' /%3E%3C/svg%3E");
+  }
+
+  /* Bottom arrow - appears when can scroll down */
+  .scrollable-container::after {
+    bottom: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M10 5L10 18M5 13L10 18L15 13' stroke='rgba(0,0,0,0.6)' stroke-width='1' stroke-linejoin='miter' /%3E%3C/svg%3E");
+  }
+
+  /* Show arrows when the scrollable has the corresponding classes */
+  .scrollable-container:has(.scrollable.can-scroll-up)::before {
+    opacity: 1;
+  }
+
+  .scrollable-container:has(.scrollable.can-scroll-down)::after {
+    opacity: 1;
   }
 }
 

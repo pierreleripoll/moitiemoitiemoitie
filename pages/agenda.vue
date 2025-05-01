@@ -1,37 +1,42 @@
 <template>
-  <div class="agenda-container scrollable">
-    <div class="agenda">
-      <div class="left-column">
-        <h2 class="agenda-title">à venir</h2>
-        <show-dates :dates="datesFutur" detailed> </show-dates>
+  <div class="container scrollable-container">
+    <div class="agenda-container scrollable">
+      <div class="agenda content-maxed-padded">
+        <div class="left-column">
+          <h2 class="agenda-title">à venir</h2>
+          <show-dates :dates="datesFutur" detailed> </show-dates>
 
-        <span class="line-limit"></span>
+          <span class="line-limit"></span>
 
-        <h2 class="agenda-title">passé</h2>
-        <div class="show-dates">
-          <show-dates :dates="datesPassed" detailed> </show-dates>
+          <h2 class="agenda-title">passé</h2>
+          <div class="show-dates">
+            <show-dates :dates="datesPassed" detailed> </show-dates>
+          </div>
         </div>
-      </div>
-      <div class="right-column">
-        <NuxtPicture
-          v-for="(img, idx) in randomImages"
-          class="show-img"
-          :src="img.src"
-          format="avif,webp"
-          sizes="450px md:650px xl:900px"
-          densities="x1 x2"
-          quality="90"
-          loading="lazy"
-          :imgAttrs="{ alt: img.caption, loading: 'lazy' }"
-        />
+        <div class="right-column">
+          <NuxtPicture
+            v-for="(img, idx) in randomImages"
+            class="show-img"
+            :src="img.src"
+            format="avif,webp"
+            sizes="450px md:650px xl:900px"
+            densities="x1 x2"
+            quality="90"
+            loading="lazy"
+            :imgAttrs="{ alt: img.caption, loading: 'lazy' }"
+          />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+import { useScrollIndicator } from "@/composables/scrollIndicator";
 import ShowDates from "@/components/ShowDates.vue";
 import { ref } from "vue";
+
+useScrollIndicator();
 
 const datesFutur = ref([]);
 const datesPassed = ref([]);
@@ -99,7 +104,8 @@ if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
 
 <style scoped>
 :deep(.dates) {
-  font-size: medium !important;
+  /* font-size: medium !important; */
+  gap: 2rem !important;
 }
 
 :deep(.dates) .date.passed {
@@ -108,7 +114,7 @@ if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
 
 .line-limit {
   display: block;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
   margin: 2rem 0;
   width: 100%;
 }
@@ -129,6 +135,7 @@ if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
 
 .left-column {
   flex: 1 1 30%;
+  padding-top: 2rem;
 }
 
 .right-column {
@@ -145,7 +152,7 @@ if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
 .agenda-title {
   text-align: left;
   /* font-size: 2rem; */
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   /* text-decoration: underline 2px; */
 }
 

@@ -1,58 +1,66 @@
 <template>
   <DocumentDrivenNotFound v-if="!page" />
 
-  <div v-else class="project-container">
+  <div v-else class="project-container content-maxed-padded">
     <!-- Text Content -->
-    <div class="project-content scrollable">
-      <div>
-        <h2>{{ page.title }}</h2>
-        <h3 v-if="page.year" class="project-year">{{ page.year }}</h3>
-      </div>
+    <div class="project-content scrollable-container">
+      <div class="scrollable">
+        <div>
+          <h2>{{ page.title }}</h2>
+          <h3 v-if="page.year" class="project-year">{{ page.year }}</h3>
+        </div>
 
-      <div v-if="page.body" class="project-description">
-        <ContentRenderer :value="page.body" />
+        <div v-if="page.body" class="project-description">
+          <ContentRenderer :value="page.body" />
+        </div>
+        <div v-if="page.credits" class="project-credits">
+          <MDC :value="page.credits" />
+        </div>
+        <slot />
+        <show-dates
+          v-if="page.dates"
+          class="show-dates"
+          :dates="page.dates"
+          :sitemap="page.path"
+        ></show-dates>
       </div>
-      <div v-if="page.credits" class="project-credits">
-        <MDC :value="page.credits" />
-      </div>
-      <slot />
-      <show-dates
-        v-if="page.dates"
-        class="show-dates"
-        :dates="page.dates"
-        :sitemap="page.path"
-      ></show-dates>
     </div>
 
     <!-- Images Gallery with PhotoSwipe -->
-    <div class="images-carousel-wrapper scrollable">
-      <div id="gallery" class="images-carousel">
-        <a
-          v-for="(image, index) in page.images"
-          :key="index"
-          :href="image.src"
-          :data-pswp-width="image.width || 800"
-          :data-pswp-height="image.height || 600"
-          target="_blank"
-          class="image-wrapper"
-        >
-          <NuxtPicture
-            :src="image.src"
-            format="avif,webp"
-            sizes="450px md:650px xl:900px"
-            densities="x1 x2"
-            quality="90"
-            loading="lazy"
-            :imgAttrs="{ alt: image.caption, loading: 'lazy' }"
-          />
-        </a>
+    <div class="images-carousel-wrapper scrollable-container">
+      <div class="scrollable">
+        <div id="gallery" class="images-carousel">
+          <a
+            v-for="(image, index) in page.images"
+            :key="index"
+            :href="image.src"
+            :data-pswp-width="image.width || 800"
+            :data-pswp-height="image.height || 600"
+            target="_blank"
+            class="image-wrapper"
+          >
+            <NuxtPicture
+              :src="image.src"
+              format="avif,webp"
+              sizes="450px md:650px xl:900px"
+              densities="x1 x2"
+              quality="90"
+              loading="lazy"
+              :imgAttrs="{ alt: image.caption, loading: 'lazy' }"
+            />
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { useScrollIndicator } from "@/composables/scrollIndicator";
+
 import { onMounted } from "vue";
+
+useScrollIndicator();
 
 const { page } = defineProps({
   page: {
@@ -80,7 +88,7 @@ onMounted(() => {
 .project-container {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 8rem;
   text-align: justify;
   text-transform: lowercase;
 }
@@ -95,18 +103,31 @@ onMounted(() => {
   gap: 5rem;
 }
 
-.project-content {
-  gap: 2rem;
-  display: flex;
-  flex-direction: column;
+.show-dates {
+  margin-top: 1rem;
 }
 
-.show-dates {
+:deep(.project-description h3),
+:deep(.project-credits h3) {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+:deep(iframe) {
+  max-width: 100%;
+  max-height: 40vh;
   margin-top: 1rem;
 }
 
 /* Desktop: two-column layout with images on left and text on right */
 @media screen and (min-width: 1080px) {
+  .scrollable {
+    gap: 2rem;
+    display: flex;
+    padding-right: 2rem;
+    flex-direction: column;
+  }
+
   .project-container {
     flex-direction: row;
     gap: 4rem;
@@ -123,12 +144,21 @@ onMounted(() => {
   .images-carousel {
     flex: 0 0 50%;
   }
-  .project-content,
-  .images-carousel-wrapper {
+  .project-content > div,
+  .images-carousel-wrapper > div {
     height: 100%;
     padding-top: 4rem;
     padding-bottom: 4rem;
     box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .project-container {
+    gap: 12rem;
+  }
+  .images-carousel {
+    flex: 0 0 40%;
   }
 }
 

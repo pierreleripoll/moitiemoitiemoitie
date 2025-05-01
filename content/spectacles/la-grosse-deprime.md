@@ -127,6 +127,7 @@ description_short: En pleine déprime financière et nerveuse, le collectif part
   la conquête des théories économiques qui structurent notre vie sociale pour
   faire péter la dette publique un bon coup, histoire de rire un peu.
 ---
+
 Comme nous l’explique très bien la classe bourgeoise qui détient les pouvoirs économiques, politiques et médiatiques (c’est pas nous qu’on le dit, c’est la sociologie) : LES CAISSES PUBLIQUES SONT VIDES. Ou plutôt PLEINES DE DETTES. Il nous faut donc trancher dans les dépenses publiques, parce que LA DETTE PUBLIQUE, C'EST MAL. Mais alors, très, TRÈS MAL. Mais ne nous inquiétons pas, on va faire ça bien : remonter un brin l’âge de la retraite, fermer un ou deux petits hôpitaux, réduire un chouïa le coût du travail, et tout ira bien.
 
 Mais attendez une seconde : est-ce que vraiment la dette publique, c'est mal ? Et en fait, WOAW, ATTENDEZ DEUX SECONDES, c’est quoi, la dette publique ?
@@ -134,12 +135,13 @@ Mais attendez une seconde : est-ce que vraiment la dette publique, c'est mal ? E
 En pleine déprime financière et nerveuse, le Collectif moitié moitié moitié a décidé d’arrêter de ne rien comprendre aux théories économiques qui structurent notre vie sociale. Il part enquêter sur les traces de ses préceptes à la recherche d'équations rigolotes, de jolies balances budgétaires et d’une brutale envie de réinventer le monde. À mi-chemin entre la conférence chantée et la comédie policière suédoise, *La Grosse Déprime* fait péter les caisses publiques à grands coups d'explications énervantes, de jeux de mots inédits et de chansons qui font du bien.
 
 ### Extraits
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ftp5AJp95k8?si=32-eXNJRZxdq0Jy6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fArqyaWcB3c?si=xNz8_IlRhiTq-Vwr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ftp5AJp95k8?si=32-eXNJRZxdq0Jy6&rel=0" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fArqyaWcB3c?si=xNz8_IlRhiTq-Vwr&rel=0" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Presse
+
 « Le quatuor excelle à traiter le sujet avec acuité, mais sans peser. » ([**Le Temps**, 27 fév. 25](https://www.letemps.ch/culture/scenes/a-rolle-avant-une-grande-tournee-la-dette-publique-est-joliment-brocardee))
 
 « Plus que jamais nécessaire pour affronter la morosité du climat politique actuel. » ([**Le Courrier**, 3 mars 25](https://lecourrier.ch/2025/03/03/racomptez-nous-des-histoires/))
