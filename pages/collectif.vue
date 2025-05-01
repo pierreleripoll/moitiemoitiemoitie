@@ -48,7 +48,7 @@ function togglePerson(index) {
 
 .person {
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
-  padding: 0rem 0 2rem 0;
+  padding: 0 0 1rem 0;
 }
 
 .person-name {

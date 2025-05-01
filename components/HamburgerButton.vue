@@ -23,7 +23,7 @@ const props = defineProps({
 .hamburger-inner:before,
 .hamburger-inner:after {
   width: 32px;
-  height: 3px;
+  height: 2px;
   background-color: black;
   position: absolute;
   transition: transform 0.1s ease, top 0.1s ease, bottom 0.1s ease;

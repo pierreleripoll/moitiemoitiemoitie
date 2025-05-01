@@ -155,7 +155,7 @@ a {
 /* Mobile-specific styles */
 @media screen and (max-width: 800px) {
   .navbar-title > h3 {
-    font-size: xx-large;
+    font-size: x-large;
   }
   .navbar {
     position: relative;

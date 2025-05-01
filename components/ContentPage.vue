@@ -118,14 +118,16 @@ onMounted(() => {
   max-height: 40vh;
   margin-top: 1rem;
 }
+.scrollable {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
 
 /* Desktop: two-column layout with images on left and text on right */
 @media screen and (min-width: 1080px) {
   .scrollable {
-    gap: 2rem;
-    display: flex;
     padding-right: 2rem;
-    flex-direction: column;
   }
 
   .project-container {
@@ -153,9 +155,9 @@ onMounted(() => {
   }
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1440px) {
   .project-container {
-    gap: 12rem;
+    gap: 10rem;
   }
   .images-carousel {
     flex: 0 0 40%;

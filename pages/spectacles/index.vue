@@ -323,7 +323,7 @@ onMounted(() => {
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 920px) {
   .show {
     flex-direction: column;
     justify-content: space-between;
