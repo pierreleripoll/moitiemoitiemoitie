@@ -4,8 +4,21 @@
       <div class="welcome content-maxed-padded">
         <div class="left-column">
           <h3 class="disclaimer">
-            <div>
-              Plus que
+            <div v-if="isShowCurrentlyPlaying">
+              en ce moment à
+              <span
+                class="theatre"
+                :class="{ 'animate-color': animationsActive }"
+                >{{ currentShow.theatre_text }}</span
+              >
+              et jusqu'au
+              <span :class="{ 'animate-color': animationsActive }">{{
+                formatEndDate
+              }}</span>
+              on joue :
+            </div>
+            <div v-else>
+              plus que
               <span class="days" :class="{ 'animate-color': animationsActive }"
                 >{{ diffDays }} jours</span
               >,
@@ -24,7 +37,7 @@
                 >{{ diffSeconds }} secondes</span
               >
             </div>
-            <div>
+            <div v-if="!isShowCurrentlyPlaying">
               avant la {{ isPremiere ? "première" : "prochaine date" }} à
               <span class="theatre"> {{ nextShow.theatre_text }} </span> de :
             </div>
@@ -138,6 +151,27 @@ const { data: show } = await useAsyncData("welcome", () =>
 const images = show.value.images;
 const img = images.length > 3 ? images[3] : images[0];
 
+// Find if there's a currently ongoing show
+const now = new Date();
+const currentShowIndex = show.value.dates.findIndex(
+  (date) => new Date(date.date_start) <= now && new Date(date.date_end) >= now
+);
+
+const isShowCurrentlyPlaying = computed(() => currentShowIndex !== -1);
+const currentShow = computed(() =>
+  isShowCurrentlyPlaying.value ? show.value.dates[currentShowIndex] : null
+);
+const formatEndDate = computed(() => {
+  if (!currentShow.value) return "";
+  const endDate = new Date(currentShow.value.date_end);
+  return new Intl.DateTimeFormat("fr-FR", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(endDate);
+});
+
+// Find the next upcoming show
 const nextShowIndex = show.value.dates.findIndex(
   (date) => new Date(date.date_start) > new Date()
 );
