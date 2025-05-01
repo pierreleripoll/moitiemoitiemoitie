@@ -107,9 +107,15 @@ onMounted(() => {
   margin-top: 1rem;
 }
 
-:deep(.project-description h3),
-:deep(.project-credits h3) {
+:deep(.project-description h3:not(:first-child)),
+:deep(.project-credits h3:not(:first-child)) {
   margin-top: 3rem;
+  margin-bottom: 6px;
+}
+
+:deep(.project-description h3:first-child),
+:deep(.project-credits h3:first-child) {
+  margin-top: 0;
   margin-bottom: 6px;
 }
 
@@ -124,7 +130,7 @@ onMounted(() => {
   margin-bottom: 1rem;
 }
 .scrollable {
-  gap: 2rem;
+  gap: 3rem;
   display: flex;
   flex-direction: column;
 }
