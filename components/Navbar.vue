@@ -160,6 +160,7 @@ a {
   .navbar {
     position: relative;
     flex-direction: column;
+    padding-top: 1rem;
   }
   .long-title {
     display: block;

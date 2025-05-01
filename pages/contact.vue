@@ -1,5 +1,7 @@
 <template>
-  <ContentPage :page="page" />
+  <ContentPage :page="page">
+    <NewsletterForm />
+  </ContentPage>
 </template>
 
 <script setup>
@@ -11,4 +13,8 @@ const { data: page } = await useAsyncData("contact", () => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+:deep(.scrollable) {
+  gap: 1rem !important;
+}
+</style>

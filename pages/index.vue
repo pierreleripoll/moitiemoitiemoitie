@@ -437,7 +437,8 @@ onMounted(() => {
 @media screen and (max-width: 800px) {
   .welcome {
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
+    margin-top: 0;
   }
 
   .right-column {

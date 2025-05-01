@@ -110,13 +110,18 @@ onMounted(() => {
 :deep(.project-description h3),
 :deep(.project-credits h3) {
   margin-top: 3rem;
+  margin-bottom: 6px;
+}
+
+:deep(p) {
+  margin-top: 0rem;
   margin-bottom: 1rem;
 }
 
 :deep(iframe) {
   max-width: 100%;
   max-height: 40vh;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .scrollable {
   gap: 2rem;
