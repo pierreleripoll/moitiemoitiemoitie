@@ -229,7 +229,7 @@ onMounted(() => {
 
 <style scoped>
 .footer {
-  margin-top: 4rem;
+  margin-top: 0;
   margin-bottom: 4rem;
   /* border-top: solid rgba(0, 0, 0, 0.6) 1px; */
 }
@@ -237,10 +237,10 @@ onMounted(() => {
 .welcome {
   display: flex;
   flex-direction: row;
-  margin-top: 4rem;
-  align-items: start;
+  margin-top: 1rem;
+  align-items: center;
   justify-content: left;
-  gap: 10rem;
+  gap: 8rem;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -343,7 +343,7 @@ onMounted(() => {
 
 .animate-color,
 .animate-size {
-  font-size: 1.5em;
+  font-size: xx-large;
   font-weight: bold;
   /* Apply animations */
 }
@@ -364,7 +364,6 @@ onMounted(() => {
   padding-top: 2rem;
   font-size: 1.5em;
   font-weight: bold;
-  height: 100px;
 }
 
 /* Additional styling for the big part if needed */
@@ -427,7 +426,7 @@ onMounted(() => {
     font-size: 1.5em;
   }
   50% {
-    font-size: 2.3em;
+    font-size: 5em;
   }
   100% {
     font-size: 1.5em;
@@ -439,6 +438,7 @@ onMounted(() => {
     flex-direction: column;
     gap: 2rem;
     margin-top: 0;
+    align-items: start;
   }
 
   .right-column {
@@ -446,7 +446,11 @@ onMounted(() => {
   }
   .disclaimer {
     width: 100%;
-    height: 200px;
+    height: 15vh;
+  }
+
+  .titre {
+    padding-top: 1rem;
   }
 }
 
