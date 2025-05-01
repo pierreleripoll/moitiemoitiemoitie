@@ -7,15 +7,16 @@ images:
     height: 3295
   - src: /uploads/img_0216.jpg
     caption: "Crédit photo: Audrey Bersier"
-    width: 2667
-    height: 4000
+    width: 4943
+    height: 3295
   - src: /uploads/img_0206.jpg
     caption: "Crédits photo: Audrey Bersier"
     width: 5800
     height: 3867
 people:
   - name: Cécile Goussard
-    text: Cécile Goussard commence par étudier le saxophone, puis après une classe
+    text:
+      Cécile Goussard commence par étudier le saxophone, puis après une classe
       préparatoire littéraire, elle entre au CRR de Lyon en théâtre et en chant.
       Elle expérimente alors plusieurs formes mêlant musique et théâtre, et
       interprète par exemple le rôle de Bacchis dans La Belle Hélène mise en
@@ -33,7 +34,7 @@ people:
       et le Collectif Tranx (Bundren, festival des Rias 2023).
   - name: Adrien Mani
     text: >-
-      
+
 
 
 
@@ -75,7 +76,8 @@ people:
 
       En plus de son activité de comédien, il crée début 2022 la Compagnie QED et met en scène Alenka Chenuz dans le solo QI – Quapacités Intelectuèles. Il est aussi formateur de théâtre et d’improvisation et improvisateur professionnel dans diverses structures de la région lémanique.
   - name: Marie Ripoll
-    text: "Marie Ripoll commence le théâtre à 20 ans au sein d'une troupe étudiante,
+    text:
+      "Marie Ripoll commence le théâtre à 20 ans au sein d'une troupe étudiante,
       alors qu'elle étudie tout à fait autre chose à l'époque. Après avoir
       obtenu un master en autre chose, elle commence sa formation de comédienne
       à l'EDT91 en banlieue parisienne. En 2013, elle débarque à Lausanne pour
@@ -93,6 +95,7 @@ people:
       stand-up de Joël Maillard, ou pour Médée superstar, un spectacle mis en
       scène par Tamara Fischer (création fév. 2024)."
 ---
+
 Nous sommes quatre comédien·ne·s formé·e·s au sein de la même promotion à la Manufacture, Haute école des arts de la scène de Suisse romande : Cécile Goussard, Adrien Mani, Matteo Prandi et Marie Ripoll. Notre goût commun pour l'absurde, pour le chant sur un plateau de théâtre, pour les pièces de Christoph Marthaler (et pour tant d'autres choses dont on ne fera pas la liste ici) nous a réuni·e·s à l'école, où nous avons commencé à travailler sur l'ébauche de notre premier spectacle.
 
 Après nos études, le collectif a vu le jour pour permettre de continuer cette première recherche et créer en 2018 Histoires sans gloire et pratiquement sans péril pour 4 voix sur pente raide (spectacle musical repris notamment à la Bâtie - Festival de Genève en 2020 et en tournée jusqu'à l'automne 2023).

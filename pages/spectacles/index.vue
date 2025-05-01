@@ -261,7 +261,7 @@ onMounted(() => {
 
 @media screen and (max-width: 1080px) {
   .list-shows {
-    gap: 5rem;
+    gap: 0;
   }
   .line-limit {
     padding-top: 5rem;
@@ -287,7 +287,7 @@ onMounted(() => {
     justify-content: space-between;
     align-items: start;
     gap: 2rem;
-    padding: 2rem;
+    padding: 4rem 2rem;
     text-align: left;
   }
 
@@ -320,6 +320,17 @@ onMounted(() => {
     object-fit: contain;
     -o-object-position: center;
     object-position: left;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .show {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+    padding: 4rem 0;
+    text-align: left;
   }
 }
 </style>

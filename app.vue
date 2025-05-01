@@ -281,7 +281,6 @@ a:hover {
 
   .container {
     padding: 0;
-    padding-top: 4rem;
   }
 }
 
@@ -289,6 +288,9 @@ a:hover {
   /* h3 {
     font-size: large;
   } */
+  .content-maxed-padded {
+    padding: 2rem 0rem;
+  }
   .app {
     padding: 0 2rem;
   }
