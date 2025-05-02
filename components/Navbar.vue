@@ -157,6 +157,9 @@ a {
   .navbar-title > h3 {
     font-size: x-large;
   }
+  .navbar-container {
+    border: 0px;
+  }
   .navbar {
     position: relative;
     flex-direction: column;
