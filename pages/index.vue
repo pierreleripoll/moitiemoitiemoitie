@@ -76,21 +76,7 @@
             <div ref="bubble" class="bubble bubble-bottom-left">
               Si seulement nous avions un bouton pour moins stresser...
             </div>
-            <ThumbhashImage
-              :src="img.src"
-              :thumbhash="img.thumbhash"
-              format="avif,webp"
-              sizes="450px md:650px xl:900px"
-              densities="x1 x2"
-              quality="90"
-              loading="lazy"
-              :imgAttrs="{
-                alt: img.caption,
-                className:
-                  'show-img' + (animationsActive ? ' animate-rotate' : ''),
-                loading: 'lazy',
-              }"
-            />
+            <ThumbhashImage :image="img" />
           </div>
           <button
             ref="stressButton"

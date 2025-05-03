@@ -2,11 +2,17 @@
 title: Comment nous joindre
 images:
   - src: /uploads/img_0213.jpg
-    caption: "Crédit photo: Audrey Bersier"
-    width: 5100
-    height: 3401
+    caption: 'Crédit photo: Audrey Bersier'
+    width: 5848
+    height: 3899
+    thumbhash: JwgSDYKZmId/dYdniId4iP6P2d+4
+    ratio: 1.499871761990254
   - src: /uploads/img_0206.jpg
-    caption: "Crédit photo: Audrey Bersier"
+    caption: 'Crédit photo: Audrey Bersier'
+    width: 5800
+    height: 3867
+    ratio: 1.499870700801655
+    thumbhash: KQgSDYKJl3h/hoZmiHiJh+yftt+Y
 ---
 
 **contact artistique** : collectif@moitiemoitiemoitie.ch

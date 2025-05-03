@@ -11,28 +11,28 @@ images:
     caption: 'Crédit photo: Sébastien Monachon - bsc8.ch'
     width: 1440
     height: 1080
-    thumbhash: w/cFDYAIhoeAiod6iGiIi7l/kdkH
+    thumbhash: w/cFDYAIhoeAiod6iGiIi6l/kekH
     ratio: 1.3333333333333333
   - src: >-
       /uploads/histoire-sans-gloire/WEB_Histoires_sans_gloire_et-Collectif_moitiC_moitiC_moitiC-TLH-Sierre-16_janvier_2018-Photo_c_SCbastien_Monachon_14_8Y2A6122_LR.jpg
     caption: 'Crédit photo: Sébastien Monachon - bsc8.ch'
     width: 1080
     height: 1080
-    thumbhash: w/cFBwAXh5eAiIhpiTiZqIeHl/sWimwA
+    thumbhash: w/cFBwAHh5eAiYhpiiiZqIeHp/sWiWwA
     ratio: 1
   - src: >-
       /uploads/histoire-sans-gloire/WEB_Histoires_sans_gloire_et-Collectif_moitiC_moitiC_moitiC-TLH-Sierre-16_janvier_2018-Photo_c_SCbastien_Monachon_26_NS5C6326_LR.jpg
     caption: 'Crédit photo: Sébastien Monachon - bsc8.ch'
     width: 1920
     height: 1080
-    thumbhash: AwgGBIAcmBCYeWeCfGUIv7GwGg==
+    thumbhash: AwgGBIAdmBCZeHdyfGQpvsDAGw==
     ratio: 1.7777777777777777
   - src: >-
       /uploads/histoire-sans-gloire/WEB_Histoires_sans_gloire_et-Collectif_moitiC_moitiC_moitiC-TLH-Sierre-16_janvier_2018-Photo_c_SCbastien_Monachon_28_NS5C6337_LR.jpg
     caption: 'Crédit photo: Sébastien Monachon - bsc8.ch'
     width: 1080
     height: 1080
-    thumbhash: BAgGBwApiHdWhoiGiwendpqKOiDVA2gI
+    thumbhash: BAgGBwApiHdWhoiGiwendpqKSiDUAmkI
     ratio: 1
 dates:
   - theatre_text: Création TLH – Sierre (Suisse)

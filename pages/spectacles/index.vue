@@ -36,18 +36,10 @@
               </h3>
             </NuxtLink>
           </div>
-          <div class="show-img-wrapper">
+          <div class="show-image">
             <ThumbhashImage
-              class="show-img"
-              :aspectRatio="show.images[0].ratio"
-              :thumbhash="show.images[0].thumbhash"
-              :src="show.images[0].src"
-              format="avif,webp"
-              sizes="450px md:650px xl:900px"
-              densities="x1 x2"
-              quality="90"
-              loading="lazy"
-              :imgAttrs="{ alt: show.images[0].caption, loading: 'lazy' }"
+              v-if="show.images && show.images.length"
+              :image="show.images[0]"
             />
           </div>
           <show-dates
@@ -66,6 +58,7 @@
 <script setup>
 import { useScrollIndicator } from "@/composables/scrollIndicator";
 useScrollIndicator();
+
 const { data: shows } = await useAsyncData("spectacles", () =>
   queryCollection("spectacles").all()
 );
@@ -103,11 +96,6 @@ shows.value = Array.isArray(shows.value)
   flex: 1 1 30%;
   max-width: 30%;
   box-sizing: border-box;
-}
-
-.show-img-wrapper {
-  flex: 2 1 40%;
-  max-width: 40%;
 }
 
 .show-title {
@@ -165,31 +153,34 @@ shows.value = Array.isArray(shows.value)
   color: #6e6e6e;
 }
 
-/* Image wrapper and image styles */
-.show-img-wrapper {
-  /* max-width: 800px;
-  max-height: 600px; */
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-.show-img {
-  box-sizing: border-box;
-  max-width: 100%;
-  max-height: 100%;
-  /* height: 500px; */
-}
-/* .show-img:deep(img) {
-  height: auto;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-} */
-
 .line-limit {
   display: block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
   width: 100%;
+}
+
+/* Equalize the width of show details and dates */
+.show-details,
+.show-dates {
+  flex: 1 1 30%;
+  max-width: 30%;
+  box-sizing: border-box;
+}
+
+/* Simplified image styling */
+.show-image {
+  flex: 2 1 40%;
+  max-width: 40%;
+  display: flex;
+  max-height: 50vh;
+  justify-content: center;
+}
+
+.show-image :deep(img) {
+  /* max-height: 50vh; */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1400px) {
@@ -213,9 +204,9 @@ shows.value = Array.isArray(shows.value)
     box-sizing: border-box;
   }
 
-  .show-img-wrapper {
+  .show-image {
     flex: 2 1 40%;
-    max-width: 50%;
+    /* max-width: 50%; */
   }
 }
 
@@ -251,13 +242,6 @@ shows.value = Array.isArray(shows.value)
     text-align: left;
   }
 
-  .show-img-wrapper {
-    order: 1;
-    width: fit-content;
-    max-width: 100%;
-    justify-content: start;
-  }
-
   .show-details {
     order: 2;
   }
@@ -273,13 +257,16 @@ shows.value = Array.isArray(shows.value)
     display: none;
   }
 
-  .show-img :deep(img) {
-    height: auto;
+  .show-image {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .show-image :deep(img) {
     width: 100%;
     max-height: 50vh;
-    -o-object-fit: cover;
     object-fit: contain;
-    -o-object-position: center;
     object-position: left;
   }
 }

@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     "@nuxt/content",
     "nuxt-viewport",
+    "@unlazy/nuxt",
   ],
   image: {
     // The screen sizes predefined by `@nuxt/image`:

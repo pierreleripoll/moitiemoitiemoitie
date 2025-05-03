@@ -17,16 +17,7 @@
           <ThumbhashImage
             v-for="(img, idx) in projectImages"
             :key="idx"
-            class="show-img"
-            :thumbhash="img.thumbhash"
-            :aspectRatio="img.ratio"
-            :src="img.src"
-            format="avif,webp"
-            sizes="450px md:650px xl:900px"
-            densities="x1 x2"
-            quality="90"
-            loading="lazy"
-            :imgAttrs="{ alt: img.caption || img.showTitle, loading: 'lazy' }"
+            :image="img"
           />
         </div>
       </div>

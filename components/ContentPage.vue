@@ -39,17 +39,7 @@
             target="_blank"
             class="image-wrapper"
           >
-            <ThumbhashImage
-              :src="image.src"
-              :thumbhash="image.thumbhash"
-              :aspectRatio="image.ratio"
-              format="avif,webp"
-              sizes="450px md:650px xl:900px"
-              densities="x1 x2"
-              quality="90"
-              loading="lazy"
-              :imgAttrs="{ alt: image.caption || 'Image', loading: 'lazy' }"
-            />
+            <ThumbhashImage :image="image" />
           </a>
         </div>
       </div>

@@ -5,19 +5,19 @@ images:
     caption: 'Crédit photo: Audrey Bersier'
     width: 4943
     height: 3295
-    thumbhash: HPgNDYCPaXdYZHdnh4eHiZ+Z9Vwc
+    thumbhash: HAgODYCPaXdYZHdnh4eIiZ+Y9iwd
     ratio: 1.5001517450682853
   - src: /uploads/img_0216.jpg
     caption: 'Crédit photo: Audrey Bersier'
     width: 5573
     height: 3716
-    thumbhash: IwgODYJ5d2iPdnd4hliHiN+P+OyY
+    thumbhash: IwgODYJ5d2iPdnd4hliHiM+O+NyY
     ratio: 1.4997308934337998
   - src: /uploads/img_0206.jpg
     caption: 'Crédits photo: Audrey Bersier'
     width: 5800
     height: 3867
-    thumbhash: KQgSDYKJl3h/hoZ2iHiJh+yftt+J
+    thumbhash: KQgSDYKJl3h/hoZmiHiJh+yftt+Y
     ratio: 1.499870700801655
 people:
   - name: Cécile Goussard
