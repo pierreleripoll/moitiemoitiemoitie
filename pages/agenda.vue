@@ -14,16 +14,19 @@
           </div>
         </div>
         <div class="right-column">
-          <NuxtPicture
-            v-for="(img, idx) in randomImages"
+          <ThumbhashImage
+            v-for="(img, idx) in projectImages"
+            :key="idx"
             class="show-img"
+            :thumbhash="img.thumbhash"
+            :aspectRatio="img.ratio"
             :src="img.src"
             format="avif,webp"
             sizes="450px md:650px xl:900px"
             densities="x1 x2"
             quality="90"
             loading="lazy"
-            :imgAttrs="{ alt: img.caption, loading: 'lazy' }"
+            :imgAttrs="{ alt: img.caption || img.showTitle, loading: 'lazy' }"
           />
         </div>
       </div>
@@ -40,56 +43,60 @@ useScrollIndicator();
 
 const datesFutur = ref([]);
 const datesPassed = ref([]);
-
-const randomImages = ref([]);
+const projectImages = ref([]);
 
 const { data: fetchedShows } = await useAsyncData("agenda", () =>
   queryCollection("spectacles").all()
 );
 
-console.log(fetchedShows);
+// Function to select representative images from shows
+function getProjectImages(shows) {
+  const images = [];
 
-function shuffle(array) {
-  let currentIndex = array.length;
+  shows.forEach((show) => {
+    // Only process each show once
+    if (show.images && show.images.length > 0) {
+      // Add the first image of each show (or choose any specific image you want)
+      const representativeImage = show.images[0];
 
-  // While there remain elements to shuffle...
-  while (currentIndex != 0) {
-    // Pick a remaining element...
-    let randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
+      // Add show metadata to the image
+      images.push({
+        ...representativeImage,
+        showTitle: show.title,
+        showPath: show._path,
+      });
+    }
+  });
 
-    // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
-    ];
-  }
-  return array;
+  return images;
 }
 
 const today = new Date();
-// Flatten dates from all shows and attach the show title
+// Process shows and dates
 if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
+  // Get representative image for each project
+  console.log("fetchedShows", fetchedShows.value);
+  projectImages.value = getProjectImages(fetchedShows.value);
+
+  // Limit to a reasonable number of images if needed
+  if (projectImages.value.length > 5) {
+    projectImages.value = projectImages.value.slice(0, 5);
+  }
+
+  // Process dates
   const allDates = [];
   fetchedShows.value.forEach((show) => {
-    randomImages.value = randomImages.value.concat(
-      shuffle(show.images).slice(0, 1)
-    );
-
     if (show.dates && Array.isArray(show.dates)) {
       show.dates.forEach((date) => {
         allDates.push({
           ...date,
           showTitle: show.title,
           color: show.color,
+          showPath: show._path,
         });
       });
     }
   });
-
-  shuffle(randomImages.value);
-
-  // randomImages.value = randomImages.value.slice(0, 5);
 
   // Sort dates chronologically
   const dates = allDates.sort(

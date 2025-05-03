@@ -39,14 +39,16 @@
             target="_blank"
             class="image-wrapper"
           >
-            <NuxtPicture
+            <ThumbhashImage
               :src="image.src"
+              :thumbhash="image.thumbhash"
+              :aspectRatio="image.ratio"
               format="avif,webp"
               sizes="450px md:650px xl:900px"
               densities="x1 x2"
               quality="90"
               loading="lazy"
-              :imgAttrs="{ alt: image.caption, loading: 'lazy' }"
+              :imgAttrs="{ alt: image.caption || 'Image', loading: 'lazy' }"
             />
           </a>
         </div>
@@ -69,7 +71,6 @@ const { page } = defineProps({
   },
 });
 
-console.log(page);
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";
 
@@ -177,11 +178,12 @@ onMounted(() => {
 
 /* Gallery image styling */
 .image-wrapper {
-  display: block; /* Anchor element behaves as a block for layout */
+  display: block;
   overflow: hidden;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
-
 /* Constrain the image size inside NuxtPicture */
 :deep(img) {
   max-width: 100%;

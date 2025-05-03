@@ -56,7 +56,6 @@ const activeRoute = ref("");
 
 watch(route, (r) => {
   activeRoute.value = r.path;
-  console.log(activeRoute.value);
 });
 
 const activeMenu = (routeMenu: string) =>

@@ -10,8 +10,6 @@ export function useScrollIndicator() {
       ".scrollable:not([data-scroll-initialized])"
     );
 
-    console.log(`Setting up ${scrollables.length} scrollable indicators`);
-
     scrollables.forEach((scrollable) => {
       // Mark as initialized to avoid duplicate listeners
       scrollable.setAttribute("data-scroll-initialized", "true");
@@ -75,8 +73,6 @@ export function useScrollIndicator() {
 
   // Initialize everything when component is mounted
   onMounted(() => {
-    console.log("Setting up scroll indicators");
-
     // Initial setup
     setupScrollIndicators();
 

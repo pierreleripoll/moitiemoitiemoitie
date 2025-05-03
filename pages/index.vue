@@ -76,8 +76,9 @@
             <div ref="bubble" class="bubble bubble-bottom-left">
               Si seulement nous avions un bouton pour moins stresser...
             </div>
-            <NuxtPicture
+            <ThumbhashImage
               :src="img.src"
+              :thumbhash="img.thumbhash"
               format="avif,webp"
               sizes="450px md:650px xl:900px"
               densities="x1 x2"
@@ -175,8 +176,6 @@ const formatEndDate = computed(() => {
 const nextShowIndex = show.value.dates.findIndex(
   (date) => new Date(date.date_start) > new Date()
 );
-
-console.log("Next show index", nextShowIndex);
 
 const nextShow = show.value.dates[nextShowIndex];
 

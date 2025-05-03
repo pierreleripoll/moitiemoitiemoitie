@@ -37,8 +37,10 @@
             </NuxtLink>
           </div>
           <div class="show-img-wrapper">
-            <NuxtPicture
+            <ThumbhashImage
               class="show-img"
+              :aspectRatio="show.images[0].ratio"
+              :thumbhash="show.images[0].thumbhash"
               :src="show.images[0].src"
               format="avif,webp"
               sizes="450px md:650px xl:900px"
@@ -168,19 +170,21 @@ shows.value = Array.isArray(shows.value)
   /* max-width: 800px;
   max-height: 600px; */
   height: auto;
+  display: flex;
+  justify-content: center;
 }
 .show-img {
   box-sizing: border-box;
-  width: 100%;
   max-width: 100%;
-  height: 500px;
+  max-height: 100%;
+  /* height: 500px; */
 }
-.show-img:deep(img) {
+/* .show-img:deep(img) {
   height: auto;
   width: 100%;
   object-fit: cover;
   object-position: center;
-}
+} */
 
 .line-limit {
   display: block;
@@ -249,8 +253,9 @@ shows.value = Array.isArray(shows.value)
 
   .show-img-wrapper {
     order: 1;
-    width: 100%;
+    width: fit-content;
     max-width: 100%;
+    justify-content: start;
   }
 
   .show-details {
