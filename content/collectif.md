@@ -2,20 +2,26 @@
 title: le collectif
 images:
   - src: /uploads/collectif/IMG_0183.jpg
-    caption: "Crédit photo: Audrey Bersier"
+    caption: 'Crédit photo: Audrey Bersier'
     width: 4943
     height: 3295
+    thumbhash: HPgNDYCPaXdYZHdnh4eHiZ+Z9Vwc
+    ratio: 1.5001517450682853
   - src: /uploads/img_0216.jpg
-    caption: "Crédit photo: Audrey Bersier"
-    width: 4943
-    height: 3295
+    caption: 'Crédit photo: Audrey Bersier'
+    width: 5573
+    height: 3716
+    thumbhash: IwgODYJ5d2iPdnd4hliHiN+P+OyY
+    ratio: 1.4997308934337998
   - src: /uploads/img_0206.jpg
-    caption: "Crédits photo: Audrey Bersier"
+    caption: 'Crédits photo: Audrey Bersier'
     width: 5800
     height: 3867
+    thumbhash: KQgSDYKJl3h/hoZ2iHiJh+yftt+J
+    ratio: 1.499870700801655
 people:
   - name: Cécile Goussard
-    text:
+    text: >-
       Cécile Goussard commence par étudier le saxophone, puis après une classe
       préparatoire littéraire, elle entre au CRR de Lyon en théâtre et en chant.
       Elle expérimente alors plusieurs formes mêlant musique et théâtre, et
@@ -41,26 +47,34 @@ people:
 
       Né en 1987, Adrien Mani grandit à Lausanne. Après des études de lettres
 
-      à l’Université de Lausanne et à l’Université de Kathmandu, il est admis en 2010
+      à l’Université de Lausanne et à l’Université de Kathmandu, il est admis en
+      2010
 
       au Conservatoire de Genève. Il entre ensuite dans la promotion H de la
 
-      Manufacture d’où il sort diplômé en 2016. Depuis sa sortie d’école, il entreprend des démarches collectives (Collectif moitié moitié moitié, Collectif CCC, Compagnie Slalom, Compagnie
+      Manufacture d’où il sort diplômé en 2016. Depuis sa sortie d’école, il
+      entreprend des démarches collectives (Collectif moitié moitié moitié,
+      Collectif CCC, Compagnie Slalom, Compagnie
 
-      Lausanne-Impro) et travaille également pour des metteur·e·s en scène émergent·e·s
+      Lausanne-Impro) et travaille également pour des metteur·e·s en scène
+      émergent·e·s
 
-      ou établi·e·s (Muriel Imbach, Sandra Amodio, Jacques Maitre, Camille Giaccobino,
+      ou établi·e·s (Muriel Imbach, Sandra Amodio, Jacques Maitre, Camille
+      Giaccobino,
 
-      Mattias Brossard, Sarah Calcine, Jean-Daniel Piguet, Tibor Ockenfels, Jonas
+      Mattias Brossard, Sarah Calcine, Jean-Daniel Piguet, Tibor Ockenfels,
+      Jonas
 
       Lambelet et Lara Khattabi).
 
 
       Parallèlement à son parcours théâtral, il fait également partie de
 
-      différentes troupes et événements d’improvisation. Il est notamment co-programmateur
+      différentes troupes et événements d’improvisation. Il est notamment
+      co-programmateur
 
-      du Festival d’Improvisation Rolande Léonard et a été président de l’Association
+      du Festival d’Improvisation Rolande Léonard et a été président de
+      l’Association
 
       Vaudoise des Ligues d’Improvisation jusqu’en 2020.
   - name: Matteo Prandi
@@ -72,12 +86,24 @@ people:
       Ecole des Arts de la Scène à Lausanne, dont il ressort diplômé d’un
       Bachelor de comédien en 2016.
 
-      Dès sa sortie, il fonde avec trois autres comédien·ne·s le Collectif moitié moitié moitié, dont la deuxième création de théâtre-chant, Objectif Projet, est créée en avril 2021. Il intègre aussi le Groupe B dès sa création en 2016, sous la direction de Tibor Ockenfels, pour les créations de Tambour dans la Nuit, Dialogues d’exilés et Sainte Jeanne des abattoirs de Bertolt Brecht. En 2022, il est interprète pour les deux dernières créations jeune public du metteur en scène Joan Mompart à Am Stram Gram : Le Colibri d’Elisa Shua Dusapin et Oz de Robert Sandoz. En 2023, il participe à la création collective du spectacle de théâtre d’improvisation La Mécanique du pétrin avec la Compagnie Slalom.
+      Dès sa sortie, il fonde avec trois autres comédien·ne·s le Collectif
+      moitié moitié moitié, dont la deuxième création de théâtre-chant, Objectif
+      Projet, est créée en avril 2021. Il intègre aussi le Groupe B dès sa
+      création en 2016, sous la direction de Tibor Ockenfels, pour les créations
+      de Tambour dans la Nuit, Dialogues d’exilés et Sainte Jeanne des abattoirs
+      de Bertolt Brecht. En 2022, il est interprète pour les deux dernières
+      créations jeune public du metteur en scène Joan Mompart à Am Stram Gram :
+      Le Colibri d’Elisa Shua Dusapin et Oz de Robert Sandoz. En 2023, il
+      participe à la création collective du spectacle de théâtre d’improvisation
+      La Mécanique du pétrin avec la Compagnie Slalom.
 
-      En plus de son activité de comédien, il crée début 2022 la Compagnie QED et met en scène Alenka Chenuz dans le solo QI – Quapacités Intelectuèles. Il est aussi formateur de théâtre et d’improvisation et improvisateur professionnel dans diverses structures de la région lémanique.
+      En plus de son activité de comédien, il crée début 2022 la Compagnie QED
+      et met en scène Alenka Chenuz dans le solo QI – Quapacités Intelectuèles.
+      Il est aussi formateur de théâtre et d’improvisation et improvisateur
+      professionnel dans diverses structures de la région lémanique.
   - name: Marie Ripoll
-    text:
-      "Marie Ripoll commence le théâtre à 20 ans au sein d'une troupe étudiante,
+    text: >-
+      Marie Ripoll commence le théâtre à 20 ans au sein d'une troupe étudiante,
       alors qu'elle étudie tout à fait autre chose à l'époque. Après avoir
       obtenu un master en autre chose, elle commence sa formation de comédienne
       à l'EDT91 en banlieue parisienne. En 2013, elle débarque à Lausanne pour
@@ -93,7 +119,7 @@ people:
       de Sainte-Jeanne des abattoirs. Parfois, elle accompagne certains projets
       comme collaboratrice artistique : c’est le cas pour Résilience mon cul, un
       stand-up de Joël Maillard, ou pour Médée superstar, un spectacle mis en
-      scène par Tamara Fischer (création fév. 2024)."
+      scène par Tamara Fischer (création fév. 2024).
 ---
 
 Nous sommes quatre comédien·ne·s formé·e·s au sein de la même promotion à la Manufacture, Haute école des arts de la scène de Suisse romande : Cécile Goussard, Adrien Mani, Matteo Prandi et Marie Ripoll. Notre goût commun pour l'absurde, pour le chant sur un plateau de théâtre, pour les pièces de Christoph Marthaler (et pour tant d'autres choses dont on ne fera pas la liste ici) nous a réuni·e·s à l'école, où nous avons commencé à travailler sur l'ébauche de notre premier spectacle.
