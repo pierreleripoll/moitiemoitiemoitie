@@ -6,10 +6,10 @@
     <UnLazyImage
       :thumbhash="thumbhash"
       :style="`aspect-ratio: ${aspectRatio};`"
-      :sizes="props.sizes"
       :sources="sources"
       :src="image.src"
       :alt="alt"
+      auto-sizes=""
     />
   </div>
 </template>
@@ -45,14 +45,9 @@ const props = defineProps({
     default: 90,
     required: false,
   },
-  densities: {
-    type: String,
-    default: "x1 x2",
-    required: false,
-  },
   sizes: {
     type: String,
-    default: "450px md:650px xl:900px",
+    default: "450px  xl:900px",
     required: false,
   },
 });
@@ -76,15 +71,13 @@ const sources = computed(() => {
     sizes: props.sizes,
     modifiers: {
       quality: props.quality,
-      densities: props.densities,
       format: "webp",
     },
   });
-  const jpegSrcset = img.getSizes(props.image.src, {
+  const jpegSizes = img.getSizes(props.image.src, {
     sizes: props.sizes,
     modifiers: {
       quality: props.quality,
-      densities: props.densities,
       format: "jpeg",
     },
   });
@@ -95,7 +88,7 @@ const sources = computed(() => {
     },
     {
       type: "image/jpeg",
-      srcSet: jpegSrcset.srcset,
+      srcSet: jpegSizes.srcset,
     },
   ];
   // console.log("sourcesComputed", sourcesComputed);
