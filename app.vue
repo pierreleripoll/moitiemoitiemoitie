@@ -227,6 +227,8 @@ a:hover {
   .scrollable {
     padding-right: 0;
     overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
   }
 
   /* Parent container of scrollable needs to be positioned */
