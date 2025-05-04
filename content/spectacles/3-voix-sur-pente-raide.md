@@ -10,18 +10,21 @@ images:
     height: 876
     thumbhash: 2+gFFwJje4h4h3ZmmPhz2WZm+ghuFGMA
     ratio: 0.9452054794520548
+    thumbhashRatio: 1
   - src: /uploads/img_5500.jpg
     caption: Adrien Mani
     width: 828
     height: 900
     thumbhash: G+kFFwJEW4iIh3eDmKeE+WZ5xweNR3cA
     ratio: 0.92
+    thumbhashRatio: 1
   - src: /uploads/img_5502.jpg
     caption: Adrien Mani
     width: 828
     height: 1012
     thumbhash: 1fgFFgJYmKeKezVZd8CIRYp1p3xgCto=
     ratio: 0.8181818181818182
+    thumbhashRatio: 0.8571428571428571
 dates:
   - theatre_text: Le Reflet
     date_text: 11 mai 2024

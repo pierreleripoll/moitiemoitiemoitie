@@ -13,6 +13,7 @@ images:
     height: 4000
     thumbhash: 4CgGDYD9ivl4golZaES4iZh/avNI
     ratio: 1.5
+    thumbhashRatio: 1.4
   - src: >-
       /uploads/la-grosse-deprime/3._La_Grosse_deprime_visuel_deprime_Credit_Audrey_Bersier.jpg
     caption: 'Crédit photo: Audrey Bersier'
@@ -20,6 +21,7 @@ images:
     height: 4000
     thumbhash: 2igGDYDrq/h2dYdWeDSph8pvqpBH
     ratio: 1.5
+    thumbhashRatio: 1.4
   - src: >-
       /uploads/la-grosse-deprime/4._La_Grosse_Deprime_visuel_joie_Credit_Audrey_Bersier.jpg
     caption: 'Crédit photo: Audrey Bersier'
@@ -27,6 +29,7 @@ images:
     height: 4000
     thumbhash: 4CgGDYD6mtiGdIhpdiW4iaqPqsC4
     ratio: 1.5
+    thumbhashRatio: 1.4
   - src: >-
       /uploads/la-grosse-deprime/5._La_Grosse_deprime_visuel_perruques_Credit_Audrey_Bersier.jpg
     caption: 'Crédit photo: Audrey Bersier'
@@ -34,36 +37,42 @@ images:
     height: 3929
     thumbhash: mCgKDQD4lYl3V1dpeHhXl6ePcrII
     ratio: 0.6665818274370069
+    thumbhashRatio: 0.7142857142857143
   - src: /uploads/grossedeprime46.jpeg
     caption: 'Crédits photo: Aurelia Thys'
     width: 5443
     height: 3629
     thumbhash: llkKDYKJd4k/iadkeleYcXhvkMUI
     ratio: 1.4998622209975199
+    thumbhashRatio: 1.4
   - src: /uploads/grossedeprime16-copie.jpeg
     caption: 'Crédits photo: Aurelia Thys'
     width: 5458
     height: 3639
     thumbhash: jBcKFYKwk1hIa6d1mZZ4eHp/BJw0
     ratio: 1.499862599615279
+    thumbhashRatio: 1.4
   - src: /uploads/grossedeprime10-copie.jpeg
     caption: 'Crédits photo: Aurelia Thys'
     width: 4328
     height: 2885
     thumbhash: DDkKLYYVh2mQWYiFmJeGdjaQdwNo
     ratio: 1.5001733102253032
+    thumbhashRatio: 1.4
   - src: /uploads/grossedeprime59.jpeg
     caption: 'Crédits photo: Aurelia Thys'
     width: 4821
     height: 3214
     thumbhash: j+cFFYQYn4mRe3h1V5ZYhEiCUA2Y
     ratio: 1.5
+    thumbhashRatio: 1.4
   - src: /uploads/grossedeprime44-copie.jpeg
     caption: 'Crédits photo: Aurelia Thys'
     width: 5623
     height: 3749
     thumbhash: U0kGFYKLVIgvp5ZSi2h4c4xPw/gT
     ratio: 1.499866631101627
+    thumbhashRatio: 1.4
 dates:
   - theatre_text: 'Casino Théâtre, Rolle'
     date_text: 26 fév. – 02 mars 2025

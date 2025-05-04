@@ -126,6 +126,22 @@ onMounted(() => {
   flex-direction: column;
 }
 
+/* Gallery image styling */
+.image-wrapper {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  max-height: 80vh;
+}
+
+.image-wrapper :deep(img) {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Desktop: two-column layout with images on left and text on right */
 @media screen and (min-width: 1080px) {
   .scrollable {
@@ -137,16 +153,15 @@ onMounted(() => {
     gap: 4rem;
     height: 100%;
     padding-top: 0px;
+    justify-content: space-between;
   }
 
   .project-content {
     flex: 0 0 50%;
-    /* position: sticky;
-    top: 6rem; */
   }
 
-  .images-carousel {
-    flex: 0 0 50%;
+  .images-carousel-wrapper {
+    flex: 0 1 40%;
   }
   .project-content > div,
   .images-carousel-wrapper > div {
@@ -161,23 +176,5 @@ onMounted(() => {
   .project-container {
     gap: 10rem;
   }
-  .images-carousel {
-    flex: 0 0 40%;
-  }
-}
-
-/* Gallery image styling */
-.image-wrapper {
-  display: block;
-  overflow: hidden;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-/* Constrain the image size inside NuxtPicture */
-:deep(img) {
-  max-width: 100%;
-  max-height: 80vh; /* Ensure images never exceed viewport height */
-  object-fit: contain;
 }
 </style>

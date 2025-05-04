@@ -27,10 +27,13 @@ async function generateThumbhash(imagePath) {
 
     // Create thumbhash
     const hash = thumbhash.rgbaToThumbHash(info.width, info.height, imageData);
-    // Return as base64 string for storage in markdown
+    const ratio = thumbhash.thumbHashToApproximateAspectRatio(hash);
+
+    console.log("Thumbhash ratio", ratio);
+
     return {
       hash: Buffer.from(hash).toString("base64"),
-      ratio: info.width / info.height,
+      ratio,
     };
   } catch (err) {
     console.error(`Error generating thumbhash: ${err.message}`);
@@ -55,6 +58,7 @@ async function updateImageDimensionsForPath(filePath, file) {
           image.width = metadata.width;
           image.height = metadata.height;
           image.ratio = metadata.width / metadata.height;
+          console.log("Image ratio", image.ratio);
           updateNeeded = true;
 
           changed = true;
@@ -71,6 +75,7 @@ async function updateImageDimensionsForPath(filePath, file) {
           const { hash, ratio } = await generateThumbhash(imgPath);
           if (hash) {
             image.thumbhash = hash;
+            image.thumbhashRatio = ratio;
             updateNeeded = true;
             changed = true;
           }

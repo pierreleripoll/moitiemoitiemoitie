@@ -180,7 +180,7 @@ shows.value = Array.isArray(shows.value)
   /* max-height: 50vh; */
   width: 100%;
   height: auto;
-  object-fit: contain;
+  /* object-fit: cover; */
 }
 
 @media screen and (max-width: 1400px) {
@@ -266,8 +266,8 @@ shows.value = Array.isArray(shows.value)
   .show-image :deep(img) {
     width: 100%;
     max-height: 50vh;
-    object-fit: contain;
-    object-position: left;
+    /* object-fit: contain;
+    object-position: left; */
   }
 }
 

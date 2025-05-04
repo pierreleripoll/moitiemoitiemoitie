@@ -13,6 +13,7 @@ images:
     height: 1080
     thumbhash: TQgGDwZTGTaQdpeQaiuXl3d5SFAJaH0A
     ratio: 1
+    thumbhashRatio: 1
   - src: >-
       /uploads/objectif-projet/WEB_Objectif_Projet-Collectif_Moitie_Moitie_Moitie-2_21-26_avril_2021-Photo_c_Sastien_Monachon_05_NS5C5783.JPG
     caption: 'Crédit photo: Sébastien Monachon - bsc8.ch'
@@ -20,6 +21,7 @@ images:
     height: 1080
     thumbhash: UBgODIIYWndwbIZ0d4kDZVJwJw==
     ratio: 1.7777777777777777
+    thumbhashRatio: 1.75
   - src: >-
       /uploads/objectif-projet/WEB_Objectif_Projet-Collectif_Moitie_Moitie_Moitie-2_21-26_avril_2021-Photo_c_Sastien_Monachon_18_NS5C5941.JPG
     caption: 'Crédit photo: Sébastien Monachon - bsc8.ch'
@@ -27,6 +29,7 @@ images:
     height: 1080
     thumbhash: kAgKDIZEB4ujd3plpooGfIcJOQ==
     ratio: 1.7777777777777777
+    thumbhashRatio: 1.75
   - src: >-
       /uploads/objectif-projet/WEB_Objectif_Projet-Collectif_Moitie_Moitie_Moitie-2_21-26_avril_2021-Photo_c_Sastien_Monachon_26_NS5C6016.JPG
     caption: 'Crédit photo: Sébastien Monachon - bsc8.ch'
@@ -34,6 +37,7 @@ images:
     height: 1080
     thumbhash: SRgGDIJXSGiQemlgiItpcJkIqA==
     ratio: 1.7777777777777777
+    thumbhashRatio: 1.75
 dates:
   - theatre_text: 'Création Théâtre 2.21, Lausanne'
     date_text: 4 - 9 mai 2021
