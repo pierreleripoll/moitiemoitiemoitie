@@ -76,7 +76,9 @@
             <div ref="bubble" class="bubble bubble-bottom-left">
               Si seulement nous avions un bouton pour moins stresser...
             </div>
-            <ThumbhashImage :image="img" />
+            <div class="cartoon-image-wrapper">
+              <ThumbhashImage :image="img" />
+            </div>
           </div>
           <button
             ref="stressButton"
@@ -226,8 +228,6 @@ onMounted(() => {
   align-items: center;
   justify-content: left;
   gap: 8rem;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 .left-column {
@@ -241,23 +241,26 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  flex: 0 1 50%;
 }
 
 .theatre {
   font-weight: bold;
 }
 
-:deep(.show-img) {
+:deep(.image-container) {
   width: 100%;
   max-height: 50vh;
   height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .cartoon {
   position: relative;
   overflow: hidden;
   max-width: 100vw;
-  max-height: 100%;
+  width: 100%;
   z-index: -1;
 }
 
@@ -428,6 +431,10 @@ onMounted(() => {
 
   .right-column {
     margin: auto;
+    width: 100%;
+  }
+  .right-column :deep(.image-container) {
+    width: 100% !important; /* Force 100% width */
   }
   .disclaimer {
     width: 100%;

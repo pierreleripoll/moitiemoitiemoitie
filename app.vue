@@ -292,7 +292,7 @@ a:hover {
     padding: 2rem 0rem;
   }
   .app {
-    padding: 0 2rem;
+    padding: 1.5rem 2rem;
   }
 }
 

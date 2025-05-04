@@ -29,7 +29,7 @@ async function generateThumbhash(imagePath) {
     const hash = thumbhash.rgbaToThumbHash(info.width, info.height, imageData);
     const ratio = thumbhash.thumbHashToApproximateAspectRatio(hash);
 
-    console.log("Thumbhash ratio", ratio);
+    // console.log("Thumbhash ratio", ratio);
 
     return {
       hash: Buffer.from(hash).toString("base64"),
@@ -58,7 +58,7 @@ async function updateImageDimensionsForPath(filePath, file) {
           image.width = metadata.width;
           image.height = metadata.height;
           image.ratio = metadata.width / metadata.height;
-          console.log("Image ratio", image.ratio);
+          // console.log("Image ratio", image.ratio);
           updateNeeded = true;
 
           changed = true;

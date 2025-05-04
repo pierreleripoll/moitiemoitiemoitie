@@ -37,6 +37,7 @@
             :data-pswp-width="image.width || 800"
             :data-pswp-height="image.height || 600"
             target="_blank"
+            :aria-label="`View image ${index + 1} for ${page.title}`"
             class="image-wrapper"
           >
             <ThumbhashImage :image="image" />

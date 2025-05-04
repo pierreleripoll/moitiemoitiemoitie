@@ -21,7 +21,7 @@ images:
 
 **contact administratif** : admin@moitiemoitiemoitie.ch
 
-**site internet** : [moitiemoitiemoitie.ch](moitiemoitiemoitie.ch)
+**site internet** : [moitiemoitiemoitie.ch](https://moitiemoitiemoitie.ch/)
 
 **instagram :** [@collectifmoitiemoitiemoitie](https://www.instagram.com/collectifmoitiemoitiemoitie/)
 

@@ -5,6 +5,7 @@
   >
     <UnLazyImage
       :thumbhash="thumbhash"
+      :style="`aspect-ratio: ${aspectRatio};`"
       :sizes="props.sizes"
       :sources="sources"
       :src="image.src"
@@ -65,7 +66,7 @@ const thumbhash = computed(() => {
 });
 
 const aspectRatio = computed(() => {
-  return props.aspectRatio || props.image.thumbhashRatio;
+  return props.aspectRatio || props.image.ratio;
 });
 
 const img = useImage();
@@ -97,7 +98,7 @@ const sources = computed(() => {
       srcSet: jpegSrcset.srcset,
     },
   ];
-  console.log("sourcesComputed", sourcesComputed);
+  // console.log("sourcesComputed", sourcesComputed);
   return sourcesComputed;
 });
 </script>

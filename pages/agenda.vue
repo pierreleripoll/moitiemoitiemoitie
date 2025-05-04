@@ -66,7 +66,7 @@ const today = new Date();
 // Process shows and dates
 if (fetchedShows.value && Array.isArray(fetchedShows.value)) {
   // Get representative image for each project
-  console.log("fetchedShows", fetchedShows.value);
+  // console.log("fetchedShows", fetchedShows.value);
   projectImages.value = getProjectImages(fetchedShows.value);
 
   // Limit to a reasonable number of images if needed
