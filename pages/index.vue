@@ -227,12 +227,12 @@ onMounted(() => {
   margin-top: min(4rem, 10vh);
   align-items: center;
   justify-content: left;
-  gap: 8rem;
 }
 
 .left-column {
   text-align: left;
   flex: 0 0 40%;
+  margin-bottom: 25vh;
 }
 
 .right-column {
@@ -434,6 +434,10 @@ onMounted(() => {
     gap: 2rem;
     margin-top: 0;
     align-items: start;
+  }
+
+  .left-column {
+    margin-bottom: 0px;
   }
 
   .right-column {
