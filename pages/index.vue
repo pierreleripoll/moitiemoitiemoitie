@@ -462,4 +462,11 @@ onMounted(() => {
     text-align: left;
   }
 }
+
+@media screen and (min-height: 800px) and (min-width: 800px) {
+  .welcome {
+    padding-top: 15vh;
+    align-items: start;
+  }
+}
 </style>

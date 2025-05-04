@@ -17,4 +17,7 @@ const { data: page } = await useAsyncData("contact", () => {
 :deep(.scrollable) {
   gap: 1rem !important;
 }
+:deep(.project-description) {
+  text-align: left;
+}
 </style>
