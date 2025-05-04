@@ -224,7 +224,7 @@ onMounted(() => {
 .welcome {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-top: min(4rem, 10vh);
   align-items: center;
   justify-content: left;
   gap: 8rem;
@@ -256,12 +256,19 @@ onMounted(() => {
   justify-content: center;
 }
 
+:deep(.image-container) picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
 .cartoon {
   position: relative;
   overflow: hidden;
   max-width: 100vw;
   width: 100%;
-  z-index: -1;
 }
 
 .bubble {
