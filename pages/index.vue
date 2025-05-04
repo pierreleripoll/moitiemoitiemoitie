@@ -224,7 +224,7 @@ onMounted(() => {
 .welcome {
   display: flex;
   flex-direction: row;
-  margin-top: min(4rem, 10vh);
+  margin-top: 1rem;
   align-items: center;
   justify-content: left;
 }
