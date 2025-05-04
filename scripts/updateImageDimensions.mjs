@@ -52,7 +52,7 @@ async function updateImageDimensionsForPath(filePath, file) {
       let updateNeeded = false;
 
       // Check if dimensions need to be updated
-      if (true || !image.width || !image.height) {
+      if (!image.width || !image.height) {
         try {
           const metadata = await sharp(imgPath).metadata();
           image.width = metadata.width;
@@ -70,7 +70,7 @@ async function updateImageDimensionsForPath(filePath, file) {
       }
 
       // Check if thumbhash needs to be generated
-      if (true || !image.thumbhash) {
+      if (!image.thumbhash) {
         try {
           const { hash, ratio } = await generateThumbhash(imgPath);
           if (hash) {
