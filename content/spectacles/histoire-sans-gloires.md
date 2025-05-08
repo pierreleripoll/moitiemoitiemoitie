@@ -2,37 +2,33 @@
 color: rgb(71 165 255)
 gif: /uploads/histoire-sans-gloire/quand-tu-veux-pecho.gif
 title: Histoires sans gloire et pratiquement sans péril pour 4 voix sur pente raide
-year: '2018'
+year: "2018"
 navigation:
   order: 3
 images:
-  - src: >-
-      /uploads/histoire-sans-gloire/WEB_Histoires_sans_gloire_et-Collectif_moitiC_moitiC_moitiC-TLH-Sierre-16_janvier_2018-Photo_c_SCbastien_Monachon_09_8Y2A6085_LR.jpg
-    caption: 'Crédit photo: Sébastien Monachon - bsc8.ch'
+  - src: /uploads/histoire-sans-gloire/WEB_Histoires_sans_gloire_et-Collectif_moitiC_moitiC_moitiC-TLH-Sierre-16_janvier_2018-Photo_c_SCbastien_Monachon_09_8Y2A6085_LR.jpg
+    caption: "Crédit photo: Sébastien Monachon - bsc8.ch"
     width: 1440
     height: 1080
     thumbhash: w/cFDYAIhoeAiod6iGiIi6l/kekH
     ratio: 1.3333333333333333
     thumbhashRatio: 1.4
-  - src: >-
-      /uploads/histoire-sans-gloire/WEB_Histoires_sans_gloire_et-Collectif_moitiC_moitiC_moitiC-TLH-Sierre-16_janvier_2018-Photo_c_SCbastien_Monachon_14_8Y2A6122_LR.jpg
-    caption: 'Crédit photo: Sébastien Monachon - bsc8.ch'
+  - src: /uploads/histoire-sans-gloire/WEB_Histoires_sans_gloire_et-Collectif_moitiC_moitiC_moitiC-TLH-Sierre-16_janvier_2018-Photo_c_SCbastien_Monachon_14_8Y2A6122_LR.jpg
+    caption: "Crédit photo: Sébastien Monachon - bsc8.ch"
     width: 1080
     height: 1080
     thumbhash: w/cFBwAHh5eAiYhpiiiZqIeHp/sWiWwA
     ratio: 1
     thumbhashRatio: 1
-  - src: >-
-      /uploads/histoire-sans-gloire/WEB_Histoires_sans_gloire_et-Collectif_moitiC_moitiC_moitiC-TLH-Sierre-16_janvier_2018-Photo_c_SCbastien_Monachon_26_NS5C6326_LR.jpg
-    caption: 'Crédit photo: Sébastien Monachon - bsc8.ch'
+  - src: /uploads/histoire-sans-gloire/WEB_Histoires_sans_gloire_et-Collectif_moitiC_moitiC_moitiC-TLH-Sierre-16_janvier_2018-Photo_c_SCbastien_Monachon_26_NS5C6326_LR.jpg
+    caption: "Crédit photo: Sébastien Monachon - bsc8.ch"
     width: 1920
     height: 1080
     thumbhash: AwgGBIAdmBCZeHdyfGQpvsDAGw==
     ratio: 1.7777777777777777
     thumbhashRatio: 1.75
-  - src: >-
-      /uploads/histoire-sans-gloire/WEB_Histoires_sans_gloire_et-Collectif_moitiC_moitiC_moitiC-TLH-Sierre-16_janvier_2018-Photo_c_SCbastien_Monachon_28_NS5C6337_LR.jpg
-    caption: 'Crédit photo: Sébastien Monachon - bsc8.ch'
+  - src: /uploads/histoire-sans-gloire/WEB_Histoires_sans_gloire_et-Collectif_moitiC_moitiC_moitiC-TLH-Sierre-16_janvier_2018-Photo_c_SCbastien_Monachon_28_NS5C6337_LR.jpg
+    caption: "Crédit photo: Sébastien Monachon - bsc8.ch"
     width: 1080
     height: 1080
     thumbhash: BAgGBwApiHdWhoiGiwendpqKSiDUAmkI
@@ -41,57 +37,56 @@ images:
 dates:
   - theatre_text: Création TLH – Sierre (Suisse)
     date_text: 17-18 janvier 2018
-    dates_url: 'https://www.tlh-sierre.ch'
-    ticket_url: ''
+    dates_url: https://www.tlh-sierre.ch
+    ticket_url: ""
     date_start: 2018-01-17T00:00:00.000Z
     date_end: 2018-01-18T00:00:00.000Z
-  - theatre_text: 'Théâtre 2.21, Lausanne'
+  - theatre_text: Théâtre 2.21, Lausanne
     date_text: 26 jan. - 04 fév. 2018
-    dates_url: 'https://www.theatre221.ch'
-    ticket_url: ''
+    dates_url: https://www.theatre221.ch
+    ticket_url: ""
     date_start: 2018-01-26T00:00:00.000Z
     date_end: 2018-02-04T00:00:00.000Z
-  - theatre_text: 'Petithéâtre, Sion'
+  - theatre_text: Petithéâtre, Sion
     date_text: 24-26 mai 2019
-    dates_url: 'https://www.petitheatre.ch'
-    ticket_url: ''
+    dates_url: https://www.petitheatre.ch
+    ticket_url: ""
     date_start: 2019-05-24T00:00:00.000Z
     date_end: 2019-05-26T00:00:00.000Z
-  - theatre_text: 'Clochards Célestes, Lyon'
+  - theatre_text: Clochards Célestes, Lyon
     date_text: 26-30 juin 2019
-    dates_url: 'https://www.clochardscelestes.com'
-    ticket_url: ''
+    dates_url: https://www.clochardscelestes.com
+    ticket_url: ""
     date_start: 2019-06-26T00:00:00.000Z
     date_end: 2019-06-30T00:00:00.000Z
-  - theatre_text: 'Festival de la Bâtie, Genève, Théâtre de l’Orangerie'
+  - theatre_text: Festival de la Bâtie, Genève, Théâtre de l’Orangerie
     date_text: 2-7 sept. 2020
-    dates_url: 'https://www.batie.ch'
-    ticket_url: ''
+    dates_url: https://www.batie.ch
+    ticket_url: ""
     date_start: 2020-09-02T00:00:00.000Z
     date_end: 2020-09-07T00:00:00.000Z
-  - theatre_text: 'Pommier, Neuchâtel'
+  - theatre_text: Pommier, Neuchâtel
     date_text: 2-3 avr. 2022
-    dates_url: 'https://www.theatredupommier.ch'
-    ticket_url: ''
+    dates_url: https://www.theatredupommier.ch
+    ticket_url: ""
     date_start: 2022-04-02T00:00:00.000Z
     date_end: 2022-04-03T00:00:00.000Z
-  - theatre_text: 'Tournelle, Orbe'
+  - theatre_text: Tournelle, Orbe
     date_text: 23-24 sept. 2023
-    dates_url: 'https://www.theatre-tournelle.ch'
-    ticket_url: ''
+    dates_url: https://www.theatre-tournelle.ch
+    ticket_url: ""
     date_start: 2023-09-23T00:00:00.000Z
     date_end: 2023-09-24T00:00:00.000Z
-  - theatre_text: 'Nebia Poche, Bienne'
+  - theatre_text: Nebia Poche, Bienne
     date_text: 27-28 sept. 2023
-    dates_url: 'https://www.nebia.ch'
-    ticket_url: ''
+    dates_url: https://www.nebia.ch
+    ticket_url: ""
     date_start: 2023-09-27T00:00:00.000Z
     date_end: 2023-09-28T00:00:00.000Z
 credits: >-
   ### Générique
 
-  **Conception et interprétation** Cécile Goussard, Adrien Mani, Matteo Prandi,
-  Marie Ripoll
+  **Conception et interprétation** Cécile Goussard, Adrien Mani, Matteo Prandi, Marie Ripoll
 
 
   **Regard externe et oreille interne** François Renou
@@ -103,8 +98,7 @@ credits: >-
   **Costumes** Augustin Rolland
 
 
-  **Administration, production et communication** Jeanne Quattropani, Boris
-  Degex, Olivier Blättler, Samuel Bezençon
+  **Administration, production et communication** Jeanne Quattropani, Boris Degex, Olivier Blättler, Samuel Bezençon
 
 
   **Production** Collectif moitié moitié moitié
@@ -116,12 +110,10 @@ credits: >-
   **Remerciements** Théâtre 2.21, Petithéâtre de Sion, Oriental-Vevey
 
 
-  **Soutiens** Ville de Lausanne, Loterie Romande, Fondation Ernst Göhner,
-  Pour-cent culturel Migros, Fondation Engelberts, ALJF
-description_short: >-
-  Histoires sans gloire et pratiquement sans péril pour 4 voix sur pente raide
-  est un spectacle qui parle ~~du vide~~ de l’appel des sommets, ~~de la
-  solitude~~ du chant choral et ~~de la mort~~ des moutons.
+  **Soutiens** Ville de Lausanne, Loterie Romande, Fondation Ernst Göhner, Pour-cent culturel Migros, Fondation Engelberts, ALJF
+description_short: "*Histoires sans gloire et pratiquement sans péril pour 4
+  voix sur pente raide* est un spectacle qui parle ~~du vide~~ de l’appel des
+  sommets, ~~de la solitude~~ du chant choral et ~~de la mort~~ des moutons."
 ---
 
 « Vous êtes ici. »
@@ -134,7 +126,7 @@ heure de marche soutenue, découvrez le Vieux Chalet qui, paraît-il, regorge ~~
 revenants~~ de contes aussi sublimes que ridicules – c’est comme ça qu’on les
 aime, n’est-ce pas.
 
-Histoires sans gloire et pratiquement sans péril pour 4 voix sur pente raide est un spectacle qui parle ~~du vide~~ de l’appel des sommets, ~~de la solitude~~ du chant choral et ~~de la mort~~ des moutons.
+*Histoires sans gloire et pratiquement sans péril pour 4 voix sur pente raide* est un spectacle qui parle ~~du vide~~ de l’appel des sommets, ~~de la solitude~~ du chant choral et ~~de la mort~~ des moutons.
 
 ### Extraits
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/314122827?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Histoires sans gloire et pratiquement sans péril pour 4 voix sur pente raide // extrait"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
