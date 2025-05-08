@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@unlazy/nuxt",
   ],
   image: {
+    provider: "ipx",
     // The screen sizes predefined by `@nuxt/image`:
     screens: {
       xs: 320,
