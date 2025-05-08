@@ -109,7 +109,7 @@ credits: >-
 
   **Soutiens** Ville de Lausanne, Canton de Vaud, Loterie Romande, Pro Helvetia - Fondation suisse pour la culture, Fondation Ernst Göhner, Fondation Michalski et Fonds culturel de la SSA
 description_short: |-
-  OBJECTIF PROJET est un spectacle mêlant théâtre et chant. Le collectif,
+  *OBJECTIF PROJET* est un spectacle mêlant théâtre et chant. Le collectif,
   passionné par les projets, se lance dans une aventure théâtrale qui questionne
   la notion même de PROJET.
 
@@ -118,7 +118,7 @@ description_short: |-
   le propre de l’Homme. Une fois ce projet réalisé, le collectif pensera déjà au
   suivant.
 ---
-OBJECTIF PROJET est un PROJET de théâtre et de chant. On adore les PROJETS, on a la tête pleine de PROJETS. Alors on a décidé de se lancer dans un PROJET fou : faire un spectacle qui parle du mot PROJET. 
+*OBJECTIF PROJET* est un PROJET de théâtre et de chant. On adore les PROJETS, on a la tête pleine de PROJETS. Alors on a décidé de se lancer dans un PROJET fou : faire un spectacle qui parle du mot PROJET. 
 
 On PROJETTE une histoire de managers dans une entreprise sans PROJET. Le problème c’est que des managers sans PROJET ça ne peut pas exister, c’est interdit. Le PROJET est le propre de l’Homme.
 
@@ -132,7 +132,7 @@ Voilà, ça c’est notre PROJET. Et une fois qu’on l’aura produit, on réfl
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yeai_la5ntw?si=VToZpGY-DP5lXz2d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Presse
-« Si vous aimez la musique baroque, s’il vous arrive de soupirer devant la machine à café de l’étage, Objectif projet est taillé pour vous. » ([**RTS Info**, 22 mars 23](https://www.rts.ch/info/culture/spectacles/13880665-avec-objectif-projet-le-theatre-se-rit-du-management.html))
+« Si vous aimez la musique baroque, s’il vous arrive de soupirer devant la machine à café de l’étage, *Objectif projet* est taillé pour vous. » ([**RTS Info**, 22 mars 23](https://www.rts.ch/info/culture/spectacles/13880665-avec-objectif-projet-le-theatre-se-rit-du-management.html))
 
 « Piquante caricature du jargon entrepreneurial. » ([**RTS La Première**, 21 mars 23](https://www.rts.ch/info/culture/spectacles/13880665-avec-objectif-projet-le-theatre-se-rit-du-management.html))
 
