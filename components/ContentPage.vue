@@ -36,6 +36,7 @@
             :href="image.src"
             :data-pswp-width="image.width"
             :data-pswp-height="image.height"
+            :data-pswp-caption="image.caption"
             target="_blank"
             :aria-label="`View image ${index + 1} for ${page.title}`"
             class="image-wrapper"
@@ -69,8 +70,43 @@ onMounted(() => {
   const lightbox = new PhotoSwipeLightbox({
     gallery: "#gallery",
     children: "a",
+    bgOpacity: 1,
+    showHideAnimationType: "none",
+    initialZoomLevel: "fit",
+    secondaryZoomLevel: 1,
+    maxZoomLevel: 2,
+    zoomAnimationDuration: false,
+    preload: [1, 3],
     pswpModule: () => import("photoswipe"),
   });
+
+  // Register custom caption element
+  lightbox.on("uiRegister", function () {
+    lightbox.pswp.ui.registerElement({
+      name: "custom-caption",
+      order: 7,
+      isButton: false,
+      appendTo: "root",
+      html: "Caption text",
+      onInit: (el, pswp) => {
+        lightbox.pswp.on("change", () => {
+          const currSlideElement = lightbox.pswp.currSlide.data.element;
+          let captionHTML = "";
+
+          if (currSlideElement) {
+            // Get caption from data-pswp-caption attribute
+            const caption = currSlideElement.getAttribute("data-pswp-caption");
+            if (caption) {
+              captionHTML = caption;
+            }
+          }
+
+          el.innerHTML = "<span>" + (captionHTML || "") + "</span>";
+        });
+      },
+    });
+  });
+
   lightbox.init();
 });
 </script>
@@ -141,6 +177,24 @@ onMounted(() => {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+/* PhotoSwipe custom caption styling */
+:global(.pswp__custom-caption) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+:global(.pswp__custom-caption span) {
+  display: block;
 }
 
 /* Desktop: two-column layout with images on left and text on right */
