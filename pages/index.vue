@@ -300,10 +300,11 @@ onMounted(() => {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 150px;
+  height: 150px; /* Fixed height to prevent layout changes */
+  margin-bottom: 2rem;
   /* gap: 1rem; */
   font-size: medium;
-  overflow: visible;
+  overflow: visible; /* Allow animations to be visible outside bounds */
 }
 
 .exclamation {
@@ -334,6 +335,8 @@ onMounted(() => {
 /* Shared animation on time units */
 .animate-size {
   animation: sizePulse 3s linear infinite;
+  position: relative; /* Prevent layout disruption */
+  z-index: 10; /* Ensure visibility above other elements */
 }
 
 .animate-color,
@@ -449,7 +452,9 @@ onMounted(() => {
   }
   .disclaimer {
     width: 100%;
-    height: 15vh;
+    height: 150px; /* Fixed height to prevent button movement */
+    margin-bottom: 2rem;
+    overflow: visible; /* Allow animations to be visible */
   }
 
   .titre {
@@ -460,6 +465,12 @@ onMounted(() => {
 @media screen and (max-width: 600px) {
   .disclaimer {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .disclaimer {
+    height: fit-content;
   }
 }
 
