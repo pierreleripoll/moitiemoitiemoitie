@@ -137,7 +137,7 @@ credits: >-
 
   **Scénographie** Lucie Meyer
 
-  **Aide à la scénographie** Charlotte Nicolas
+  **Aide à la scénographie** Charlotte Nicolas, Ada Beaulieu
 
   **Costumes** Augustin Rolland
 
