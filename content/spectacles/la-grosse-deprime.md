@@ -149,7 +149,7 @@ credits: >-
 
   **Partenariats** Théâtre 2.21 - Lausanne, Oriental - Vevey, Centre de Culture ABC - La Chaux-de-Fonds
 
-  **Soutiens** Loterie Romande, Etat de Vaud, Ville de Lausanne, Pro Helvetia - Fondation suisse pour la culture, Fondation Leenards, Corodis, Fonds culturel de la SSA, Fondation Ernst Göhner, Pour-cent culturel Migros
+  **Soutiens** Loterie Romande, Etat de Vaud, Ville de Lausanne, Pro Helvetia - Fondation suisse pour la culture, Fondation Leenards, Corodis, Fonds culturel de la SSA, Fondation Ernst Göhner, Fondation Jan Michalski, Pour-cent culturel Migros
 description_short: En pleine déprime financière et nerveuse, le collectif part à
   la conquête des théories économiques qui structurent notre vie sociale pour
   faire péter la dette publique un bon coup, histoire de rire un peu.
