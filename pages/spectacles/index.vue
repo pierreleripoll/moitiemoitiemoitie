@@ -172,7 +172,7 @@ shows.value = Array.isArray(shows.value)
   flex: 2 1 40%;
   max-width: 40%;
   display: flex;
-  max-height: 50vh;
+  max-height: 70vh;
   justify-content: center;
 }
 
@@ -180,7 +180,7 @@ shows.value = Array.isArray(shows.value)
   width: 100%;
   display: flex;
   justify-content: center;
-  max-height: 50vh;
+  max-height: 70vh;
 }
 
 .show-image :deep(img) {
