@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="right-column">
-          <ThumbhashImage
+          <ThumbhashImageWithCredits
             v-for="(img, idx) in projectImages"
             :key="idx"
             :image="img"

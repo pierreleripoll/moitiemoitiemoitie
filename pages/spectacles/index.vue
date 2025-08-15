@@ -37,7 +37,7 @@
             </NuxtLink>
           </div>
           <div class="show-image">
-            <ThumbhashImage
+            <ThumbhashImageWithCredits
               v-if="show.images && show.images.length"
               :image="show.images[0]"
             />
@@ -176,6 +176,13 @@ shows.value = Array.isArray(shows.value)
   justify-content: center;
 }
 
+.show-image :deep(.image-wrapper) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-height: 50vh;
+}
+
 .show-image :deep(img) {
   /* max-height: 50vh; */
   width: 100%;
@@ -261,6 +268,11 @@ shows.value = Array.isArray(shows.value)
     order: 1;
     width: 100%;
     max-width: 100%;
+  }
+
+  .show-image :deep(.image-wrapper) {
+    width: 100%;
+    max-height: 50vh;
   }
 
   .show-image :deep(img) {

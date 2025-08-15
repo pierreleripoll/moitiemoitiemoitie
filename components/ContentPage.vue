@@ -39,9 +39,9 @@
             :data-pswp-caption="image.caption"
             target="_blank"
             :aria-label="`View image ${index + 1} for ${page.title}`"
-            class="image-wrapper"
+            class="image-link"
           >
-            <ThumbhashImage :image="image" />
+            <ThumbhashImageWithCredits :image="image" />
           </a>
         </div>
       </div>
@@ -128,7 +128,7 @@ onMounted(() => {
 .images-carousel {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .show-dates {
@@ -164,16 +164,24 @@ onMounted(() => {
 }
 
 /* Gallery image styling */
-.image-wrapper {
+.image-link {
   display: block;
   overflow: hidden;
   text-align: center;
   display: flex;
   justify-content: center;
-  max-height: 80vh;
+  max-height: 75vh;
 }
 
-.image-wrapper :deep(img) {
+.image-link :deep(.image-wrapper) {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  max-height: 75vh;
+}
+
+.image-link :deep(img) {
   width: 100%;
   height: auto;
   object-fit: contain;
