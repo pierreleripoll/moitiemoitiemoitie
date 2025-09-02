@@ -102,23 +102,29 @@ dates:
     date_end: 2025-05-31T01:59:00.000Z
   - theatre_text: Théâtre 2.21, Lausanne
     date_text: 16 – 21 sept. 2025
-    dates_url: https://www.theatre221.ch
-    ticket_url: https://www.theatre221.ch
-    date_start: 2025-09-16T00:00:00.000Z
-    date_end: 2025-09-22T01:59:00.000Z
+    dates_url: https://theatre221.ch/spectacle/648/la-grosse-deprime
+    ticket_url: https://theatre221.ch/spectacle/648/la-grosse-deprime
+    date_start: 2025-09-16T20:00:00.000+02:00
+    date_end: 2025-09-21T22:00:00.000+02:00
   - theatre_text: Centre de culture ABC, La Chaux-de-Fonds
     date_text: 26 – 27 sept. 2025
-    dates_url: https://www.centreculturelabc.ch
-    ticket_url: https://www.centreculturelabc.ch
-    date_start: 2025-09-26T00:00:00.000Z
-    date_end: 2025-09-28T01:59:00.000Z
+    dates_url: https://www.abc-culture.ch/event/2145/
+    ticket_url: https://www.abc-culture.ch/event/2145/
+    date_start: 2025-09-26T20:30:00.000+02:00
+    date_end: 2025-09-27T22:00:00.000+02:00
   - theatre_text: L’Échandole, Yverdon-les-Bains
     date_text: 3 octobre 2025
-    dates_url: https://www.echandole.ch
+    dates_url: https://echandole.ch/spectacles/la-grosse-deprime/
     date_hint: ""
-    ticket_url: https://www.echandole.ch
-    date_start: 2025-10-03T00:00:00.000Z
-    date_end: 2025-10-04T01:59:00.000Z
+    ticket_url: https://echandole.ch/spectacles/la-grosse-deprime/
+    date_start: 2025-10-03T20:30:00.000+02:00
+    date_end: 2025-10-04T22:00:00.000+02:00
+  - theatre_text: Les Alambics, Martigny
+    date_text: 16 avril 2026
+    dates_url: https://www.alambics.ch/evenements/la-grosse-deprime
+    ticket_url: https://www.alambics.ch/evenements/la-grosse-deprime
+    date_start: 2026-04-16T19:30:00.000+02:00
+    date_end: 2026-04-16T21:00:00.000+02:00
 credits: >-
   ### Générique
 
