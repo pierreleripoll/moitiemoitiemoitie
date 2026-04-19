@@ -83,6 +83,12 @@ dates:
     ticket_url: ""
     date_start: 2023-12-09T00:00:00.000Z
     date_end: 2023-12-09T00:00:00.000Z
+  - theatre_text: Le 1218, Grand-Saconnex (GE)
+    date_text: 3 - 7 février 2027
+    dates_url: ledouzedixhuit.ch
+    ticket_url: ledouzedixhuit.ch
+    date_start: 2027-02-03T19:30:00.000+01:00
+    date_end: 2027-02-07T22:00:00.000+01:00
 credits: >-
   ### Générique
 
