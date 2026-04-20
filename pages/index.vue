@@ -17,6 +17,7 @@
               }}</span>
               on joue :
             </div>
+            <div v-else-if="!hasNextShow">bientôt nous rejouerons :</div>
             <div v-else>
               plus que
               <span class="days" :class="{ 'animate-color': animationsActive }"
@@ -37,7 +38,7 @@
                 >{{ diffSeconds }} secondes</span
               >
             </div>
-            <div v-if="!isShowCurrentlyPlaying">
+            <div v-if="!isShowCurrentlyPlaying && hasNextShow">
               avant la {{ isPremiere ? "première" : "prochaine date" }} à
               <span class="theatre"> {{ nextShow.theatre_text }} </span> de :
             </div>
@@ -50,18 +51,21 @@
               }"
             >
               <NuxtLink :to="show.path" class="show-link">
-                La
-                <span
-                  class="big"
-                  :class="{ 'animate-uppercase': animationsActive }"
-                  >grosse</span
-                >
-                déprime
-                <span
-                  :class="{
-                    'exclamation animate-exclamation': animationsActive,
-                  }"
-                ></span>
+                <template v-if="slug === 'la-grosse-deprime'">
+                  La
+                  <span
+                    class="big"
+                    :class="{ 'animate-uppercase': animationsActive }"
+                    >grosse</span
+                  >
+                  déprime
+                  <span
+                    :class="{
+                      'exclamation animate-exclamation': animationsActive,
+                    }"
+                  ></span>
+                </template>
+                <template v-else>{{ show.title }}</template>
               </NuxtLink>
             </div>
           </h3>
@@ -73,7 +77,7 @@
               'animate-rotate': animationsActive,
             }"
           >
-            <div ref="bubble" class="bubble bubble-bottom-left">
+            <div ref="bubble" :class="['bubble', 'bubble-bottom-left', `bubble-${slug}`]">
               Si seulement nous avions un bouton pour moins stresser...
             </div>
             <div class="cartoon-image-wrapper">
@@ -134,21 +138,42 @@ const diffSeconds = ref(0);
 
 const animationsActive = ref(false);
 
-const { data: show } = await useAsyncData("welcome", () =>
-  queryCollection("spectacles").order("navigation", "ASC").first()
+const { data: shows } = await useAsyncData("welcome", () =>
+  queryCollection("spectacles").order("navigation", "ASC").all()
 );
-const images = show.value.images;
-const img = images.length > 3 ? images[3] : images[0];
+
+// Feature the show with the soonest upcoming date; fall back to navigation.order
+function pickFeaturedShow(list) {
+  const now = new Date();
+  let best = null;
+  let bestDate = null;
+  for (const s of list) {
+    const upcoming = (s.dates ?? []).find((d) => new Date(d.date_start) > now);
+    if (!upcoming) continue;
+    const d = new Date(upcoming.date_start);
+    if (!bestDate || d < bestDate) {
+      best = s;
+      bestDate = d;
+    }
+  }
+  return best ?? list[0];
+}
+
+const show = pickFeaturedShow(shows.value ?? []);
+const slug = show.path.split("/").pop();
+const img = show.images[0];
+
+const dates = show.dates ?? [];
 
 // Find if there's a currently ongoing show
 const now = new Date();
-const currentShowIndex = show.value.dates.findIndex(
+const currentShowIndex = dates.findIndex(
   (date) => new Date(date.date_start) <= now && new Date(date.date_end) >= now
 );
 
 const isShowCurrentlyPlaying = computed(() => currentShowIndex !== -1);
 const currentShow = computed(() =>
-  isShowCurrentlyPlaying.value ? show.value.dates[currentShowIndex] : null
+  isShowCurrentlyPlaying.value ? dates[currentShowIndex] : null
 );
 const formatEndDate = computed(() => {
   if (!currentShow.value) return "";
@@ -161,17 +186,19 @@ const formatEndDate = computed(() => {
 });
 
 // Find the next upcoming show
-const nextShowIndex = show.value.dates.findIndex(
+const nextShowIndex = dates.findIndex(
   (date) => new Date(date.date_start) > new Date()
 );
 
-const nextShow = show.value.dates[nextShowIndex];
+const nextShow = nextShowIndex === -1 ? null : dates[nextShowIndex];
+const hasNextShow = computed(() => nextShow !== null);
 
 const isPremiere = nextShowIndex === 0;
 
-const nextShowDate = new Date(nextShow.date_start);
+const nextShowDate = nextShow ? new Date(nextShow.date_start) : null;
 
 function updateCountdown() {
+  if (!nextShowDate) return;
   const today = new Date();
   const diffTime = Math.max(nextShowDate - today, 0);
   diffDays.value = Math.floor(diffTime / (1000 * 60 * 60 * 24));
@@ -281,6 +308,16 @@ onMounted(() => {
   padding: 10px;
   left: 40%;
   top: 30%;
+}
+
+.bubble-objectif-projet {
+  left: 55%;
+  top: 5%;
+}
+
+.bubble-histoire-sans-gloires {
+  left: 55%;
+  top: 15%;
 }
 .bubble-bottom-left:before {
   content: "";
