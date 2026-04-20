@@ -37,11 +37,11 @@ export function useScrollIndicator() {
           const mouseEvent = event as MouseEvent;
           const rect = container.getBoundingClientRect();
           const isTopArrow =
-            mouseEvent.clientY - rect.top < 30 &&
-            mouseEvent.clientX > rect.right - 30;
+            mouseEvent.clientY - rect.top < 66 &&
+            mouseEvent.clientX > rect.right - 32;
           const isBottomArrow =
-            rect.bottom - mouseEvent.clientY < 30 &&
-            mouseEvent.clientX > rect.right - 30;
+            rect.bottom - mouseEvent.clientY < 66 &&
+            mouseEvent.clientX > rect.right - 32;
 
           if (isTopArrow && scrollable.classList.contains("can-scroll-up")) {
             // Scroll up by a reasonable amount (e.g., 200px)

@@ -241,10 +241,11 @@ a:hover {
   .scrollable-container::after {
     content: "";
     position: absolute;
-    right: 5px;
-    width: 20px;
-    height: 20px;
+    right: 3px;
+    width: 24px;
+    height: 54px;
     background-repeat: no-repeat;
+    background-size: contain;
     opacity: 0;
     transition: opacity 0.1s ease;
     pointer-events: none; /* Changed from 'none' to 'auto' to make it clickable */
@@ -255,13 +256,13 @@ a:hover {
   /* Top arrow - appears when can scroll up */
   .scrollable-container::before {
     top: 5px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M10 15L10 2M5 7L10 2L15 7' stroke='rgba(0,0,0,0.6)' stroke-width='1' stroke-linejoin='miter' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='54' viewBox='0 0 24 54' fill='none'%3E%3Cpath d='M12 15 L12 2 M6 7 L12 2 L18 7 M12 33 L12 20 M6 25 L12 20 L18 25 M12 51 L12 38 M6 43 L12 38 L18 43' stroke='rgba(0,0,0,0.6)' stroke-width='1' stroke-linejoin='miter' fill='none' /%3E%3C/svg%3E");
   }
 
   /* Bottom arrow - appears when can scroll down */
   .scrollable-container::after {
     bottom: 5px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M10 5L10 18M5 13L10 18L15 13' stroke='rgba(0,0,0,0.6)' stroke-width='1' stroke-linejoin='miter' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='54' viewBox='0 0 24 54' fill='none'%3E%3Cpath d='M12 2 L12 15 M6 10 L12 15 L18 10 M12 20 L12 33 M6 28 L12 33 L18 28 M12 38 L12 51 M6 46 L12 51 L18 46' stroke='rgba(0,0,0,0.6)' stroke-width='1' stroke-linejoin='miter' fill='none' /%3E%3C/svg%3E");
   }
 
   /* Show arrows when the scrollable has the corresponding classes */
