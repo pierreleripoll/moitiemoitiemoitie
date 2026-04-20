@@ -169,9 +169,11 @@ En pleine déprime financière et nerveuse, le Collectif moitié moitié moitié
 
 ### Extraits
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ftp5AJp95k8?si=32-eXNJRZxdq0Jy6&rel=0" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+::youtube-lite{id="ftp5AJp95k8"}
+::
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fArqyaWcB3c?si=xNz8_IlRhiTq-Vwr&rel=0" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+::youtube-lite{id="fArqyaWcB3c"}
+::
 
 ### Presse
 
