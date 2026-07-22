@@ -83,12 +83,30 @@ dates:
     ticket_url: ""
     date_start: 2023-12-09T00:00:00.000Z
     date_end: 2023-12-09T00:00:00.000Z
-  - theatre_text: Le 1218, Grand-Saconnex (GE)
+  - theatre_text: Théâtre le douze dix-huit, Grand-Saconnex (GE)
     date_text: 3 - 7 février 2027
     dates_url: ledouzedixhuit.ch
     ticket_url: ledouzedixhuit.ch
     date_start: 2027-02-03T19:30:00.000+01:00
     date_end: 2027-02-07T22:00:00.000+01:00
+  - theatre_text: Maison de Quartier de Chailly
+    date_text: 25 - 28 février 2027
+    dates_url: https://www.m-q-c.ch/
+    ticket_url: https://www.m-q-c.ch/
+    date_start: 2027-02-25T01:00:00.000+01:00
+    date_end: 2027-02-28T01:00:00.000+01:00
+  - theatre_text: Alambics Théâtre-École
+    date_text: 4 mars 2027
+    dates_url: https://www.alambics.ch/evenements/objectif-projet
+    ticket_url: https://www.alambics.ch/evenements/objectif-projet
+    date_start: 2027-03-04T01:00:00.000+01:00
+    date_end: 2027-03-04T01:00:00.000+01:00
+  - theatre_text: Le Théâtre de Grand-Champ
+    date_text: 9 et 10 mars 2027
+    dates_url: https://www.grand-champ.ch/saison-26-27/
+    ticket_url: https://www.grand-champ.ch/saison-26-27/
+    date_start: 2027-03-09T01:00:00.000+01:00
+    date_end: 2027-03-10T01:00:00.000+01:00
 credits: >-
   ### Générique
 
@@ -97,7 +115,9 @@ credits: >-
 
   **Regard externe et oreille interne** François Renou
 
-  **Création lumière et régie** Guillaume Gex
+  **Création lumière et régie** Guillaume Gex \
+
+  **Régie** Laurie Gerber
 
   **Scénographie** Lucie Meyer
 
