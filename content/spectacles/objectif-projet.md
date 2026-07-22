@@ -85,8 +85,8 @@ dates:
     date_end: 2023-12-09T00:00:00.000Z
   - theatre_text: Théâtre le douze dix-huit, Grand-Saconnex (GE)
     date_text: 3 - 7 février 2027
-    dates_url: ledouzedixhuit.ch
-    ticket_url: ledouzedixhuit.ch
+    dates_url: https://ledouzedixhuit.ch/
+    ticket_url: https://ledouzedixhuit.ch/
     date_start: 2027-02-03T19:30:00.000+01:00
     date_end: 2027-02-07T22:00:00.000+01:00
   - theatre_text: Maison de Quartier de Chailly
